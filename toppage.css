@@ -313,29 +313,24 @@ body > main > section > div > div{
     width:70%;
     overflow: hidden;
 }
-body > main > section > div > figure.it_img{
-    width:30%;
-}
-body > main > section > div > figure.it_img > img{
-    width:100%;
-}
-.sec01 h2 {
+
+.Section__Odd h2 {
     font-size: 45px;
     padding-top: 1em;
     padding-left: 1em;
     margin-top:0;
 }
-.news {
+.Section__Odd__Contents {
     display: flex;
     justify-content: space-around;
     padding-bottom:1.5em;
 }
-.news img {
+.Section__Odd__Contents img {
     width: 30%;
     height: 30%; 
     margin-left: 4%;   
 }
-.agata p {
+.Section__Odd__Paragraph p {
     position: relative;
     width: 80%;
     height: 500px;
@@ -344,12 +339,12 @@ body > main > section > div > figure.it_img > img{
     margin-left: 75px;
     font-size: 20px;
 }
-.sec01 {
+.Section__Odd {
     position: relative;
     background-color: #def0e6;
     margin-bottom: -37px;
 }
-.hana_sec01 img {
+.Section__Odd--chery img {
     width: 50%;
     height: auto;
     position: absolute;
@@ -358,28 +353,29 @@ body > main > section > div > figure.it_img > img{
     z-index: 0;
     opacity: 0.5;
 }
+
 /* sec02*/
-.sec02 {
+.Section__Even {
     position: relative;
     background-color: white;
     margin-bottom: -66px;
 }
-.sec02 h2 {
+.Section__Even h2 {
     font-size: 45px;
     padding-top: 1em;
     padding-left: 1em;
 }
-.sec02 .it {
+.Section__Even__Content {
     display:flex;
     justify-content: space-around;
     margin: 65px 0px 65px 0;
 }
 
-.sec02 .it_text {
+.Section__Even__Paragraph {
     display: flex;
     justify-content: space-around;
 }
-.sec02 .it p {
+.Section__Even__Paragraph p {
      width: 80%;
     height: 500px;
     line-height: 2em;
@@ -389,16 +385,21 @@ body > main > section > div > figure.it_img > img{
     position: relative;
     z-index: 1;
 }
-.hana_sec02 img {
+.Section__Even figure {
+    width:30%;
+}
+.Section__Even__Content figure img{
+    width:100%;
+}
+.Section__Even--cherry img {
     width: 50%;
-    /* height: 210px; */
+    height:auto;
     opacity: 0.5;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-/* /sec02*/
 /* sec03*/
 .sec03 {
     background-color: #def0e6;
@@ -417,11 +418,12 @@ body > main > section > div > figure.it_img > img{
     display: flex;
     justify-content: space-around;
 }
-body > main > section.sec03 > div.home > figure{
+
+.Section__Odd__Content figure{
     margin:0;
     width: 30%;
 }
-body > main > section.sec03 > div.home > figure > img{
+.Section__Odd__Content figure > img{
     width:100%;
 }
 .hpage p {
