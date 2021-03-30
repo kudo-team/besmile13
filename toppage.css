@@ -1,4 +1,7 @@
 @charset "utf-8";
+*,*::after,*::before{
+    box-sizing: border-box;
+}
 /* header */
 header {
     height: 100px;
@@ -11,7 +14,6 @@ header {
 .logo-img {
     width: auto;
     height: 100px;
-    margin: 0 120px;
 }
 
 header div.menu-content{
@@ -41,12 +43,19 @@ header div.menu-content{
 body > header > h1{
     margin:0;
     padding:0;
+    font-size:30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 @media (max-width: 768px)
 {
+    body > header > h1{
+        font-size:20px;
+    }
     .logo-img {
-        width: 200px;
-        height: auto;
+        
     }
     header div.menu-content {
         display: block;
@@ -218,7 +227,7 @@ div#sakura_animation{
     z-index: 20;
     writing-mode: vertical-rl;/*縦書き*/
     display: inline-block;
-    top: 5%;
+    top: 10px;
     right: -17%;
     font-size: 55px;
     font-weight: bold;
@@ -309,10 +318,7 @@ div#sakura_animation{
 }
 
 
-body > main > section > div > div{
-    width:70%;
-    overflow: hidden;
-}
+
 
 .Section__Odd h2 {
     font-size: 45px;
@@ -323,26 +329,29 @@ body > main > section > div > div{
 .Section__Odd__Contents {
     display: flex;
     justify-content: space-around;
-    padding-bottom:1.5em;
+}
+.Section__Odd__Contents figure{
+    width:27%;
+    margin:0;
 }
 .Section__Odd__Contents img {
-    width: 30%;
-    height: 30%; 
-    margin-left: 4%;   
+    width: 100%;
+    height: auto; 
+}
+.Section__Odd__Paragraph{
+    width:67%;
 }
 .Section__Odd__Paragraph p {
     position: relative;
-    width: 80%;
-    height: 500px;
-    line-height: 2em;
+    padding:20px;
+    line-height: 1.75em;
     z-index: 1;
-    margin-left: 75px;
     font-size: 20px;
 }
 .Section__Odd {
     position: relative;
     background-color: #def0e6;
-    margin-bottom: -37px;
+    min-height: 600px;
 }
 .Section__Odd--chery img {
     width: 50%;
@@ -358,35 +367,33 @@ body > main > section > div > div{
 .Section__Even {
     position: relative;
     background-color: white;
-    margin-bottom: -66px;
+    overflow: hidden;
+    min-height: 600px;
 }
 .Section__Even h2 {
     font-size: 45px;
     padding-top: 1em;
     padding-left: 1em;
+    margin-top: 0;
 }
 .Section__Even__Content {
     display:flex;
     justify-content: space-around;
-    margin: 65px 0px 65px 0;
 }
 
 .Section__Even__Paragraph {
-    display: flex;
-    justify-content: space-around;
+    width:70%;
 }
 .Section__Even__Paragraph p {
-     width: 80%;
-    height: 500px;
-    line-height: 2em;
-    margin-right: 0%;
-    margin-left: 5%;
+    line-height: 1.75em;
     font-size: 20px;
     position: relative;
     z-index: 1;
+    padding:20px;
 }
 .Section__Even figure {
     width:30%;
+    margin:0;
 }
 .Section__Even__Content figure img{
     width:100%;
@@ -399,24 +406,13 @@ body > main > section > div > div{
     bottom: 0;
     left: 0;
 }
-
-/* sec03*/
-.sec03 {
-    background-color: #def0e6;
-    position: relative;
-    margin-bottom: -37px;
-    min-height: 600px;
-}
-.sec03 h2 {
-    font-size: 45px;
-    margin: 0;
-    padding-top: 1em;
-    padding-left: 1em;
-    margin-bottom: 45px;
-}
-.home {
-    display: flex;
-    justify-content: space-around;
+.Section__Odd--cherry img {
+    width: 50%;
+    height:auto;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    right:0;
 }
 
 .Section__Odd__Content figure{
@@ -426,155 +422,30 @@ body > main > section > div > div{
 .Section__Odd__Content figure > img{
     width:100%;
 }
-.hpage p {
-    width: 90%;
-    line-height: 2em;
-    margin-top: 35px;
-    margin-left: 75px;
-    position: relative;
-    z-index: 1;
-    font-size: 20px;
+figcaption{
+    font-size:12px;
+    text-align: center;
 }
-
-.hana_sec03 img {
-    width: 660px;
-    position: absolute;
-    right: 0;
-    bottom:0;
-    opacity: 0.5;
-    z-index: 0;
-}
-/* /sec03 */
-
-/* sec04 */
-.sec04 {
-    position: relative;
-    background-color: #faebf9;
-    margin-bottom: -65px;
-}
-.sec04 h2 {
-    font-size: 45px;
-    padding-top: 1em;
-    padding-left: 1em;
-}
-.sec04 .illust {
-    width:100%;
-    display: flex;
-    justify-content: space-around;
-}
-.sec04 figure.illust_img{
-    width:30%;
-    margin:0;
-}
-.sec04 .illust_text {
-    display: flex;
-    justify-content: space-around;
-}
-.sec04 .illust p {
-    width: 80%;
-    height: 300px;
-    line-height: 2em;
-    margin-right: 8%;
-    margin-left: 5%;
-    z-index: 1;
-    position: relative;
-    font-size: 20px;
-}
-.hana_sec04 img {
-    width: 50%;
-    height: 25%;
-    position: absolute;
-    bottom: 105px;
-    left: 1%;
-    z-index: 0;
-}
-
-
-/* /sec04 */
-
-/* sec05 */
-.sec05 {
-    background-color:#def0e6;
-    margin-bottom: -38px;
-}
-.sec05 h2 {
-    font-size: 45px;
-    padding-top: 1em;
-    padding-left: 1em;
-}
-.pro_ing {
-    display: flex;
-    justify-content: space-around;
-}
-.pro_ing img {
-    width: 560px;
-    height: 500px;  
-    margin-left: 10%;  
-}
-.pro_txt p {
-    width: 80%;
-    height: 500px;
-    line-height: 2em;
-    margin-top: 35px;
-    margin-left: 75px;
-    position: relative;
-    z-index: 1;
-    font-size: 20px;
-}
-.sec05 {
-    position: relative;
-}
-.hana_sec05 img {
-    width: 50%;
-    height: 211px;
-    position: absolute;
-    right:0;
-    top: 425px;
-    z-index: 0;
-}
-/* /sec05 */
-/* sec06 */
-.sec06 {
-    position: relative;
-    background-color: #faebf9;
-}
-.sec06 h2 {
-    font-size: 45px;
-    padding-top: 1em;
-    padding-left: 1em;
-}
-.sec06 .sound {
-    display:flex;
-    justify-content: space-around;
-    margin: 65px auto;
-}
-.sec06 .sound_text {
-    display: flex;
-    justify-content: space-around;
-}
-.sec06 .sound_img {
-    margin-bottom: 30px;
-    margin-right: 3%;
-}
-
-.sec06 .sound p {
-    width: 80%;
-    height: 300spx;
-    line-height: 2em;
-    margin-right: 8%;
-    margin-left: 5%;
-    margin-top: 40px;
-    z-index: 1;
-    position: relative;
-    font-size: 20px;
-}
-.hana_sec06 img {
-    width: 690px;
-    height: 240px;
-    position: absolute;
-    bottom: 20px;
-    left: 1%;
-    z-index: 0;
+@media screen and (max-width:768px){
+    .Section__Odd__Contents{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Section__Even__Content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .Section__Odd__Contents figure,.Section__Even figure,.Section__Odd__Paragraph,.Section__Even__Paragraph{
+        width:80%;
+    }
+    .Section__Odd__Paragraph p,.Section__Even__Paragraph p{
+        padding:0;
+    }
+    .Section__Odd h2,.Section__Even h2{
+        font-size:28px;
+        padding-left: 0;
+        text-align: center;
+    }
 }
 @media (max-width: 768px)
 {
@@ -589,9 +460,6 @@ body > main > section > div > div{
         width: 23vw!important;
         height: 9.5vw!important;
         font-size:11.5px!important;
-    }
-    #hanabira {
-        /*height: 770px;*/
     }
     .mainmenu li {
         font-size: 18px;
@@ -644,206 +512,14 @@ body > main > section > div > div{
         top: 32%;
     } 
 
-
-   .sec01 h2, .sec02 h2,.sec03 h2, .sec04 h2,.sec05 h2, .sec06 h2 {
-        font-size:18px;
-    }
-    .sec04 .illust p, .hpage p ,.sec02 .it p,.agata p{
-        line-height: 1.75em;
-    } 
-    
-    .news{
-        display: block;
-    }
-    .news img {
-        width: 80%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-    .agata p {
-        width: 95%;
-        height: auto;
-        margin: 20px auto 0;
-    }
-    .hana_sec01 {
-        display: block;
-    }
-    .hana_sec01 img {
-        left: auto;
-        top:auto;
-        display: none;
-    }
-    .sec02 {
-        margin-bottom: 0;
-    }
-    .sec02 .it {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .sec02 .it_text {
-        display: block;
-        order:2;
-        width: 95%;
-        height: auto;
-        margin: 20px auto 0;
-    } 
-    .sec02 .it_img {
-        order:1;
-    }
-    body > main > section > div > figure.it_img {
-        width: 100%;
-        margin:0;
-    }
-    body > main > section > div > div{
-        margin: 0 auto;
-        width:90%;
-    }
-    .sec02 .it p {
-        width: auto;
-        height: auto;
-        margin-right: auto;
-    }
-    .sec02 .it img {
-        width: 80%;
-        height: auto;
-    }
-    .hana_sec01,.hana_sec02,.hana_sec03,.hana_sec04,.hana_sec05,.hana_sec06{
-        display:none;
-    }
-    .sec03 .home {
-        display: flex;
-        flex-direction: column;
-        margin: -15px auto;
-    }
-    .sec03 .hpage {
-        display: block;
-        order:2;
-        width: 95%;
-        height: auto;
-        margin: 20px auto 0;
-    }
-    .sec03 .pc_img {
-        order:1;
-        width: 80%;
-        margin:20px auto 0;
-    } 
-    .sec03 .pc_img img {
-        width: 100%;
-        height: auto;
-    }
-    .sec03 .hpage  p {
-        width: auto;
-        height: auto;
-        margin-top: 0;
-    }
-    .illust {
-        display:flex;
-        flex-direction: column;
-    }
-    .illust .illust_text {
-        display: block;
-        order:2;
-        width: 95%;
-        height: auto;
-        margin: 20px auto 0;
-
-    }
-    .illust .illust_img {
-        order:1;
-        width: 80%;
-        margin:0 auto;
-    }
-    .illust .illust_img img {
-        width: 100%;
-        height: auto;
-    }
-    .sec04 {
-        margin-bottom: 0;
-    }
-    .sec04 .illust {
-        margin: 0 auto;
-    }
-    .sec04 .illust p {
-        width: auto;
-        margin-right: 0;
-        margin-top: 0;
-        margin-bottom: 25px;
-
-    }
-    .sec05 {
-        margin-top: -38px
-    }
-    .pro_ing {
-        display:flex;
-        flex-direction: column;
-    }
-    .pro_ing .pro_txt {
-        display: block;
-        order:2;
-        width: 95%;
-        height: auto;
-        margin: 20px auto 0;
-
-    }
-    .pro_ing .pro_img {
-        order:1;
-        width: 80%;
-        margin:0 auto;
-    }
-    .pro_ing .pro_img img {
-        width: 100%;
-        height: auto;
-
-    }
-    .pro_txt p {
-        width: auto;
-        height: auto;
-        line-height: 1.75em;
-        margin-top: 0;
-    }
-    .sec06 .sound {
-        display:flex;
-        flex-direction: column;
-    }
-    .sound .sound_text {
-        display: block;
-        order:2;
-        width: 95%;
-        height: auto;
-        margin: 20px auto 0;
-    }
-    .sec06 .sound p {
-        width: auto;
-        height: auto;
-        line-height: 1.75em;
-        margin-right: auto;
-        margin-top: 40px;
-    }
-    .sound_img {
-        order:1;
-        width: 80%;
-        margin:0 auto;
-    }
-    .sound_img img {
-        width: 100%;
-        height: auto;
-    }
-    .sec06 .sound {
-        display: flex;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
-
 }
+   
 /* toppage */
 
 /* footer */
 .footer {
-    background-color:#def0e6 ;
-    color:#e460d2;
-    margin-top:-65px;
+    background-color:#7a4171 ;
+    color:white;
     height: 230px;
 }
 .footer h1 {
@@ -854,7 +530,6 @@ body > main > section > div > div{
     display: flex;
     margin: 0 auto;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 .footer p {
@@ -864,17 +539,17 @@ body > main > section > div > div{
     margin-top: 26px;
 }
 .link {
-    min-width: 350px;
+    min-width: 160px;
 }
 .footer ul {
     width:fit-content ;
     width: -moz-fit-content;/*firefox*/
     list-style: none;
-    border-left: 3px solid #e460d2;/*縦棒*/
+    border-left: 3px solid white;/*縦棒*/
     padding-left: 25px;
 }
 .footer ul li {
-    border-bottom: 1px solid #e460d2;
+    border-bottom: 1px solid white;
     position:relative;
 }
 .footer ul li::before {/*斜め線*/
@@ -882,7 +557,7 @@ body > main > section > div > div{
     display: block;
     height: 1px;
     width: 34px;
-    background-color: #e460d2;
+    background-color: white;
     position: absolute;
     top: 13px;
     left: -29px;
@@ -895,7 +570,7 @@ body > main > section > div > div{
     display:block;
     width:10px;
     height: 10px;
-    background-color: #e460d2;
+    background-color: white;
     border-radius: 50%;
     position: absolute;
     top: -3px;
@@ -904,7 +579,7 @@ body > main > section > div > div{
 .footer ul li  a {
     text-decoration: none; 
     list-style: none;
-    color: #e460d2;
+    color: white;
 }
 .footer ul li :hover{
     color: green;
