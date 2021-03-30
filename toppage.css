@@ -583,36 +583,36 @@ figcaption {
 /* toppage */
 
 /* footer */
-.footer {
+footer {
     background-color: #7a4171;
     color: white;
     height: 230px;
 }
 
-.footer h1 {
+footer h1 {
     font-size: 40px;
 }
 
-.footer .inner {
+footer .Footer__Inner {
     display: flex;
     margin: 0 auto;
     align-items: center;
     justify-content: space-around;
 }
 
-.footer p {
+footer p {
     display: block;
 }
 
-.gmap {
+.Footer__Inner__GoogleMaps {
     margin-top: 26px;
 }
 
-.link {
+.Footer__Inner__Links {
     min-width: 160px;
 }
 
-.footer ul {
+footer ul {
     width: fit-content;
     width: -moz-fit-content; /*firefox*/
     list-style: none;
@@ -620,12 +620,12 @@ figcaption {
     padding-left: 25px;
 }
 
-.footer ul li {
+footer ul li {
     border-bottom: 1px solid white;
     position: relative;
 }
 
-.footer ul li::before { /*斜め線*/
+footer ul li::before { /*斜め線*/
     content: '';
     display: block;
     height: 1px;
@@ -639,7 +639,7 @@ figcaption {
     );
 }
 
-.footer ul li::after { /*〇*/
+footer ul li::after { /*〇*/
     content: '';
     display: block;
     width: 10px;
@@ -651,24 +651,24 @@ figcaption {
     left: -31px;
 }
 
-.footer ul li a {
+footer ul li a {
     text-decoration: none;
     list-style: none;
     color: white;
 }
 
-.footer ul li :hover {
+footer ul li :hover {
     color: green;
 }
 
 
 @media (max-width: 768px) {
-    .footer {
+    footer {
         height: 600px;
         margin-top: 0;
     }
 
-    .footer .inner {
+    footer .Footer__Inner {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -676,19 +676,19 @@ figcaption {
         margin: 0 auto;
     }
 
-    .footer h1 {
+    footer h1 {
         font-size: 35px;
     }
 
-    .footer p {
+    footer p {
         margin-left: 0;
     }
 
-    .link {
+    .Footer__Inner__Links {
         min-width: 0;
     }
 
-    .gmap {
+    .Footer__Inner__GoogleMaps {
         margin-top: 0;
     }
 }
