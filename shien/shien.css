@@ -1,0 +1,417 @@
+@charset "utf-8";
+
+.key_visual h1 {
+    font-size: 48px;
+}
+
+.key_visual{
+    height: 700px;
+    width: 100%;
+	background-color: #faebf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position:absolute;
+}
+.staff {
+	height: 600px;
+	width: 100%;
+    position: absolute;
+    top:50%;
+ }
+#shidouin {
+	position:relative;
+	/* background-color: #faebf9; */
+}
+.hover-effect1 {
+	width:			200px;
+	height:			200px;
+  	border-radius: 50%;
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		absolute;	/* 相対位置指定 */
+	top: 0%;
+	right: 52%;
+}
+.hover-effect1 img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+
+}
+.hover-effect1 .caption {
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		80px;
+	color:			#fff;
+}
+.hover-effect1 .mask1 {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.hover-effect1:hover .mask1 {
+	opacity:		1;	/* マスクを表示する */
+}
+
+.hover-effect2 {
+	width:			200px;
+	height:			200px;
+  border-radius: 50%;
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		absolute;	/* 相対位置指定 */
+	top: 0%;
+	right: 39%;
+}
+.hover-effect2 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.hover-effect2 .caption {
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		80px;
+	color:			#fff;
+}
+.hover-effect2 .mask2 {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.hover-effect2:hover .mask2 {
+	opacity:		1;	/* マスクを表示する */
+}
+.hover-effect3 {
+	width:			200px;
+	height:			200px;
+  	border-radius: 50%;
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		absolute;	/* 相対位置指定 */
+	top: 73%;
+	right: 52%;
+}
+.hover-effect3 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.hover-effect3 .caption {
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		80px;
+	color:			#fff;
+}
+.hover-effect3 .mask3 {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.hover-effect3:hover .mask3 {
+	opacity:		1;	/* マスクを表示する */
+}
+
+.hover-effect4 {
+	width:			200px;
+	height:			200px;
+  border-radius: 50%;
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		absolute;	/* 相対位置指定 */
+	top: 74%;
+    right: 39%;
+}
+.hover-effect4 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.hover-effect4 .caption {
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		80px;
+	color:			#fff;
+}
+.hover-effect4 .mask4 {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.hover-effect4:hover .mask4 {
+	opacity:		1;	/* マスクを表示する */
+}
+
+.hover-effect5 {
+	width:			200px;
+	height:			200px;
+  border-radius: 50%;
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		absolute;	/* 相対位置指定 */
+	top: 35%;
+    right: 29%;
+}
+
+.hover-effect5 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.hover-effect5 .caption {
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		80px;
+	color:			#fff;
+}
+.hover-effect5 .mask5 {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.hover-effect5:hover .mask5 {
+	opacity:		1;	/* マスクを表示する */
+}
+.hover-effect6 {
+	width:			200px;
+	height:			200px;
+  border-radius: 50%;
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		absolute;	/* 相対位置指定 */
+	top: 35%;
+    right: 59%;
+}
+
+.hover-effect6 img {
+  width: 200px;
+  height: 20s0px;
+  border-radius: 50%;
+}
+.hover-effect6 .caption {
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		80px;
+	color:			#fff;
+}
+.hover-effect6 .mask6 {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.hover-effect6:hover .mask6 {
+	opacity:		1;	/* マスクを表示する */
+}
+@media (max-width: 768px)
+
+{
+	body {
+		background-color: #faebf9;
+	}
+	.staff{
+		position: static;
+		height: auto;
+		width:170px;
+		margin:0 auto;
+	}
+	.key_visual{
+		height: 100px;
+		width: 100%;
+		position: static;
+	}
+	.key_visual h1 {
+		margin: 0 auto;
+	}
+	#shidouin {
+		display:  block;
+		height: auto;
+		background-color: #faebf9;
+	}
+	.hover-effect1 {
+		top:15%;
+		right:35%;
+		position: static;
+		margin:15px auto;
+		overflow:unset;
+	}
+	.hover-effect1 img {
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+	}
+	.hover-effect1 .mask1 {
+		position:		static;	/* 絶対位置指定 */
+		top:			auto;
+		left:			auto; 
+		opacity:		1;	/* マスクを表示しない */
+		background-color: transparent;/*親のbgk適用*/
+	}
+	.hover-effect1 .caption {
+		color: #000;
+		transform: translateX(100px) translateY(-270px);
+	}
+	
+	.hover-effect2 {
+		top:48%;
+		right:35%;
+		position: static;
+		margin:15px auto;
+		overflow:unset;
+	}
+	.mask2 .caption {
+		font-size: 15px;
+	}
+	.hover-effect2 img {
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+	}
+	.hover-effect2 .mask2 {
+		position:		static;	/* 絶対位置指定 */
+		top:			auto;
+		left:			auto; 
+		opacity:		1;	/* マスクを表示しない */
+		background-color: transparent;/*親のbgk適用*/
+	}
+	.hover-effect2 .caption {
+		color: #000;
+		transform: translateX(-100px) translateY(-270px);
+	}
+	.hover-effect2 .caption  span {
+		font-size: 150%;
+	}
+
+	.hover-effect3 {
+		position: static;
+		margin:15px auto;
+		overflow:unset;
+	}
+	.hover-effect3 img {
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+	}
+	.hover-effect3 .mask3 {
+		position:		static;	/* 絶対位置指定 */
+		top:			auto;
+		left:			auto; 
+		opacity:		1;	/* マスクを表示しない */
+		background-color: transparent;/*親のbgk適用*/
+	}
+	.hover-effect3 .caption {
+		color: #000;
+		transform: translateX(100px) translateY(-270px);
+	}
+
+	.hover-effect4 {
+		position: static;
+		margin:15px auto;
+		overflow:unset;
+	}
+	.hover-effect4 img {
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+	}
+	.hover-effect4 .mask4 {
+		position:		static;	/* 絶対位置指定 */
+		top:			auto;
+		left:			auto; 
+		opacity:		1;	/* マスクを表示しない */
+		background-color: transparent;/*親のbgk適用*/
+	}
+	.hover-effect4 .caption {
+		color: #000;
+		transform: translateX(-100px) translateY(-270px);
+	}
+
+	.hover-effect5 {
+		top: 145%;
+		right: 35%;
+		position: static;
+		margin:15px auto;
+		overflow:unset;
+	}
+	.hover-effect5 img {
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+	}
+	.hover-effect5 .mask5 {
+		position:		static;	/* 絶対位置指定 */
+		top:			auto;
+		left:			auto; 
+		opacity:		1;	/* マスクを表示しない */
+		background-color: transparent;/*親のbgk適用*/
+	}
+	.hover-effect5 .caption {
+		color: #000;
+		transform: translateX(100px) translateY(-270px);
+	}
+
+	.hover-effect6 {
+		top: 180%;
+		right: 35%;
+		position: static;
+		margin:15px auto;
+		overflow:unset;
+	}
+	.hover-effect6 img {
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+	}
+	.hover-effect6 .mask6 {
+		position:		static;	/* 絶対位置指定 */
+		top:			auto;
+		left:			auto; 
+		opacity:		1;	/* マスクを表示しない */
+		background-color: transparent;/*親のbgk適用*/
+		height: 0;
+	}
+	.hover-effect6 .caption {
+		color: #000;
+		transform: translateX(-100px) translateY(-270px);
+	}
+	.hover_width{
+		height: 170px!important;
+		width: 170px!important;
+	}
+}	
