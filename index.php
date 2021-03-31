@@ -198,7 +198,8 @@
                 <p>〒532-0023<br>
                     大阪府大阪市淀川区十三東3-18-12<br>
                     伊藤ビル1F<br>
-                    Tel 06-6770-9014</p>
+                    TEL 06-6770-9011<br>
+                    FAX 06-6770-9014</p>
             </section>
         </div>
         <div class="Footer__Inner__GoogleMaps">
@@ -208,10 +209,10 @@
         <div class="Footer__Inner__Links">
             <ul>
                 <li><a href="#">ご挨拶</a></li>
-                <li><a href="/shien">指導員紹介</a></li>
+                <li><a href="shien/">指導員紹介</a></li>
                 <li><a href="#">ご利用までの流れ</a></li>
                 <li><a href="#">企業情報</a></li>
-                <li><a href="/faq">よくあるご質問</a></li>
+                <li><a href="faq/">よくあるご質問</a></li>
             </ul>
         </div>
     </div>
