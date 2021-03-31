@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-/.idea
-/.git
-=======
 .idea
-.idea/*git
->>>>>>> develop
+.idea/
+.git
