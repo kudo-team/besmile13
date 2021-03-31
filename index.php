@@ -208,10 +208,10 @@
         <div class="Footer__Inner__Links">
             <ul>
                 <li><a href="#">ご挨拶</a></li>
-                <li><a href="/shien">指導員紹介</a></li>
+                <li><a href="shien/">指導員紹介</a></li>
                 <li><a href="#">ご利用までの流れ</a></li>
                 <li><a href="#">企業情報</a></li>
-                <li><a href="/faq">よくあるご質問</a></li>
+                <li><a href="faq/">よくあるご質問</a></li>
             </ul>
         </div>
     </div>
