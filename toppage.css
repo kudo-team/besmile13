@@ -35,6 +35,7 @@ header .Hamburger__Menu__Content {
     /* justify-content: space-around; */
     align-items: flex-end;
     margin-top: 65px;
+    padding: 0;
 }
 
 .Hamburger__Menu__Content ul li :hover {
@@ -50,11 +51,12 @@ header .Hamburger__Menu__Content {
 body > header > h1 {
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 23px;
     text-align: center;
     display: flex;
     align-items: center;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
