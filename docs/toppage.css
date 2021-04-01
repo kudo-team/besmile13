@@ -282,7 +282,12 @@ div#sakura_animation {
     color: #444;
     font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, 'Noto Serif JP', serif;
 }
-
+_::-webkit-full-page-media, _:future, :root .vertical-2{
+    height: 94%;
+}
+_::-webkit-full-page-media, _:future, :root img#main_image{
+    max-height: calc(100vh - 135px);
+}
 @media screen and (max-width: 984px) {
     .vertical-1 {
         right: 0;
