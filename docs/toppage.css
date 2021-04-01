@@ -346,8 +346,7 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     background-color: rgba(204, 270, 24, 0.70);
     width: 225px;
     height: 80px;
-    border: 1px solid;
-    border-color: #9ec39e;
+    border: 1px solid #9ec39e;
     border-radius: 50%;
     z-index: 6;
 }
