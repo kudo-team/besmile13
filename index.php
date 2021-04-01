@@ -198,7 +198,8 @@
                 <p>〒532-0023<br>
                     大阪府大阪市淀川区十三東3-18-12<br>
                     伊藤ビル1F<br>
-                    Tel 06-6770-9014</p>
+                    TEL 06-6770-9011<br>
+                    FAX 06-6770-9014</p>
             </section>
         </div>
         <div class="Footer__Inner__GoogleMaps">
