@@ -42,7 +42,8 @@ header .Hamburger__Menu__Content {
 }
 
 .Hamburger__Menu__Content ul li :hover {
-    color: #444444;
+    color: #e460d2;
+    opacity:0.7;
 }
 
 .Hamburger__Menu__Content ul li a {
@@ -52,6 +53,7 @@ header .Hamburger__Menu__Content {
 .Hamburger__Menu__Content li{
     margin-left: 15px;
     position: relative;
+    transition: 0.2s;
 }
 .Hamburger__Menu__Content li:first-child{
     margin-left: 0;
@@ -61,7 +63,7 @@ header .Hamburger__Menu__Content {
     content:'';
     width:0%;
     height: 2px;
-    background-color: #d675be;
+    background-color: #e460d2;
     bottom:0;
     left:0;
     transition: 0.2s;
