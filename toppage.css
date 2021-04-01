@@ -1,4 +1,7 @@
 @charset "utf-8";
+html,body {
+    font-size: 14px;
+}
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -54,7 +57,7 @@ header .Hamburger__Menu__Content {
 body > header > h1 {
     margin: 0;
     padding: 0;
-    font-size: 23px;
+    font-size: 2rem;
     text-align: center;
     display: flex;
     align-items: center;

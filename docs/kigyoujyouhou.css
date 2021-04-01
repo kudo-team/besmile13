@@ -59,6 +59,9 @@ body{
   background-attachment: fixed;
   background-size:cover;
   background-position: center center;
+  margin:0;
+  padding:0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
 }
 @media screen and (max-width:767px) {
   table td, table th{

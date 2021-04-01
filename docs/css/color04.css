@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body,#content, #mw-head,.toc, .toccolours, .tocnumber, .wikitable, .infobox, .infobox th{
+body,header, section, footer, .vertical-1, .vertical-2,aside{
     background:#000 !important;
     color: #fff !important;
 }
