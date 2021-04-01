@@ -1,10 +1,16 @@
 @charset "utf-8";
+html, body {
+    font-size: 14px;
+}
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
 }
+
 /* header */
 header {
     height: 100px;
@@ -54,7 +60,7 @@ header .Hamburger__Menu__Content {
 body > header > h1 {
     margin: 0;
     padding: 0;
-    font-size: 23px;
+    font-size: 200%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -64,7 +70,7 @@ body > header > h1 {
 
 @media (max-width: 768px) {
     body > header > h1 {
-        font-size: 20px;
+        font-size: 140%;
     }
 
     header div.Hamburger__Menu__Content {
@@ -154,7 +160,7 @@ body > header > h1 {
     .Hamburger__Menu__Content ul li a {
         display: block;
         width: 100%;
-        font-size: 15px;
+        font-size: 150%;
         box-sizing: border-box;
         color: #fff;
         text-decoration: none;
@@ -282,12 +288,15 @@ div#sakura_animation {
     color: #444;
     font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, 'Noto Serif JP', serif;
 }
-_::-webkit-full-page-media, _:future, :root .vertical-2{
+
+_::-webkit-full-page-media, _:future, :root .vertical-2 {
     height: 94%;
 }
-_::-webkit-full-page-media, _:future, :root img#main_image{
+
+_::-webkit-full-page-media, _:future, :root img#main_image {
     max-height: calc(100vh - 114px);
 }
+
 @media screen and (max-width: 984px) {
     .vertical-1 {
         right: 0;
@@ -316,7 +325,7 @@ _::-webkit-full-page-media, _:future, :root img#main_image{
 
 .mainmenu li {
     list-style: none;
-    font-size: 20px;
+    font-size: 180%;
 }
 
 .mainmenu li a {
@@ -368,7 +377,7 @@ _::-webkit-full-page-media, _:future, :root img#main_image{
 
 
 .Section__Odd h2 {
-    font-size: 45px;
+    font-size: 250%;
     padding-top: 1em;
     padding-left: 1em;
     margin-top: 0;
@@ -398,7 +407,7 @@ _::-webkit-full-page-media, _:future, :root img#main_image{
     padding: 20px;
     line-height: 1.75em;
     z-index: 1;
-    font-size: 20px;
+    font-size: 140%;
 }
 
 .Section__Odd {
@@ -426,7 +435,7 @@ _::-webkit-full-page-media, _:future, :root img#main_image{
 }
 
 .Section__Even h2 {
-    font-size: 45px;
+    font-size: 200%;
     padding-top: 1em;
     padding-left: 1em;
     margin-top: 0;
@@ -443,7 +452,7 @@ _::-webkit-full-page-media, _:future, :root img#main_image{
 
 .Section__Even__Paragraph p {
     line-height: 1.75em;
-    font-size: 20px;
+    font-size: 140%;
     position: relative;
     z-index: 1;
     padding: 20px;
@@ -486,7 +495,7 @@ _::-webkit-full-page-media, _:future, :root img#main_image{
 }
 
 figcaption {
-    font-size: 12px;
+    font-size: 100%;
     text-align: center;
 }
 
@@ -510,7 +519,7 @@ figcaption {
     }
 
     .Section__Odd h2, .Section__Even h2 {
-        font-size: 28px;
+        font-size: 140%;
         padding-left: 0;
         text-align: center;
     }
@@ -529,22 +538,22 @@ figcaption {
     .menu {
         width: 23vw !important;
         height: 9.5vw !important;
-        font-size: 11.5px !important;
+        font-size: 80%;
     }
 
     .mainmenu li {
-        font-size: 18px;
+        font-size: 110%;
     }
 
     .vertical-1 {
         right: 10px;
-        font-size: 30px;
+        font-size: 160%;
     }
 
     .vertical-2 {
         left: 10px;
         bottom: 0;
-        font-size: 30px;
+        font-size: 160%;
     }
 
     .menu_s {
@@ -603,7 +612,7 @@ footer {
 }
 
 footer h1 {
-    font-size: 40px;
+    font-size: 200%;
 }
 
 footer .Footer__Inner {
@@ -690,7 +699,7 @@ footer ul li :hover {
     }
 
     footer h1 {
-        font-size: 35px;
+        font-size: 180%;
     }
 
     footer p {
@@ -731,7 +740,7 @@ footer ul li :hover {
 #page_top a::before {
     font-weight: 900;
     /*content: '\f102';*/
-    font-size: 25px;
+    font-size: 120%;
     color: #e20e67;
     position: absolute;
     width: 25px;
@@ -746,7 +755,7 @@ footer ul li :hover {
 
 #page_top a::after {
     content: 'PAGE TOP';
-    font-size: 13px;
+    font-size: 100%;
     position: absolute;
     top: 45px;
     bottom: 0;
@@ -755,4 +764,44 @@ footer ul li :hover {
     margin: auto;
     text-align: center;
     color: #e20e67;
+}
+
+header {
+    margin-top: 60px;
+}
+
+.usability {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    background-color: #feedfa;
+    border-bottom: 1px solid #eea293;
+    top: 0;
+}
+
+.usability ul {
+    display: flex;
+    list-style: none;
+    font-size: 120%;
+    justify-content: flex-end;
+}
+
+.usability li:nth-of-type(even) {
+    margin: 0 14px
+}
+
+.usability a {
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .usability ul {
+        margin-left:0;
+        justify-content: flex-start;
+    }
+    .usability span {
+        display:none;
+    }
+    .Hamburger__Menu--btn {
+        top: 70px;
+    }
 }

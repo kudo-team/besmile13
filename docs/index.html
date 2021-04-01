@@ -11,16 +11,18 @@
           content="就労継続支援A型のBeSmile（ビースマイル）十三駅前 大阪淀川区。就労継続支援A型だけでなく就労継続支援B型もサポート。あなたの働きたいを形にします。○○○○○○○○○○○○○○○○○○○○○○○○">
     <link rel="stylesheet" href="toppage.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap&subset=japanese" rel="stylesheet">
+    <link rel="stylesheet" href="css/color01.css" id="css">
+    <script src="js/usability.js"></script>
     <title>就労継続支援A型・大阪十三駅前BeSmile（ビースマイル）</title>
 </head>
-<body>
+<body id="body">
 <header>
     <h1>
         <img src="images/besmile_logo.png" alt="BeSmile（ビースマイル）">
         大阪のA型事業所<br>
         BeSmile十三駅前
     </h1>
-    <nav class="Hamburger__Menu">
+    <nav class="Hamburger__Menu" id="Hamburger__Menu">
         <input type="checkbox" id="menu-btn-check">
         <label for="menu-btn-check" class="Hamburger__Menu--btn"><span></span></label>
         <div class="Hamburger__Menu__Content">
@@ -237,9 +239,15 @@
             if (ScrollPos >= TargetPos) {
                 // 達していれば表示
                 $("#page_top").css("display", "block");
+                if (window.matchMedia('(max-width:768px)').matches) {
+                    $(".Hamburger__Menu--btn").css("top", "10px");
+                }
             } else {
                 // 達していなければ非表示
                 $("#page_top").css("display", "none");
+                if (window.matchMedia('(max-width:768px)').matches) {
+                    $(".Hamburger__Menu--btn").css("top", "70px");
+                }
             }
         });
     });
@@ -249,5 +257,23 @@
 <!-- 読み込むやつ -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
 <script src="hanabira.js"></script>
+<aside class="usability">
+    <ul>
+        <li>
+            <span>文字サイズ</span>
+            <a href="javascript:textSizeUp();">拡大</a>
+            <a href="javascript:textSizeReset();">標準</a>
+        </li>
+        <li>
+            <span>背景色</span>
+        </li>
+        <li>
+            <a href="javascript:changeCSS('color01.css');" style="border:1px solid #e0e0e0;background-color: #e0e0e0;padding:8px">標準</a>
+            <a href="javascript:changeCSS('color02.css');" style="border:1px solid #e0e0e0;background-color: #e0e0e0;padding:8px;background:#0000bc!important;color: #ffff00!important;">青</a>
+            <a href="javascript:changeCSS('color03.css');" style="border:1px solid #e0e0e0;background-color: #e0e0e0;padding:8px;background:#ffff00!important;;color: #000!important;">黄</a>
+            <a href="javascript:changeCSS('color04.css');" style="border:1px solid #e0e0e0;background-color: #e0e0e0;padding:8px;background:#000!important;;color: #fff!important;">黒</a>
+        </li>
+    </ul>
+</aside>
 </body>
 </html>
