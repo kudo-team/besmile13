@@ -12,6 +12,9 @@ header {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    background-image: url("images/1409443-min.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 
 header h1 img {
