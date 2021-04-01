@@ -20,28 +20,7 @@ body{
 	background: #fff;
 	max-width: 1140px;
 }
-/* .cp_qa h1 {
-	font-size: 1.2em;
-	position: relative;
-	margin-right: 86em;
-	margin-left: 45px;
-	padding: 0.3em;
-	color: #ffffff;
-	background-color: #cf4eb3 ;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-}
-.cp_qa h1::after {
-	position: absolute;
-	bottom: -10px;
-	left: 0;
-	display: inline-block;
-	width: 0;
-	height: 0;
-	content: '';
-	border-width: 0 10px 10px 0;
-	border-style: solid;
-	border-color: transparent #cf4eb3 transparent transparent;
-} */
+
 .cp_qa h1 {
     margin-bottom: 0.5em;
     padding: 0.2em 0.5em 0.5em 2em;
