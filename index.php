@@ -10,7 +10,7 @@
     <meta name="description"
           content="就労継続支援A型のBeSmile（ビースマイル）十三駅前 大阪淀川区。就労継続支援A型だけでなく就労継続支援B型もサポート。あなたの働きたいを形にします。○○○○○○○○○○○○○○○○○○○○○○○○">
     <link rel="stylesheet" href="toppage.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap&subset=japanese" rel="stylesheet">
     <title>就労継続支援A型・大阪十三駅前BeSmile（ビースマイル）</title>
 </head>
 <body>
