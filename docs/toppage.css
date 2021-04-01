@@ -265,7 +265,7 @@ div#sakura_animation {
     font-size: 55px;
     font-weight: bold;
     color: #444;
-    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, 'Noto Serif JP', serif;
 }
 
 .vertical-2 {
@@ -277,9 +277,10 @@ div#sakura_animation {
     left: -17%;
     font-size: 55px;
     font-weight: bold;
+    white-space: nowrap;
     /*min-height: 676px;*/
     color: #444;
-    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, 'Noto Serif JP', serif;
 }
 
 @media screen and (max-width: 984px) {
