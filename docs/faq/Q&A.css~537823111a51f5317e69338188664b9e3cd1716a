@@ -1,0 +1,173 @@
+<<<<<<< HEAD
+@charset "UTF-8";
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	font-family: sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa {
+	margin: 0 0 2em 10px;
+	padding: 1em 1em 0.5em 1em;
+	background: #fff;
+}
+/* .cp_qa h1 {
+	font-size: 1.2em;
+	position: relative;
+	margin-right: 86em;
+	margin-left: 45px;
+	padding: 0.3em;
+	color: #ffffff;
+	background-color: #cf4eb3 ;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.cp_qa h1::after {
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	content: '';
+	border-width: 0 10px 10px 0;
+	border-style: solid;
+	border-color: transparent #cf4eb3 transparent transparent;
+} */
+.cp_qa h1 {
+    margin-bottom: 0.5em;
+    padding: 0.2em 0.5em 0.5em 2em;
+    border-radius: 0.2em;
+    background: #f0deec;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cp_qa dl {
+	margin: 0;
+}
+.cp_qa dt {
+	margin-bottom: 0.5em;
+	padding: 0.2em 0.5em 0.5em 2em;
+	border-radius: 0.2em;
+	background: #f0deec;
+    font-weight: bold;
+}
+.cp_qa dd {
+	margin-bottom: 1em;
+	margin-left: 0;
+	padding: 0.5em 1em 1.5em 3em;
+}
+/* QAアイコン */
+.cp_qa dt::before,.cp_qa dd::before{
+	font-size: 1.5em;
+	color: #52062c;
+}
+.cp_qa dt::before {
+	margin: 0.3em 0.3em 0 -1em;
+	content: 'Q';
+}
+.cp_qa dd::before {
+	margin: 0 0.5em 0 -2em;
+	padding: 0.2em 0.4em;
+	content: 'A';
+	border-radius: 0.2em;
+	background: #9de6af;
+}
+
+@media (max-width: 768px){
+
+    .cp_qa h1 {
+        display: block;
+        
+
+    }
+         
+}
+
+=======
+@charset "UTF-8";
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	font-family: sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa {
+	margin: 0 0 2em 10px;
+	padding: 1em 1em 0.5em 1em;
+	background: #fff;
+}
+/* .cp_qa h1 {
+	font-size: 1.2em;
+	position: relative;
+	margin-right: 86em;
+	margin-left: 45px;
+	padding: 0.3em;
+	color: #ffffff;
+	background-color: #cf4eb3 ;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.cp_qa h1::after {
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	content: '';
+	border-width: 0 10px 10px 0;
+	border-style: solid;
+	border-color: transparent #cf4eb3 transparent transparent;
+} */
+.cp_qa h1 {
+    margin-bottom: 0.5em;
+    padding: 0.2em 0.5em 0.5em 2em;
+    border-radius: 0.2em;
+    background: #f0deec;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cp_qa dl {
+	margin: 0;
+}
+.cp_qa dt {
+	margin-bottom: 0.5em;
+	padding: 0.2em 0.5em 0.5em 2em;
+	border-radius: 0.2em;
+	background: #f0deec;
+    font-weight: bold;
+}
+.cp_qa dd {
+	margin-bottom: 1em;
+	margin-left: 0;
+	padding: 0.5em 1em 1.5em 3em;
+}
+/* QAアイコン */
+.cp_qa dt::before,.cp_qa dd::before{
+	font-size: 1.5em;
+	color: #52062c;
+}
+.cp_qa dt::before {
+	margin: 0.3em 0.3em 0 -1em;
+	content: 'Q';
+}
+.cp_qa dd::before {
+	margin: 0 0.5em 0 -2em;
+	padding: 0.2em 0.4em;
+	content: 'A';
+	border-radius: 0.2em;
+	background: #9de6af;
+}
+
+@media (max-width: 768px){
+
+    .cp_qa h1 {
+        display: block;
+        
+
+    }
+         
+}
+
+>>>>>>> 07a755832d1248eaa6a882fc64c2bc9220e64729

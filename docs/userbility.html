@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function textSizeUp(){
+            currentSize = document.getElementById("body").style.fontSize;
+            selectSize = "";
+            if ( currentSize == "100%" ){
+                selectSize = "110%";
+            }
+            else if ( currentSize == "110%" ){
+                selectSize = "120%";
+            }
+            else if ( currentSize == "120%" ){
+                selectSize = "150%";
+            }
+            else if ( currentSize == "150%" ){
+                selectSize = "200%";
+            }
+            else if ( currentSize == "200%" ){
+                m = escape("これ以上文字のサイズを大きくできません。");
+                alert(unescape(m));
+                selectSize = "200%";
+            }
+            else {
+                selectSize = "110%";
+            }
+            document.getElementById("body").style.fontSize = selectSize;
+            setCookie(selectSize);
+        }
+
+        function textSizeReset(){
+            currentSize = document.getElementById("body").style.fontSize;
+            m = escape("ただいまの文字サイズは" + currentSize + "（標準：100%）です。元に戻しますか？");
+            r = confirm(unescape(m));
+            if (r) {
+                currentSize = "";
+                document.getElementById("body").style.fontSize = currentSize;
+            }
+            setCookie(currentSize);
+        }
+
+        function changeCSS(cssfile){
+            document.getElementById("css").href = "http://localhost:63342/userbility/" + cssfile;
+        }
+    </script>
+</head>
+<body>
+<ul>
+    <li id="pt-anonuserpage">
+        文字サイズ
+        <a href="javascript:textSizeUp();">拡大</a>
+        <a href="javascript:textSizeReset();">標準</a>
+    </li>
+    <li id="pt-anontalk">
+        背景色
+    </li>
+    <li id="pt-anoncontribs">
+        <a href="javascript:changeCSS('color01.css');">標準</a>
+        <a href="javascript:changeCSS('color02.css');">青</a>
+        <a href="javascript:changeCSS('color03.css');">黄</a>
+        <a href="javascript:changeCSS('color04.css');">黒</a>
+    </li>
+</ul>
+</body>
+</html>
