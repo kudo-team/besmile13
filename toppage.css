@@ -2,7 +2,9 @@
 *, *::after, *::before {
     box-sizing: border-box;
 }
-
+body{
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+}
 /* header */
 header {
     height: 100px;
@@ -10,6 +12,9 @@ header {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    background-image: url("images/1409443-min.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 
 header h1 img {
@@ -33,6 +38,7 @@ header .Hamburger__Menu__Content {
     /* justify-content: space-around; */
     align-items: flex-end;
     margin-top: 65px;
+    padding: 0;
 }
 
 .Hamburger__Menu__Content ul li :hover {
@@ -48,11 +54,12 @@ header .Hamburger__Menu__Content {
 body > header > h1 {
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 23px;
     text-align: center;
     display: flex;
     align-items: center;
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -268,9 +275,9 @@ div#sakura_animation {
     display: inline-block;
     bottom: 0;
     left: -17%;
-    height:93%;
     font-size: 55px;
     font-weight: bold;
+    height: 94%;
     /*min-height: 676px;*/
     color: #444;
     font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
