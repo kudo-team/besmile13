@@ -2,7 +2,9 @@
 *, *::after, *::before {
     box-sizing: border-box;
 }
-
+body{
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+}
 /* header */
 header {
     height: 100px;
@@ -52,7 +54,7 @@ body > header > h1 {
     text-align: center;
     display: flex;
     align-items: center;
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
 }
 
 @media (max-width: 768px) {
