@@ -51,9 +51,23 @@ header .Hamburger__Menu__Content {
 }
 .Hamburger__Menu__Content li{
     margin-left: 15px;
+    position: relative;
 }
 .Hamburger__Menu__Content li:first-child{
     margin-left: 0;
+}
+.Hamburger__Menu__Content li::before{
+    position:absolute;
+    content:'';
+    width:0%;
+    height: 2px;
+    background-color: #d675be;
+    bottom:0;
+    left:0;
+    transition: 0.2s;
+}
+.Hamburger__Menu__Content li:hover::before{
+    width:100%;
 }
 
 body > header > h1 {
