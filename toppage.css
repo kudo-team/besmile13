@@ -277,7 +277,7 @@ div#sakura_animation {
     left: -17%;
     font-size: 55px;
     font-weight: bold;
-    height: 94%;
+    white-space: nowrap;
     /*min-height: 676px;*/
     color: #444;
     font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
