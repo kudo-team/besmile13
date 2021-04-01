@@ -10,7 +10,7 @@
     <meta name="description"
           content="就労継続支援A型のBeSmile（ビースマイル）十三駅前 大阪淀川区。就労継続支援A型だけでなく就労継続支援B型もサポート。あなたの働きたいを形にします。○○○○○○○○○○○○○○○○○○○○○○○○">
     <link rel="stylesheet" href="toppage.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap&subset=japanese" rel="stylesheet">
     <title>就労継続支援A型・大阪十三駅前BeSmile（ビースマイル）</title>
 </head>
 <body>
@@ -198,7 +198,8 @@
                 <p>〒532-0023<br>
                     大阪府大阪市淀川区十三東3-18-12<br>
                     伊藤ビル1F<br>
-                    Tel 06-6770-9014</p>
+                    TEL 06-6770-9011<br>
+                    FAX 06-6770-9014</p>
             </section>
         </div>
         <div class="Footer__Inner__GoogleMaps">
