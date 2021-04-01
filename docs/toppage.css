@@ -48,7 +48,12 @@ header .Hamburger__Menu__Content {
 .Hamburger__Menu__Content ul li a {
     text-decoration: none;
     color: #e460d2;
-    padding-left: 15px;
+}
+.Hamburger__Menu__Content li{
+    margin-left: 15px;
+}
+.Hamburger__Menu__Content li:first-child{
+    margin-left: 0;
 }
 
 body > header > h1 {
