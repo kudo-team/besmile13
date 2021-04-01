@@ -286,7 +286,7 @@ _::-webkit-full-page-media, _:future, :root .vertical-2{
     height: 94%;
 }
 _::-webkit-full-page-media, _:future, :root img#main_image{
-    max-height: calc(100vh - 135px);
+    max-height: calc(100vh - 124px);
 }
 @media screen and (max-width: 984px) {
     .vertical-1 {
