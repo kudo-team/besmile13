@@ -25,7 +25,7 @@
         <label for="menu-btn-check" class="Hamburger__Menu--btn"><span></span></label>
         <div class="Hamburger__Menu__Content">
             <ul>
-                <li><a href="#">ご挨拶</a></li>
+                <!--<li><a href="#">ご挨拶</a></li>-->
                 <li><a href="shien/">指導員紹介</a></li>
                 <li><a href="#">ご利用までの流れ</a></li>
                 <li><a href="#">企業情報</a></li>
