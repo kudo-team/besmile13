@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body,#content, #mw-head,.toc, .toccolours, .tocnumber, .wikitable, .infobox, .infobox th{
+    background:#0000bc !important;
+    color: #ffff00 !important;
+}
+#body a { background: #00008B !important; }
+#body a:LINK { text-decoration:underline; color:#fff !important; }
+#body a:VISITED { text-decoration:underline; color:#fff !important; }
+#body a:ACTIVE  { text-decoration:none; color:#fff !important; }
+#body a:HOVER   { text-decoration:none; color:#fff !important; }
