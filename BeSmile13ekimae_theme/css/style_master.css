@@ -23,7 +23,22 @@ body{
     padding:0;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
   }
-
+  .marker-animation {
+    background-image: -webkit-linear-gradient(left, transparent 50%, #e460d2 50%);
+    background-image: -moz-linear-gradient(left, transparent 50%, #e460d2 50%);
+    background-image: -ms-linear-gradient(left, transparent 50%, #e460d2 50%);
+    background-image: -o-linear-gradient(left, transparent 50%, #e460d2 50%);
+    background-image: linear-gradient(left, transparent 50%, #e460d2 50%);
+    background-repeat: repeat-x;
+    background-size: 200% 1em;
+    background-position: 0 1em;
+    transition: all 2s ease;
+    transition-delay: .5s;
+    font-weight: bold;
+}
+.marker-animation.active {
+    background-position: -100% 1em;
+}
 /* header */
 header {
     height: 100px;
