@@ -19,13 +19,7 @@ function textSizeUp() {
 }
 
 function textSizeReset() {
-    currentSize = document.getElementById("body").style.fontSize;
-    // m = escape("ただいまの文字サイズは" + currentSize + "（標準：100%）です。元に戻しますか？");
-    // r = confirm(unescape(m));
-    // if (r) {
-        currentSize = "";
-        document.getElementById("body").style.fontSize = currentSize;
-    // }
+    document.getElementById("body").style.fontSize = "100%";
     setCookie(currentSize);
 }
 
