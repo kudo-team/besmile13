@@ -5,6 +5,9 @@
 - 支援員ページ
 - Q&Aページ
 
+## GitHub上のWebサイトURL
+https://kudo-team.github.io/besmile13/
+
 ### 備考.1
 WordPressでの更新を行うことも可能ですが、現状まだ正式なバージョンでのアップはまだ不要なので、/wpディレクトリでの動作をしています。
 例) https://13-sunplace-osaka.com →リダイレクト→ https://13-sunplace-osaka.com/wp/
