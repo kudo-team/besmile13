@@ -19,8 +19,9 @@ function textSizeUp() {
 }
 
 function textSizeReset() {
-    document.getElementById("body").style.fontSize = "100%";
-    setCookie(currentSize);
+    const normalSize = "100%";
+    document.getElementById("body").style.fontSize = normalSize;
+    setCookie(normalSize);
 }
 
 function changeCSS(cssfile) {
