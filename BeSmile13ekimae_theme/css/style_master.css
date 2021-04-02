@@ -6,6 +6,13 @@ html, body {
 *, *::after, *::before {
     box-sizing: border-box;
 }
+a,a:visited,a:active{
+    color: #e460d2;
+    transition: 0.2s;
+}
+a:hover{
+    opacity:0.7;
+}
 body{
     background-image: url("../images/1174006.jpg");
     background-repeat: no-repeat;
@@ -682,7 +689,7 @@ footer ul li::before { /*斜め線*/
     width: 34px;
     background-color: white;
     position: absolute;
-    top: 13px;
+    top: 10px;
     left: -29px;
     transform: rotateZ(
             45deg
@@ -697,19 +704,17 @@ footer ul li::after { /*〇*/
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    top: -3px;
+    top: -6px;
     left: -31px;
 }
 
 footer ul li a {
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: white!important;
 }
 
-footer ul li :hover {
-    color: green;
-}
+
 
 
 @media (max-width: 768px) {

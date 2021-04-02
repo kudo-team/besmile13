@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <main>
     <section class="Cherry__Menu">
         <nav id="hanabira">
@@ -150,3 +151,4 @@
         <!--/サウンド-->
     </section>
 </main>
+<?php get_footer(); ?>
