@@ -1,6 +1,49 @@
+window.addEventListener('load', function() {
+    setTextSize();
+});
+function setTextSize() {
+    cookieFontSize = '100%';
+    if(document.cookie != null) {
+        var cookies = document.cookie;
+        var cookiesArray = cookies.split(';');
+
+        for (var c of cookiesArray) {
+            var cArray = c.split('=');
+            if (cArray[0] == 'fontSize') {
+                cookieFontSize = cArray[1];  // [key,value]
+            }
+        }
+    }
+    if(cookieFontSize != '100%') {
+        currentSize = cookieFontSize;
+        selectSize = cookieFontSize;
+    } else {
+        currentSize = document.getElementById("body").style.fontSize;
+        selectSize = '100%';
+    }
+    document.getElementById("body").style.fontSize = selectSize;
+    setCookie(selectSize);
+}
 function textSizeUp() {
-    currentSize = document.getElementById("body").style.fontSize;
-    selectSize = "";
+    cookieFontSize = '100%';
+    if(document.cookie != null) {
+        var cookies = document.cookie;
+        var cookiesArray = cookies.split(';');
+
+        for (var c of cookiesArray) {
+            var cArray = c.split('=');
+            if (cArray[0] == 'fontSize') {
+                cookieFontSize = cArray[1];  // [key,value]
+            }
+        }
+    }
+    if(cookieFontSize != '100%') {
+        currentSize = cookieFontSize;
+        selectSize = cookieFontSize;
+    } else {
+        currentSize = document.getElementById("body").style.fontSize;
+        selectSize = "";
+    }
     if (currentSize == "100%") {
         selectSize = "110%";
     } else if (currentSize == "110%") {
@@ -20,15 +63,15 @@ function textSizeUp() {
 
 function textSizeReset() {
     currentSize = document.getElementById("body").style.fontSize;
-    // m = escape("ただいまの文字サイズは" + currentSize + "（標準：100%）です。元に戻しますか？");
-    // r = confirm(unescape(m));
-    // if (r) {
-        currentSize = "";
-        document.getElementById("body").style.fontSize = currentSize;
-    // }
+    currentSize = "";
+    document.getElementById("body").style.fontSize = currentSize;
     setCookie(currentSize);
 }
 
 function changeCSS(cssfile) {
-    document.getElementById("css").href = "css/" + cssfile;
+    document.getElementById("css").href = "https://13-sunplace-osaka.com/wp/wp-content/themes/BeSmile13ekimae_theme/css/" + cssfile;
+}
+
+function setCookie(percent) {
+    document.cookie = "fontSize=" + percent;
 }
