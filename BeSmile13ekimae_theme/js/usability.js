@@ -1,6 +1,5 @@
 window.addEventListener('load', function() {
     getCookiesAndSetUp();
-    alert(document.cookie);
 });
 function setColor() {
     if(document.cookie != null) {
