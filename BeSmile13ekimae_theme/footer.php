@@ -28,7 +28,7 @@
 <!--/footer-->
 
 <!--toppageへのボタン-->
-<div id="page_top" style="text-align: center"><a href="#" onclick="$('html,body').animate({ scrollTop: 0 }); return false;"><img src="images/up.svg" width="25px" height="30px" alt=""></a></div>
+<div id="page_top" style="text-align: center"><a href="#" onclick="$('html,body').animate({ scrollTop: 0 }); return false;"><img src="<?php echo get_template_directory_uri(); ?>/images/up.svg" width="25px" height="30px" alt=""></a></div>
 <!--/toppageへのボタン-->
 <!--jquery-->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
