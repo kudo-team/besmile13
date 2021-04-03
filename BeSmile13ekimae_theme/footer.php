@@ -84,7 +84,7 @@
             <span>背景色</span>
         </li>
         <li>
-            <a href="javascript:changeCSS('color01.css');" style="border:1px solid #e0e0e0;background-color: #e0e0e0;padding:8px">標準</a>
+            <a href="javascript:changeCSS('color01.css');" style="border:1px solid #e0e0e0!important;background-color: #e0e0e0!important;padding:8px">標準</a>
             <a href="javascript:changeCSS('color02.css');" style="border:1px solid #e0e0e0;background-color: #e0e0e0;padding:8px;background:#0000bc!important;color: #ffff00!important;">青</a>
             <a href="javascript:changeCSS('color03.css');" style="border:1px solid #e0e0e0;background-color: #e0e0e0;padding:8px;background:#ffff00!important;;color: #000!important;">黄</a>
             <a href="javascript:changeCSS('color04.css');" style="border:1px solid #e0e0e0;background-color: #e0e0e0;padding:8px;background:#000!important;;color: #fff!important;">黒</a>
