@@ -835,15 +835,16 @@ footer #copyright{
     z-index: 100;
 }
 
-#page_top a {
+#page_top div {
     position: relative;
     display: block;
     width: 90px;
     height: 90px;
     text-decoration: none;
+    cursor: pointer;
 }
 
-#page_top a::before {
+#page_top div::before {
     font-weight: 900;
     /*content: '\f102';*/
     font-size: 120%;
@@ -859,7 +860,7 @@ footer #copyright{
     text-align: center;
 }
 
-#page_top a::after {
+#page_top div::after {
     content: 'PAGE TOP';
     font-size: 100%;
     position: absolute;
