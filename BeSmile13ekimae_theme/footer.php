@@ -73,7 +73,6 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" data-deferred="1"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/hanabira.js"></script>
 <aside class="usability">
     <ul>

@@ -3,7 +3,7 @@
     <section class="Cherry__Menu">
         <nav id="hanabira">
             <div class="img_fit_div">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/wood.png" id="main_image" alt="桜" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/wood-min.png" id="main_image" alt="桜" loading="lazy">
                 <div id="sakura_animation">
                     <div id="sakura_animation2"></div>
                 </div>
@@ -11,12 +11,12 @@
                     <div class="vertical-1">自分にあった</div>
                     <div class="vertical-2">やりたいこと見つけた<span class="yoko">!!</span></div>
                     <ul class="mainmenu">
-                        <li class="menu_s menu"><a href="#section06">サウンド</a></li>
-                        <li class="menu_p menu"><a href="#section05">プログラミング</a></li>
-                        <li class="menu_it menu"><a href="#section02">ITに特化</a></li>
-                        <li class="menu_a menu"><a href="#section01">A型事業所</a></li>
-                        <li class="menu_h menu"><a href="#section03">ホームページ</a></li>
-                        <li class="menu_il menu"><a href="#section04">イラスト</a></li>
+                        <li class="menu_s menu"><a href="#section06">サウンド<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
+                        <li class="menu_p menu"><a href="#section05">プログラミング<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
+                        <li class="menu_it menu"><a href="#section02">ITに特化<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
+                        <li class="menu_a menu"><a href="#section01">A型事業所<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
+                        <li class="menu_h menu"><a href="#section03">ホームページ<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
+                        <li class="menu_il menu"><a href="#section04">イラスト<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
                     </ul>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                     主にゲーム制作で用いるイラスト制作を行います。
                     特にBeSmile十三駅前では週に一度、プロによる<strong class="marker-animation">イラスト講習会を開催</strong>しており、イラストのスキルアップを図れます。<br>
                     とはいえ現状かなりスキルの高いメンバーもそろっていて、以下でそのサンプル等ご覧になれます。<br>
-                    <a href="https://begroup-create.biz/service/illustration/" target="_blank" rel="noopener" class="blank">https://begroup-create.biz/service/illustration/</a></p>
+                    <a href="https://begroup-create.biz/service/illustration/" target="_blank" rel="noopener" class="blank">https://begroup-create.biz/service/illustration/<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon.svg" alt="リンクアイコン" class="link_icon"></a></p>
             </div>
             <figure>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/illust.png" alt="イラストを書くうさぎ" loading="lazy">
@@ -135,7 +135,7 @@
         <div class="Section__Even__Content">
             <div class="Section__Even__Paragraph">
                 <p>主にゲーム制作で用いるサウンドや、BGM等の制作を行います。<br>BeSmile十三駅前では、FMCocoroでDJを8年間担当・CD13枚リリースという経歴を持つ音楽のプロ、<strong class="marker-animation">フレディ・フローレス氏の監修</strong>を受けることができ、イラスト部門と同じくあなたのスキルアップに貢献できます。以下よりサンプル等お聞きできます。<br>
-                    <a href="https://begroup-create.biz/service/sound/" target="_blank" rel="noopener" class="blank">https://begroup-create.biz/service/sound/</a>
+                    <a href="https://begroup-create.biz/service/sound/" target="_blank" rel="noopener" class="blank">https://begroup-create.biz/service/sound/<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon.svg" alt="リンクアイコン" class="link_icon"></a>
                 </p>
 
             </div>
