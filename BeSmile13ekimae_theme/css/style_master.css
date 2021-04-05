@@ -69,12 +69,15 @@ header .Hamburger__Menu__Content {
 .Hamburger__Menu__Content ul li a {
     text-decoration: none;
     color: #e460d2;
+    display: block;
+    padding-top: 65px;
+    position: relative;
+    z-index: 2;
 }
 .Hamburger__Menu__Content li{
     margin-left: 15px;
     position: relative;
     transition: 0.2s;
-    cursor: pointer;
 }
 
 .Hamburger__Menu__Content li::before{
@@ -90,7 +93,7 @@ header .Hamburger__Menu__Content {
 .Hamburger__Menu__Content li::after{    
     display: block;
     position: absolute;
-    top:-65px;
+    top:-0px;
     left:50%;
     transform: translateX(-50%);
 }
@@ -99,7 +102,7 @@ header .Hamburger__Menu__Content {
 }
 .Hamburger__Menu__Content li:nth-child(2)::after{
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju57_0016_s64_choju57_0016_0.png);
-    top: -50px;
+    top: 15px;
 }
 .Hamburger__Menu__Content li:nth-child(3)::after{
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju49_0002_s64_choju49_0002_2.png);
@@ -225,6 +228,7 @@ body > header > h1 {
         text-decoration: none;
         padding: 9px 15px 10px 0;
         position: relative;
+        padding-top:0;
     }
 
     .Hamburger__Menu__Content ul li a::before {
@@ -270,7 +274,7 @@ body {
 }
 
 body > main > section:nth-child(1) {
-    background-image: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
 #hanabira {
@@ -488,6 +492,9 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
 .Section__Even {
     position: relative;
     background-color: white;
+    background-image: url(../images/1409443-min.jpg);
+    background-size: cover;
+    background-position: center center;
     overflow: hidden;
     min-height: 600px;
 }
@@ -666,7 +673,7 @@ figcaption {
 footer {
     background-color: #7a4171;
     color: white;
-    height: 230px;
+    margin-bottom: -13px;
 }
 
 footer h1 {
@@ -738,6 +745,12 @@ footer ul li a {
     color: white!important;
 }
 
+footer #copyright{
+    text-align: center;
+    font-size:13px;
+    color: white;
+}
+
 
 
 
@@ -765,7 +778,7 @@ footer ul li a {
         left:-36px;
     }
     footer ul li::before{
-        top: 11px;
+        top: 12px;
         left: -35px;
         width:41px;
     }
@@ -893,7 +906,7 @@ header {
 #shidouin {
 	position:relative;
 	width: 100%;
-    height: 100vh;
+    height: calc(100vh - 160px);
 	min-height: 700px;
 	display: flex;
 	justify-content: center;
@@ -1278,7 +1291,7 @@ header {
 
 .cp_qa h1 {
     margin-bottom: 0.5em;
-    padding: 0.2em 0.5em 0.5em 2em;
+    padding: 10px;
     border-radius: 0.2em;
     background: #f0deec;
     font-weight: bold;
@@ -1332,26 +1345,23 @@ header {
 .add {
     display: table;
     margin: 0 auto;
-      line-height: 30px;
+    line-height: 30px;
+    padding-bottom: 30px;
   }
   .h1{
   text-align: center;
   }
-  
-  
-  table{
+  table#company{
     width: 100%;
     border-collapse: collapse;
+    font-size: 1.2em;
   }
-  
   table tr{
     border-bottom: solid 2px white;
-  }
-  
+  }  
   table tr:last-child{
     border-bottom: none;
-  }
-  
+  }  
   table th{
     position: relative;
     text-align: left;
@@ -1361,8 +1371,7 @@ header {
     text-align: center;
     padding: 10px 0;
     min-width: 100px;
-  }
-  
+  }  
   table th:after{
     display: block;
     content: "";
@@ -1374,8 +1383,7 @@ header {
     border-left: 10px solid #ffccff;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-  }
-  
+  }  
   table td{
     text-align: left;
     width: 70%;
@@ -1383,8 +1391,6 @@ header {
     padding: 10px 25px;
     min-width: 284px;
   }
-  
-
   @media screen and (max-width:767px) {
     table td, table th{
       min-width: 0px;
@@ -1408,6 +1414,7 @@ header {
     width:fit-content;
     width:-moz-fit-content;
     margin:0 auto;
+    font-size: 1.2em;
   }
   span.kome{
     position: absolute;
@@ -1460,6 +1467,7 @@ header {
   figure.usagi_figure figcaption{
     font-size:12px;
     text-align: center;
+    margin-left: 57px;
   }
   div.usagi{
     width:100%;
@@ -1487,15 +1495,16 @@ header {
     background-position: -100% 1em;
 }
   .marker-animation {
+    background-image: linear-gradient(to right, transparent 50%, #e460d2 50%);
     background-image: -webkit-linear-gradient(left, transparent 50%, #e460d2 50%);
     background-image: -moz-linear-gradient(left, transparent 50%, #e460d2 50%);
     background-image: -ms-linear-gradient(left, transparent 50%, #e460d2 50%);
     background-image: -o-linear-gradient(left, transparent 50%, #e460d2 50%);
-    background-image: linear-gradient(left, transparent 50%, #e460d2 50%);
     background-repeat: repeat-x;
     background-size: 200% 1em;
-    background-position: 0 1em;
+    background-position: 0% 1em;
     transition: all 2s ease;
     transition-delay: .5s;
     font-weight: bold;
+    display: inline;
 }

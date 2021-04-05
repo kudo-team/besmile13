@@ -23,7 +23,7 @@
         </nav>
     </section>
 
-    <section>
+    <section id="chiiki_renkei">
         <p style="text-align:center;font-size:2em;"><a href="<?php echo esc_url( home_url( '/' ) ); ?>bbq.pdf" target="_blank" rel="noopener">令和二年度地域連携報告</a></p>
     </section>
     <!--A型事業所とは-->
