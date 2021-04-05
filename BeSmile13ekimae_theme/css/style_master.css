@@ -23,22 +23,7 @@ body{
     padding:0;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
   }
-  .marker-animation {
-    background-image: -webkit-linear-gradient(left, transparent 50%, #e460d2 50%);
-    background-image: -moz-linear-gradient(left, transparent 50%, #e460d2 50%);
-    background-image: -ms-linear-gradient(left, transparent 50%, #e460d2 50%);
-    background-image: -o-linear-gradient(left, transparent 50%, #e460d2 50%);
-    background-image: linear-gradient(left, transparent 50%, #e460d2 50%);
-    background-repeat: repeat-x;
-    background-size: 200% 1em;
-    background-position: 0 1em;
-    transition: all 2s ease;
-    transition-delay: .5s;
-    font-weight: bold;
-}
-.marker-animation.active {
-    background-position: -100% 1em;
-}
+
 /* header */
 header {
     height: 100px;
@@ -59,6 +44,7 @@ header h1 img {
 header .Hamburger__Menu__Content {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 #menu-btn-check { /*チェックボックスなくす*/
@@ -71,7 +57,7 @@ header .Hamburger__Menu__Content {
     display: flex;
     /* justify-content: space-around; */
     align-items: flex-end;
-    margin-top: 65px;
+    margin-top: 100px;
     padding: 0;
 }
 
@@ -88,10 +74,9 @@ header .Hamburger__Menu__Content {
     margin-left: 15px;
     position: relative;
     transition: 0.2s;
+    cursor: pointer;
 }
-.Hamburger__Menu__Content li:first-child{
-    margin-left: 0;
-}
+
 .Hamburger__Menu__Content li::before{
     position:absolute;
     content:'';
@@ -102,6 +87,27 @@ header .Hamburger__Menu__Content {
     left:0;
     transition: 0.2s;
 }
+.Hamburger__Menu__Content li::after{    
+    display: block;
+    position: absolute;
+    top:-65px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.Hamburger__Menu__Content li:nth-child(1)::after{
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju61_0002_s64_choju61_0002_0.png);
+}
+.Hamburger__Menu__Content li:nth-child(2)::after{
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju57_0016_s64_choju57_0016_0.png);
+    top: -50px;
+}
+.Hamburger__Menu__Content li:nth-child(3)::after{
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju49_0002_s64_choju49_0002_2.png);
+}
+.Hamburger__Menu__Content li:nth-child(4)::after{
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju51_0035_s64_choju51_0035_0.png);
+}
+
 .Hamburger__Menu__Content li:hover::before{
     width:100%;
 }
@@ -135,7 +141,9 @@ body > header > h1 {
         margin-left: 30px;
         display: block;
     }
-
+    .Hamburger__Menu__Content li::after{
+        display: none;
+    }
     /* ハンバーガー*/
     .Hamburger__Menu--btn {
         position: fixed;
@@ -199,7 +207,7 @@ body > header > h1 {
     .Hamburger__Menu__Content ul {
         display: block;
         width: 98%;
-        padding: 70px 10px 0;
+        padding: 130px 10px 0;
         margin: 0 0 auto auto;
     }
 
@@ -592,7 +600,7 @@ figcaption {
     }
 
     .mainmenu li {
-        font-size: 110%;
+        font-size: 80%;
     }
 
     .vertical-1 {
@@ -695,6 +703,7 @@ footer ul {
 footer ul li {
     border-bottom: 1px solid white;
     position: relative;
+    
 }
 
 footer ul li::before { /*斜め線*/
@@ -737,7 +746,14 @@ footer ul li a {
         height: 600px;
         margin-top: 0;
     }
-
+    footer ul{
+        width:100%;
+        padding-left: 30px;
+    }
+    footer ul li{
+        line-height: 1.6;
+        font-size: 1.2em;
+    }
     footer .Footer__Inner {
         display: flex;
         flex-direction: column;
@@ -745,7 +761,14 @@ footer ul li a {
         width: fit-content;
         margin: 0 auto;
     }
-
+    footer ul li::after{
+        left:-36px;
+    }
+    footer ul li::before{
+        top: 11px;
+        left: -35px;
+        width:41px;
+    }
     footer h1 {
         font-size: 180%;
     }
@@ -756,6 +779,7 @@ footer ul li a {
 
     .Footer__Inner__Links {
         min-width: 0;
+        width:100%;
     }
 
     .Footer__Inner__GoogleMaps {
@@ -1073,7 +1097,7 @@ header {
 		margin:0 auto;
 	}
 	.key_visual{
-		height: 100px;
+		
 		width: 100%;
 		position: static;
 	}
@@ -1459,3 +1483,19 @@ header {
       padding:0 20px;
     }
   }
+.marker-animation.active {
+    background-position: -100% 1em;
+}
+  .marker-animation {
+    background-image: -webkit-linear-gradient(left, transparent 50%, #e460d2 50%);
+    background-image: -moz-linear-gradient(left, transparent 50%, #e460d2 50%);
+    background-image: -ms-linear-gradient(left, transparent 50%, #e460d2 50%);
+    background-image: -o-linear-gradient(left, transparent 50%, #e460d2 50%);
+    background-image: linear-gradient(left, transparent 50%, #e460d2 50%);
+    background-repeat: repeat-x;
+    background-size: 200% 1em;
+    background-position: 0 1em;
+    transition: all 2s ease;
+    transition-delay: .5s;
+    font-weight: bold;
+}

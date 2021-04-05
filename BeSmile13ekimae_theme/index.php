@@ -26,7 +26,6 @@
     <section>
         <p style="text-align:center;font-size:2em;"><a href="<?php echo esc_url( home_url( '/' ) ); ?>bbq.pdf" target="_blank" rel="noopener">令和二年度地域連携報告</a></p>
     </section>
-
     <!--A型事業所とは-->
     <section class="Section__Odd" id="section01">
         <h2>就労継続支援A型とは？</h2>
@@ -38,7 +37,7 @@
             <div class="Section__Odd__Paragraph">
                 <p>就労継続支援A型とは、主に心身に障害をお持ちの方に対して、将来的な一般就労を目標とした自立を支援するために<strong class="marker-animation">就労の場を提供する</strong>福祉サービスのことです。<br>
                     そこには、そのサービスを利用する「利用者」と利用者を支える「支援員」がいて、利用者は支援員の手厚いサポートを受けながら、一方でしっかりと雇用契約を結び、”就労”をしていただきます。つまり、仕事をする意欲はあるものの、まだ一般就労は気が引けるという方に対して最適なサービスとなっております。<br>
-                    中には営利目的で本サービスを行っている事業所もある中、弊所、BeSmile十三駅前は福祉の意識が高く、サポートが充実していると自負しております。是非一度ご見学に来ていただいて、その雰囲気を肌で感じてみてくださいね。
+                    中には営利目的で本サービスを行っている事業所もある中、弊所、BeSmile十三駅前は福祉の意識が高く、<strong class="marker-animation">サポートが充実している</strong>と自負しております。是非一度ご見学に来ていただいて、その雰囲気を肌で感じてみてくださいね。
                 </p>
             </div>
         </div>
@@ -54,7 +53,7 @@
         <div class="Section__Even__Content">
             <div class="Section__Even__Paragraph">
                 <p>様々なA型事業所がある中、BeSmile十三駅前の特色として、IT事業に特化しているというところがあります。
-                    例えばゲームプログラミング、ゲームイラスト制作、ゲームサウンド制作、ホームページ制作等、あなたのITスキルを存分に発揮できる環境がBeSmile十三駅前にはあります。<br>
+                    例えばゲームプログラミング、ゲームイラスト制作、ゲームサウンド制作、ホームページ制作等、あなたの<strong class="marker-animation">ITスキルを存分に発揮できる</strong>環境がBeSmile十三駅前にはあります。<br>
                     世間には軽作業等をメインに行っている事業所が多い中、イマドキなBeSmile十三駅前にご興味ございませんか？<br>
                     ちなみに案件がないときは軽作業・清掃等の業務も一部行っているため、ちょっとそっちで息抜きなんていうこともできます。
                 </p>
@@ -96,7 +95,7 @@
             <div class="Section__Even__Paragraph">
                 <p>
                     主にゲーム制作で用いるイラスト制作を行います。
-                    特にBeSmile十三駅前では週に一度、プロによるイラスト講習会を開催しており、イラストのスキルアップを図れます。<br>
+                    特にBeSmile十三駅前では週に一度、プロによる<strong class="marker-animation">イラスト講習会を開催</strong>しており、イラストのスキルアップを図れます。<br>
                     とはいえ現状かなりスキルの高いメンバーもそろっていて、以下でそのサンプル等ご覧になれます。<br>
                     <a href="https://begroup-create.biz/service/illustration/" target="_blank" rel="noopener" class="blank">https://begroup-create.biz/service/illustration/</a></p>
             </div>
@@ -121,7 +120,7 @@
             </figure>
             <div class="Section__Odd__Paragraph">
                 <p>プランナーの作成した仕様書を元に、Unityなどを使ってゲームの心臓部を作成していただきます。<br>
-                    特にBeSmile十三駅前はイラスト・サウンドメンバーと密に連携をとれるので、あなたの作ったシステムにクオリティをもたらせられるというメリットがあります。<br>
+                    特にBeSmile十三駅前は<strong class="marker-animation">イラスト・サウンドメンバーと密に連携をとれる</strong>ので、あなたの作ったシステムにクオリティをもたらせられるというメリットがあります。<br>
                     とはいえ現状数名のプログラマーは在籍しているものの、まだ製品として販売した実績はない未熟な部門ではあるので、是非あなたのお力をお貸しください！</p>
             </div>
         </div>
@@ -135,7 +134,7 @@
         <h2>ゲームサウンド制作</h2>
         <div class="Section__Even__Content">
             <div class="Section__Even__Paragraph">
-                <p>主にゲーム制作で用いるサウンドや、BGM等の制作を行います。<br>BeSmile十三駅前では、FMCocoroでDJを8年間担当・CD13枚リリースという経歴を持つ音楽のプロ、フレディ・フローレス氏の監修を受けることができ、イラスト部門と同じくあなたのスキルアップに貢献できます。以下よりサンプル等お聞きできます。<br>
+                <p>主にゲーム制作で用いるサウンドや、BGM等の制作を行います。<br>BeSmile十三駅前では、FMCocoroでDJを8年間担当・CD13枚リリースという経歴を持つ音楽のプロ、<strong class="marker-animation">フレディ・フローレス氏の監修</strong>を受けることができ、イラスト部門と同じくあなたのスキルアップに貢献できます。以下よりサンプル等お聞きできます。<br>
                     <a href="https://begroup-create.biz/service/sound/" target="_blank" rel="noopener" class="blank">https://begroup-create.biz/service/sound/</a>
                 </p>
 
