@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <base href="https://www.osakacity-hp.or.jp/juso/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> 大阪市立十三市民病院</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" href="/images/icon/apple-touch-icon.png">
+
+    <!-- Common Style -->
+    <link rel="stylesheet" href="https://www.osakacity-hp.or.jp/juso/css/common/normalize.css">
+    <link rel="stylesheet" href="https://www.osakacity-hp.or.jp/juso/css/common/reset.css">
+    <link rel="stylesheet" href="https://www.osakacity-hp.or.jp/juso/css/common/huck.css">
+
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="https://www.osakacity-hp.or.jp/juso/css/basic_sp.css"
+          media="screen and (max-width:640px)">
+    <link rel="stylesheet" href="https://www.osakacity-hp.or.jp/juso/css/style_sp.css"
+          media="screen and (max-width:640px)">
+    <link rel="stylesheet" href="https://www.osakacity-hp.or.jp/juso/css/basic_pc.css"
+          media="print, screen and (min-width:641px)">
+    <link rel="stylesheet" href="https://www.osakacity-hp.or.jp/juso/css/style_pc.css"
+          media="print, screen and (min-width:641px)">
+
+    <script src="https://www.osakacity-hp.or.jp/juso/js/jquery-1.8.3.min.js"></script>
+    <script src="https://www.osakacity-hp.or.jp/juso/js/cookie.js"></script>
+    <script src="https://www.osakacity-hp.or.jp/juso/js/easyListSplitter.js"></script>
+    <script src="https://www.osakacity-hp.or.jp/juso/js/matchHeight.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://www.osakacity-hp.or.jp/juso/js/html5.js"></script>
+    <script src="https://www.osakacity-hp.or.jp/juso/js/css3-mediaqueries.js"></script><![endif]-->
+
+    <!-- Viewport -->
+    <script src="https://www.osakacity-hp.or.jp/juso/js/viewport.js"></script>
+
+    <!-- Slide Menu -->
+    <link rel="stylesheet" href="https://www.osakacity-hp.or.jp/juso/css/sidr.dark.css">
+    <script src="https://www.osakacity-hp.or.jp/juso/js/sidr.js"></script>
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://www.osakacity-hp.or.jp/juso/css/fancybox.css">
+
+    <!-- Analytics -->
+    <script src="https://www.osakacity-hp.or.jp/juso/js/analytics.js"></script>
+    <script src="https://www.osakacity-hp.or.jp/juso/js/googleanalytics.js"></script>
+
+    <!-- Google Map -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="https://www.osakacity-hp.or.jp/juso/js/google_map.js"></script>
+
+    <!-- Home Style -->
+    <link rel="stylesheet" href="https://www.osakacity-hp.or.jp/juso/css/home_sp.css?v=1.4"
+          media="screen and (max-width:640px)">
+    <link rel="stylesheet" href="https://www.osakacity-hp.or.jp/juso/css/home_pc.css?v=1.4"
+          media="print, screen and (min-width:641px)">
+
+    <script>$(document).ready(function () {
+        $.fn.menuActiveli('nav_g01');
+    });</script>
+</head>
+
+<body id="home" onload="initialize()">
+<main id="container">
+
+    <div class="novisualAnchor">
+        <dl>
+            <dt>ページ内を移動するためのリンクです。</dt>
+            <dd>
+                <ul>
+                    <li><a href="#globalNav">サイト内の主なカテゴリメニューへ移動します</a></li>
+                    <li><a href="#content">このページの本文へ移動します</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <!-- /#novisualAnchor --></div>
+
+    <!-- /////////////// LeftColumn -->
+    <div id="leftColumn">
+
+        <!-- /////////////// Header -->
+        <header id="header">
+            <p><a href="https://www.osakacity-hp.or.jp/juso/"><img
+                    src="https://www.osakacity-hp.or.jp/juso/images/common/logo_pc.png" alt="大阪市立十三市民病院"/></a></p>
+            <div class="telBtn"><a href="tel:0661508000">電話</a></div>
+            <div class="menuBtn"><a href="javascript:void(0)">メニュー</a></div>
+        </header>
+
+        <!-- /////////////// Global Navigation -->
+        <div id="globalNav">
+            <div class="inner">
+                <nav role="navigation" id="navigation">
+                    <ul>
+                        <li id="nav_g01"><a href="https://www.osakacity-hp.or.jp/juso/">ホーム</a></li>
+                        <li id="nav_g0655"><a href="https://www.osakacity-hp.or.jp/juso/coronavirus/">新型コロナの対応について</a>
+                        </li>
+                        <li id="nav_g03"><a href="https://www.osakacity-hp.or.jp/juso/outpatient/">受診する</a></li>
+                        <li id="nav_g04"><a href="https://www.osakacity-hp.or.jp/juso/hospitalization/">入院する</a></li>
+                        <li id="nav_g05"><a href="https://www.osakacity-hp.or.jp/juso/about/">当院のご案内</a></li>
+                        <li id="nav_g06"><a href="https://www.osakacity-hp.or.jp/juso/cooperation/">医療機関の先生方へ</a></li>
+                        <li id="nav_g0594"><a href="https://www.osakacity-hp.or.jp/juso/CancerTreatment/">がん診療について</a>
+                        </li>
+                        <li id="nav_g07"><a href="http://www.osakacity-hp.or.jp/byouin/recruit/">採用について</a></li>
+                    </ul>
+                </nav>
+                <!-- /.inner --></div>
+            <!-- /#globalNav --></div>
+
+        <aside class="side">
+            <section class="outpatient"><img
+                        src="https://www.osakacity-hp.or.jp/juso/images/common/ttl_outpatient.png"
+                        alt="一般外来受診のご案内" title="一般外来受診のご案内は次のとおりになります">
+                <dl>
+                    <dt><span>初診受付</span></dt>
+                    <dd>午前8時45分〜午前11時00分</dd>
+                    <dt><span>再診受付</span></dt>
+                    <dd>午前8時30分〜午前11時00分</dd>
+                    <dt><span>休診日</span></dt>
+                    <dd>土・日・祝<br/>年末年始(12/29～1/3)</dd>
+                </dl>
+                <ul class="closedSubstitute">
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/outpatient/closed_substitute.html">休診・代診のお知らせ</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="access">
+                <a href="https://www.osakacity-hp.or.jp/juso/access.html"><em data-label="交通アクセスのご案内"><img
+                        src="https://www.osakacity-hp.or.jp/juso/images/common/ttl_access.png"
+                        alt="交通アクセスのご案内"/></em></a>
+
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26232.662156368948
+!2d135.477085!3d34.728308!3m2!1i1024!2i768!4f4.1!3m3!1m2!1s0x6000e5b83668a2b
+9%3A0x9933e0a2ad1700b1!2z5pel5pysLCDjgJI1MzItMDAzNCDlpKfpmKrlupzlpKfpmKrluIL
+mt4Dlt53ljLrph47kuK3ljJfvvJLkuIHnm67vvJHvvJLiiJLvvJLvvJc!5e0!3m2!1sja!2sus!4
+v1445312005122" frameborder="0" allowfullscreen="" style="margin: 8px 0 0 0;
+border: 0px; currentColor;" width="210" height="180"></iframe>
+
+                <p>〒532-0034<br/>大阪市淀川区野中北2-12-27<br/>TEL：06-6150-8000</p>
+                <ul>
+                    <li>阪急電鉄神戸線<br/>「神崎川駅」から南東へ約8分</li>
+                    <li>阪急電鉄<br/>「十三駅」から北西へ約12分</li>
+                    <li>大阪市バス<br/>「十三市民病院」下車</li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- /#leftColumn --></div>
+
+    <!-- /////////////// Content -->
+    <article id="content">
+
+        <section class="utility">
+            <img src="https://www.osakacity-hp.or.jp/juso/images/common/juso.png" class="logo"/>
+            <div class="inner">
+                <div class="search">
+                    <form action="https://www.google.com/cse" id="cse-search-box">
+                        <input type="hidden" name="cx" value="006919101601613510968:xbxuwqvknu4"/>
+                        <input type="hidden" name="ie" value="UTF-8"/>
+                        <input type="text" name="q" id="search_key"/><input type="submit" value="検索" name="sa"/>
+                        <script type="text/javascript"
+                                src="https://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+
+                    </form>
+                    <!-- /.search --></div>
+
+                <dl class="sizeChange">
+                    <dt>文字サイズ変更</dt>
+                    <dd><img src="https://www.osakacity-hp.or.jp/juso/images/common/btn_fontsize_m.png" alt="標準"
+                             class="changeBtn"/></dd>
+                    <dd><img src="https://www.osakacity-hp.or.jp/juso/images/common/btn_fontsize_l.png" alt="大きく"
+                             class="changeBtn"/></dd>
+                    <dd><img src="https://www.osakacity-hp.or.jp/juso/images/common/btn_fontsize_ll.png" alt="最大"
+                             class="changeBtn"/></dd>
+                </dl>
+
+                <div class="language"><a href="https://www.osakacity-hp.or.jp/juso/en/">ENGLISH</a></div>
+
+                <ul class="inquiryAccess">
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/faq.html"><img
+                            src="https://www.osakacity-hp.or.jp/juso/images/common/btn_hd_faq_pc.png"
+                            alt="よくあるご質問"/></a></li>
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/access.html"><img
+                            src="https://www.osakacity-hp.or.jp/juso/images/common/btn_hd_access_pc.png" alt="交通アクセス"/></a>
+                    </li>
+                </ul>
+                <dl class="mainTel">
+                    <dt><img src="https://www.osakacity-hp.or.jp/juso/images/common/tel_pc.png"
+                             alt="代表番号 06-6150-8000 土・日・祝休診"/></dt>
+                    <dd><span>初診受付</span>午前8時45分〜11時00分<br/><span>再診受付</span>午前8時30分〜11時00分</dd>
+                </dl>
+                <!-- /.inner --></div>
+            <!-- /.utility --></section>
+
+        <div id="mainVisual">
+            <p class="request"><a href="https://www.osakacity-hp.or.jp/juso/news/information/106.html">ご来院に際してのお願い</a>
+            </p>
+
+            <p class="reserve"><a href="https://www.osakacity-hp.or.jp/juso/news/information/corona_011.html">現在の診療内容について</a>
+            </p>
+            <p class="wearMask">新型コロナ感染症のPCR検査を目的とした診療は行っておりません</p>
+            <p class="coronaVirus"><a href="https://www.osakacity-hp.or.jp/juso/news/information/2.html">新型コロナ感染症の帰国者・接触外来や発熱外来は開設しておりません</a>
+            </p>
+            <p class="doctor"><a href="https://www.osakacity-hp.or.jp/juso/news/information/corona_010.html">当院における新型コロナウイルス感染対策について</a>
+            </p>
+
+            <img src="./images/home/main_pc.png" alt=""/>
+            <!-- /#mainVisual --></div>
+
+        <article class="main">
+            <div class="consultation">
+                <p><img src="https://www.osakacity-hp.or.jp/juso/images/home/ttl_consultation.png" alt="受診を希望される方へ"/>
+                </p>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><a href="https://www.osakacity-hp.or.jp/juso/outpatient/first_visit.html"><img
+                                    src="https://www.osakacity-hp.or.jp/juso/images/home/img_consultation01.png"
+                                    alt=""/><span><img
+                                    src="https://www.osakacity-hp.or.jp/juso/images/home/txt_consultation01.png"
+                                    alt="初めての方へ"/></span></a></dt>
+                            <dd>紹介状をお持ちの方は、来院の際、ご持参ください。</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="https://www.osakacity-hp.or.jp/juso/outpatient/return_visit.html"><img
+                                    src="https://www.osakacity-hp.or.jp/juso/images/home/img_consultation02.png"
+                                    alt=""/><span><img
+                                    src="https://www.osakacity-hp.or.jp/juso/images/home/txt_consultation02.png"
+                                    alt="再診の方へ"/></span></a></dt>
+                            <dd>再診の方は、ご予約をお願いいたします。</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="https://www.osakacity-hp.or.jp/juso/about/departments/"><img
+                                    src="https://www.osakacity-hp.or.jp/juso/images/home/img_consultation03.png"
+                                    alt=""/><span><img
+                                    src="https://www.osakacity-hp.or.jp/juso/images/home/txt_consultation03.png"
+                                    alt="診療科から探す"/></span></a></dt>
+                            <dd>診療科で探すことができます。</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="https://www.osakacity-hp.or.jp/juso/outpatient/doctor_table.html"><img
+                                    src="https://www.osakacity-hp.or.jp/juso/images/home/img_consultation04.png"
+                                    alt=""/><span><img
+                                    src="https://www.osakacity-hp.or.jp/juso/images/home/txt_consultation04.png"
+                                    alt="医師から探す"/></span></a></dt>
+                            <dd>医師から探すことができます。</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <!-- /.consultation --></div>
+            <div class="banner">
+                <ul>
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/about/departments/nursing.html"
+                           data-label="看護婦のご紹介"><img
+                            src="https://www.osakacity-hp.or.jp/juso/images/banner/bn_nurse.png" alt="看護婦のご紹介"/></a>
+                    </li>
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/about/departments/new_birth.html"
+                           data-label="お産のご案内"><img src="https://www.osakacity-hp.or.jp/juso/images/banner/bn_birth.png"
+                                                    alt="お産のご案内"/></a></li>
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/about/departments/health_check.html"
+                           data-label="健康診断のご案内"><img
+                            src="https://www.osakacity-hp.or.jp/juso/content/images/departments/banner/bn_medical.png"
+                            alt="健康診断のご案内" width="205" height="80"/></a></li>
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/about/seminar_event.html" data-label="セミナー・行事のご案内"><img
+                            src="https://www.osakacity-hp.or.jp/juso/images/banner/bn_seminar.png"
+                            alt="セミナー・行事のご案内"/></a></li>
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/access.html" data-label="送迎パスのご案内"><img
+                            src="https://www.osakacity-hp.or.jp/juso/images/banner/bn_bus.png" alt="送迎パスのご案内"/></a></li>
+                </ul>
+                <!-- /.banner --></div>
+            <div class="information">
+                <p><img src="https://www.osakacity-hp.or.jp/juso/images/home/ttl_info.png" alt="お知らせ"/></p>
+                <ul id="tab">
+                    <li class="select"><span>全て表示</span></li>
+                    <li><span>患者さま</span></li>
+                    <li><span>医療関係者</span></li>
+                    <li><span>お知らせ</span></li>
+                    <li><span>採用情報</span></li>
+                </ul>
+                <div class="scrollBar">
+                    <ul class="content_wrap">
+                        <li>
+                            <dl>
+                                <dt>2021年03月29日<span class="patient">患者さま</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/news/patient/108.html">4月20日（火）いきいき健康セミナー「知ってますか？COPD
+                                    ～病気を知って健康増進～」を開催いたします。</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2021年03月25日<span class="notice">お知らせ</span></dt>
+                                <dd><a href="http://www.osakacity-hp.or.jp/juso/about/seminar_event.html#anchor4">がん患者サロン広報誌「サロン・ド・Ｊ通信　2021年3月号」を掲載しました。</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2021年03月11日<span class="notice">お知らせ</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/news/information/116.html">広報誌「十三健康かわら版（第62号）」を掲載しました。</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2021年03月08日<span class="notice">お知らせ</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/news/information/115.html">母乳育児相談室を再開します</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2021年02月22日<span class="notice">お知らせ</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/about/certification.html">今年度新たに下肢静脈瘤に対する血管内焼灼術の実施基準による実施施設、日本病理学会研修施設、日本乳癌学会関連施設、に認定されました。</a>
+                                </dd>
+                            </dl>
+                        </li>
+
+                    </ul>
+                    <ul class="content_wrap disnon">
+                        <li>
+                            <dl>
+                                <dt>2021年03月29日<span class="patient">患者さま</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/news/patient/108.html">4月20日（火）いきいき健康セミナー「知ってますか？COPD
+                                    ～病気を知って健康増進～」を開催いたします。</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2021年01月14日<span class="patient">患者さま</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/news/patient/107.html">【中止】2月16日（火）いきいき健康セミナーについて</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2020年12月21日<span class="patient">患者さま</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/news/patient/106.html">【中止】1月19日（火）いきいき健康セミナーについて</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2020年12月07日<span class="patient">患者さま</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/news/patient/105.html">【中止】12月15日（火）いきいき健康セミナーについて</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2020年08月12日<span class="patient">患者さま</span></dt>
+                                <dd><a href="http://www.osakacity-hp.or.jp/juso/about/seminar_event.html#anchor4">9月23日（水）にリモートがん患者サロンを開催します。</a>
+                                </dd>
+                            </dl>
+                        </li>
+
+                    </ul>
+                    <ul class="content_wrap disnon">
+                        <li>
+                            <dl>
+                                <dt>2021年02月12日<span class="medical">医療関係者</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/news/medical/23.html">【WEBセミナー】令和2年度　認定看護師オープンセミナーの開催について</a>
+                                </dd>
+                            </dl>
+                        </li>
+
+                    </ul>
+
+                    <ul class="content_wrap disnon">
+                        <li>
+                            <dl>
+                                <dt>2021年03月25日<span class="notice">お知らせ</span></dt>
+                                <dd><a href="http://www.osakacity-hp.or.jp/juso/about/seminar_event.html#anchor4">がん患者サロン広報誌「サロン・ド・Ｊ通信　2021年3月号」を掲載しました。</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2021年03月11日<span class="notice">お知らせ</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/news/information/116.html">広報誌「十三健康かわら版（第62号）」を掲載しました。</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2021年03月08日<span class="notice">お知らせ</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/news/information/115.html">母乳育児相談室を再開します</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2021年02月22日<span class="notice">お知らせ</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/about/certification.html">今年度新たに下肢静脈瘤に対する血管内焼灼術の実施基準による実施施設、日本病理学会研修施設、日本乳癌学会関連施設、に認定されました。</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2021年02月19日<span class="notice">お知らせ</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/juso/news/information/112.html">三国中学校美術部生徒が制作した大凧を1階ロビーに展示し、感謝状を贈呈しました。</a>
+                                </dd>
+                            </dl>
+                        </li>
+
+                    </ul>
+                    <ul class="content_wrap disnon">
+                        <li>
+                            <dl>
+                                <dt>2020年12月07日<span class="recruit">採用情報</span></dt>
+                                <dd><a href="https://www.osakacity-hp.or.jp/byouin/info_nurse/20201102-2-2/">【急募‼】期付職員（看護師（令和２年度随時採用））の募集について</a>
+                                </dd>
+                            </dl>
+                        </li>
+
+                    </ul>
+                    <!-- /.scrollBar --></div>
+                <span class="infoMore"><a href="https://www.osakacity-hp.or.jp/juso/news/">一覧を見る</a></span>
+                <!-- /.information --></div>
+            <div class="directLink">
+                <ul>
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/about/donation.html" data-label="ご寄付ありがとうございました">ご寄付ありがとうございました</a>
+                    </li>
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/about/magazine.html" data-label="広報誌「十三健康かわら版」">広報誌「十三健康かわら版」</a>
+                    </li>
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/magazine_ra.html" data-label="広報誌「地域医療連携室だより」">広報誌「地域医療連携室だより」</a>
+                    </li>
+                    <li><a href="https://www.osakacity-hp.or.jp/juso/14/" data-label="学会発表・論文等">学会発表・論文等</a></li>
+                    <li class="sht"><a href="https://medicalnote.jp/doctors/180806-001-JZ" target="_blank" data-label="医療検索サイト：メディカルノートに、西口副院長の記事が掲載されまし
+た。">医療検索サイト：メディカルノートに、西口院長の記事が掲載されました。 </a></li>
+                    <li class="sht"><a href="https://www.osakacity-hp.or.jp/juso/10.html"
+                                       data-label="新型コロナウイルス発生に伴い、賜ったご支援について」">新型コロナウイルス発生に伴い、賜ったご支援について</a></li>
+                </ul>
+                <!-- /.directLink --></div>
+        </article>
+
+        <!-- /#content --></article>
+
+    <div id="quickNavi">
+        <ul>
+            <li><a href="https://www.osakacity-hp.or.jp/juso/outpatient/doctor_table.html" data-label="外来担当表"><img
+                    src="https://www.osakacity-hp.or.jp/juso/images/common/btn_schedule_pc.png" alt="外来担当表"/></a></li>
+            <li><a href="https://www.osakacity-hp.or.jp/juso/outpatient/floor_map.html" data-label="外来案内図"><img
+                    src="https://www.osakacity-hp.or.jp/juso/images/common/btn_floor_pc.png" alt="外来案内図"/></a></li>
+            <li><a href="https://www.osakacity-hp.or.jp/juso/about/departments/" data-label="各診療科・部門"><img
+                    src="https://www.osakacity-hp.or.jp/juso/images/common/btn_department_pc.png" alt="各診療科・部門"/></a>
+            </li>
+            <li><a href="https://www.osakacity-hp.or.jp/juso/faq.html" data-label="よくあるご質問"><img
+                    src="https://www.osakacity-hp.or.jp/juso/images/common/btn_faq_pc.png" alt="よくあるご質問"/></a></li>
+            <li><a href="#container" data-label="ページの先頭へ"><img
+                    src="https://www.osakacity-hp.or.jp/juso/images/common/btn_page_top.png" alt="ページの先頭へ"/></a></li>
+        </ul>
+        <!-- /#quickNavi Top --></div>
+
+    <div id="pageTop"><a href="#header">ページトップへ</a></div><!-- /#Page Top -->
+    <!-- /#container --></main>
+
+<!-- /////////////// Footer -->
+<footer id="footer">
+    <nav role="navigation" class="footerNav">
+        <div class="inner">
+            <ul>
+
+                <!--受診する-->
+                <li><a href="https://www.osakacity-hp.or.jp/juso/outpatient/">受診する</a></li>
+                <li>
+                    <ul>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/outpatient/first_visit.html" title="初めて受診する方へ">初めて受診する方へ</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/outpatient/return_visit.html" title="再診の方へ">再診の方へ</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/outpatient/flow/" title="外来受診の流れ">外来受診の流れ</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/outpatient/floor_map.html"
+                               title="外来案内図">外来案内図</a></li>
+                        <li><a href="about/departments/" title="各診療科・部門のご案内">各診療科・部門のご案内</a></li>
+                        <li class="last"><a href="https://www.osakacity-hp.or.jp/juso/outpatient/doctor_table.html"
+                                            title="外来担当表">外来担当表</a></li>
+                    </ul>
+                </li>
+
+                <!--入院する-->
+                <li><a href="https://www.osakacity-hp.or.jp/juso/hospitalization/">入院する</a></li>
+                <li>
+                    <ul>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/hospitalization/guidance.html" title="入院のご案内">入院のご案内</a>
+                        </li>
+                        <li class="last"><a href="https://www.osakacity-hp.or.jp/juso/hospitalization/dpc.html"
+                                            title="診断群分類別包括評価方式(DPC)について">診断群分類別包括評価方式(DPC)について</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <!--当院を知る-->
+                <li><a href="https://www.osakacity-hp.or.jp/juso/about/">当院のご案内</a></li>
+                <li>
+                    <ul class="hospital">
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/message.html" title="病院長挨拶">病院長挨拶</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/policy.html" title="基本理念">基本理念</a></li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/privacypolicy.html" title="個人情報の保護について">個人情報の保護について</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/outline.html" title="病院の概要">病院の概要</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/departments/" title="各診療科・部門のご案内">各診療科・部門のご案内</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/facilities.html" title="施設紹介">施設紹介</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/designation.html"
+                               title="指定医療機関">指定医療機関</a></li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/criteria_list.html"
+                               title="施設基準一覧">施設基準一覧</a></li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/certification.html" title="施設認定">施設認定</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/specialist.html" title="専門医教育(研修)認定施設">専門医教育(研修)認定施設</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/jcqhc.html" title="日本医療機能評価機構認定病院">日本医療機能評価機構認定病院</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/who_unicef.html"
+                               title="WHO・ユニセフ認定「赤ちゃんにやさしい病院」">WHO・ユニセフ認定「赤ちゃんにやさしい病院」</a></li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/publication.html"
+                               title="医療安全管理室">医療安全管理室</a></li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/magazine.html" title="広報誌「十三健康かわら版」">広報誌「十三健康かわら版」</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/seminar_event.html" title="セミナー・行事のご案内">セミナー・行事のご案内</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/donation.html" title="寄附について">寄附について</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/clinical_trial.html" title="臨床研究・治験について">臨床研究・治験について</a>
+                        </li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/byouin-shihyo/" title="十三市民病院 病院指標">十三市民病院
+                            病院指標</a></li>
+                        <li><a href="https://www.osakacity-hp.or.jp/juso/about/patient_satisfaction.html"
+                               title="患者満足度調査">患者満足度調査</a></li>
+                        <li class="last"><a href="https://www.osakacity-hp.or.jp/juso/about/accessibility.html"
+                                            title="ウェブアクセシビリティについて">ウェブアクセシビリティについて</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <!--地域医療連携室のご案内-->
+                <li><a href="https://www.osakacity-hp.or.jp/juso/cooperation/">医療機関の先生方へ</a></li>
+                <li>
+                    <ul>
+                        <li class="last"><a href="https://www.osakacity-hp.or.jp/juso/cooperation/patients.html"
+                                            title="患者さん・ご家族へ">患者さん・ご家族へ</a></li>
+                    </ul>
+                </li>
+                <!--採用について-->
+                <li><a href="http://www.osakacity-hp.or.jp/byouin/recruit/" target="_blank">採用について</a></li>
+                <!--交通アクセス-->
+                <li><a href="https://www.osakacity-hp.or.jp/juso/access.html">交通アクセス</a></li>
+                <!--よくあるご質問-->
+                <li><a href="https://www.osakacity-hp.or.jp/juso/faq.html">よくあるご質問</a></li>
+            </ul>
+            <ul>
+                <!--関連機関リンク-->
+                <li><a href="https://www.osakacity-hp.or.jp/juso/links.html">関連機関へのリンク</a></li>
+                <!--入札情報-->
+                <li><a href="http://www.osakacity-hp.or.jp/byouin/nyusatu/" target="_blank">入札情報</a></li>
+            </ul>
+            <img src="https://www.osakacity-hp.or.jp/juso/images/common/juso.png" class="logo"/>
+            <!-- /.inner --></div>
+    </nav>
+    <div class="organization">
+        <div class="inner">
+            <address>
+                <dl class="jusoAddress">
+                    <dt><img src="https://www.osakacity-hp.or.jp/juso/images/common/juso_hospital.png"
+                             alt="大阪市立十三市民病院"/></dt>
+                    <dd><span class="post">〒532-0034</span>大阪市淀川区野中北2-12-27<span class="telFax">TEL：06-6150-8000　FAX：06-6150-8680</span>
+                    </dd>
+                </dl>
+            </address>
+            <dl class="links">
+                <dt>独立行政法人<span>大阪市民病院機構一覧</span></dt>
+                <dd><a href="https://www.osakacity-hp.or.jp/byouin/" target="_blank"><img
+                        src="./images/common/img_organization.png" alt=""/><span>地方独立行政法人<br/>大阪市民病院機構</span></a></dd>
+                <dd><a href="https://www.osakacity-hp.or.jp/ocgh/" target="_blank"><img
+                        src="./images/common/img_ocgh.png" alt=""/><span>総合医療センター</span></a></dd>
+                <dd><a href="https://www.osakacity-hp.or.jp/byouin/suminoe/" target="_blank"><img
+                        src="./images/common/img_suminoe.png" alt=""/><span>住之江診療所</span></a></dd>
+                <dd><a href="https://www.osakacity-hp.or.jp/byouin/sumiyoshi/" target="_blank"><img
+                        src="./images/common/img_sumiyoshi.png" alt=""/><span>住吉市民病院</span></a></dd>
+                <dd><a href="https://www.osakacity-hp.or.jp/omms/" target="_blank"><img
+                        src="./images/common/img_omms.png" alt=""/><span>助産師学院</span></a></dd>
+                <dd><a href="https://www.city.osaka.lg.jp/" target="_blank"><img src="./images/common/img_osakacity.png"
+                                                                                 alt=""/><span>大阪市</span></a></dd>
+            </dl>
+            <!-- /.inner --></div>
+        <!-- /.organization --></div>
+
+
+    <div class="language"><a href="https://www.osakacity-hp.or.jp/juso/en/">ENGLISH</a></div>
+
+    <div class="copyRight">COPYRIGHT (C) 地方独立行政法人 大阪市民病院機構. ALL RIGHT RESERVED.</div>
+</footer>
+
+<script src="https://www.osakacity-hp.or.jp/juso/js/library.js"></script>
+<script src="https://www.osakacity-hp.or.jp/juso/js/retina.js"></script>
+<script src="https://www.osakacity-hp.or.jp/juso/js/news_pager.js"></script>
+
+</body>
+</html>
