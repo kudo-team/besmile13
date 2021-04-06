@@ -6,7 +6,7 @@
                 <p>〒532-0023<br>
                     大阪府大阪市淀川区十三東3-18-12<br>
                     伊藤ビル1F<br>
-                    TEL 06-6770-9011<br>
+                    <a href="tel:0667709011">TEL 06-6770-9011</a><br>
                     FAX 06-6770-9014</p>
             </section>
         </div>
@@ -24,7 +24,7 @@
             </ul>
         </div>
     </div>
-    <p id="copyright">🄫BeSmile十三駅前</p>
+    <p id="copyright">&copy; BeSmile十三駅前</p>
 </footer>
 <!--/footer-->
 
@@ -57,13 +57,13 @@
             // 現在位置が目的のスクロール量に達しているかどうかを判断
             if (ScrollPos >= TargetPos) {
                 // 達していれば表示
-                $("#page_top").css("display", "block");
+                $("#page_top").fadeIn();
                 if (window.matchMedia('(max-width:768px)').matches) {
                     $(".Hamburger__Menu--btn").css("top", "10px");
                 }
             } else {
                 // 達していなければ非表示
-                $("#page_top").css("display", "none");
+                $("#page_top").fadeOut();
                 if (window.matchMedia('(max-width:768px)').matches) {
                     $(".Hamburger__Menu--btn").css("top", "70px");
                 }

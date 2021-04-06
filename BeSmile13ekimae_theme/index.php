@@ -3,7 +3,7 @@
     <section class="Cherry__Menu">
         <nav id="hanabira">
             <div class="img_fit_div">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/wood-min.png" id="main_image" alt="桜" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/wood-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">
                 <div id="sakura_animation">
                     <div id="sakura_animation2"></div>
                 </div>
@@ -11,12 +11,12 @@
                     <div class="vertical-1">自分にあった</div>
                     <div class="vertical-2">やりたいこと見つけた<span class="yoko">!!</span></div>
                     <ul class="mainmenu">
-                        <li class="menu_s menu"><a href="#section06">サウンド<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
-                        <li class="menu_p menu"><a href="#section05">プログラミング<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
-                        <li class="menu_it menu"><a href="#section02">ITに特化<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
-                        <li class="menu_a menu"><a href="#section01">A型事業所<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
-                        <li class="menu_h menu"><a href="#section03">ホームページ<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
-                        <li class="menu_il menu"><a href="#section04">イラスト<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon_black.svg" alt="" class="link_icon black_icon"></a></li>
+                        <li class="menu_s menu"><a href="#section06">サウンド</a></li>
+                        <li class="menu_p menu"><a href="#section05">プログラミング</a></li>
+                        <li class="menu_it menu"><a href="#section02">ITに特化</a></li>
+                        <li class="menu_a menu"><a href="#section01">A型事業所</a></li>
+                        <li class="menu_h menu"><a href="#section03">ホームページ</a></li>
+                        <li class="menu_il menu"><a href="#section04">イラスト</a></li>
                     </ul>
                 </div>
             </div>
@@ -24,14 +24,14 @@
     </section>
 
     <section id="chiiki_renkei">
-        <p style="text-align:center;font-size:2em;"><a href="<?php echo esc_url( home_url( '/' ) ); ?>bbq.pdf" target="_blank" rel="noopener">令和二年度地域連携報告</a></p>
+        <p style="text-align:center;font-size:2em;"><a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf" target="_blank" rel="noopener">令和二年度地域連携報告</a></p>
     </section>
     <!--A型事業所とは-->
     <section class="Section__Odd" id="section01">
         <h2>就労継続支援A型とは？</h2>
         <div class="Section__Odd__Contents">
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/a_news.png" alt="ニュースを読むうさぎ" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/a_news.png" alt="ニュースを読むうさぎ" loading="lazy" width="327.77" height="372.92">
                 <figcaption>※BeSmile（ビースマイル）イラストチーム制作</figcaption>
             </figure>
             <div class="Section__Odd__Paragraph">
@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="Section__Odd--cherry">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="" loading="lazy">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="" loading="lazy" width="607" height="276.73">
         </div>
     </section>
     <!--/A型事業所とは-->
@@ -59,12 +59,12 @@
                 </p>
             </div>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sound.png" alt="指揮棒を振るうさぎ" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sound.png" alt="指揮棒を振るうさぎ" loading="lazy" width="364.19" height="452.58">
                 <figcaption>※BeSmile（ビースマイル）イラストチーム制作</figcaption>
             </figure>
         </div>
         <div class="Section__Even--cherry">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_2.png" alt="" loading="lazy">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_2.png" alt="" loading="lazy" width="607" height="276.73">
         </div>
 
     </section>
