@@ -45,13 +45,15 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/images/noimage-min.png" alt="no-image">
                     <?php endif; ?>
                 </a>
-                <a href="<?php the_permalink(); ?>">
-                    <h2><?php echo get_the_title(); ?></h2>
-                </a>
-                    <time datetime="<?php the_time('Y-m-d'); ?>"><?php echo get_the_date(); ?></time>
-                <a href="<?php the_permalink(); ?>">
-                    <p><?php the_excerpt(); ?></p>
-                </a>
+                <div class="blog_text_area">
+                    <a href="<?php the_permalink(); ?>">
+                        <h2><?php echo get_the_title(); ?></h2>
+                    </a>
+                        <time datetime="<?php the_time('Y-m-d'); ?>"><?php echo get_the_date(); ?></time>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_excerpt(); ?>
+                    </a>
+                </div>
             </article>
         <?php endwhile; ?>
     <?php else: ?>
