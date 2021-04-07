@@ -17,6 +17,6 @@
       <figcaption>ご案内致します！</figcaption>
     </figure>
   </div>
-  <img class="kousagi" src="83454.png" alt="桜の枝">
+  <img class="kousagi" src="<?php echo get_template_directory_uri(); ?>/images/sakura_2.png" alt="桜の枝">
 </div>
 <?php get_footer(); ?>

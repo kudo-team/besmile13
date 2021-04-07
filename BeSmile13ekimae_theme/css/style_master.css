@@ -9,6 +9,7 @@ html, body {
 a,a:visited,a:active{
     color: #e460d2;
     transition: 0.2s;
+    text-underline-offset: 3px;
 }
 a:hover{
     opacity:0.7;
@@ -69,7 +70,6 @@ header .Hamburger__Menu__Content {
 }
 
 .Hamburger__Menu__Content ul li :hover {
-    color: #e460d2;
     opacity:0.7;
 }
 
@@ -138,6 +138,9 @@ body > header > h1 {
 @media (max-width: 768px) {
     body > header > h1 {
         font-size: 140%;
+    }
+    .Hamburger__Menu__Content li::before{
+        display: none;
     }
     .black_icon{
         width:10px;
@@ -315,6 +318,7 @@ body > main > section:nth-child(1) {
 
 img#main_image {
     height: 100%;
+    width:auto;
     max-height: calc(100vh - 160px);
     /*height: 900px;*/
     max-width: 1140px;
@@ -609,6 +613,10 @@ figcaption {
     .Section__Odd, .Section__Even{
         background-size: 100%;
     }
+    .mainmenu li a{
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -770,8 +778,11 @@ footer #copyright{
     text-align: center;
     font-size:13px;
     color: white;
+    font-family: Verdana, “Droid Sans”;
 }
-
+.Footer__Inner__Corporation a{
+    color:white;
+}
 
 
 
@@ -1164,7 +1175,7 @@ header {
 	}
 	.hover-effect1 .caption {
 		color: #000;
-		transform: translateX(0px) translateY(-86px);
+		transform: translateX(0px) translateY(-77px);
 	}
 	
 	.hover-effect2 {
@@ -1191,7 +1202,7 @@ header {
 	}
 	.hover-effect2 .caption {
 		color: #000;
-		transform: translateX(0px) translateY(-86px);
+		transform: translateX(0px) translateY(-77px);
 	}
 	.hover-effect2 .caption  span {
 		font-size: 150%;
@@ -1216,7 +1227,7 @@ header {
 	}
 	.hover-effect3 .caption {
 		color: #000;
-		transform: translateX(0px) translateY(-86px);
+		transform: translateX(0px) translateY(-77px);
 	}
 
 	.hover-effect4 {
@@ -1238,7 +1249,7 @@ header {
 	}
 	.hover-effect4 .caption {
 		color: #000;
-		transform: translateX(0px) translateY(-86px);
+		transform: translateX(0px) translateY(-77px);
 	}
 
 	.hover-effect5 {
@@ -1262,7 +1273,7 @@ header {
 	}
 	.hover-effect5 .caption {
 		color: #000;
-		transform: translateX(0px) translateY(-86px);
+		transform: translateX(0px) translateY(-77px);
 	}
 
 	.hover-effect6 {
@@ -1287,7 +1298,7 @@ header {
 	}
 	.hover-effect6 .caption {
 		color: #000;
-		transform: translateX(0px) translateY(-86px);
+		transform: translateX(0px) translateY(-77px);
 	}
 	.hover_width{
 		height: 170px!important;
@@ -1315,7 +1326,7 @@ header {
     margin-bottom: 0.5em;
     padding: 10px;
     border-radius: 0.2em;
-    background: #f0deec;
+    background: #feedfa;
     font-weight: bold;
     text-align: center;
 }
@@ -1327,7 +1338,7 @@ header {
 	margin-bottom: 0.5em;
 	padding: 0.2em 0.5em 0.5em 2em;
 	border-radius: 0.2em;
-	background: #f0deec;
+	background: #feedfa;
     font-weight: bold;
 }
 .cp_qa dd {
@@ -1353,13 +1364,9 @@ header {
 }
 
 @media (max-width: 768px){
-
     .cp_qa h1 {
         display: block;
-        
-
-    }
-         
+    }         
 }
 
 /*************************************************************************/
@@ -1511,6 +1518,9 @@ header {
     }
     p.title{
       padding:0 20px;
+    }
+    figure.usagi_figure figcaption{
+        margin-left:0;
     }
 }
 .marker-animation.active {
