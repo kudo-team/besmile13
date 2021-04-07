@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b207f8b4-44a1-4940-907f-982431ad6483" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rename.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color02.css" beforeDir="false" afterPath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color02.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color03.css" beforeDir="false" afterPath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color03.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color04.css" beforeDir="false" afterPath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color04.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BeSmile13ekimae_theme/page-company.php" beforeDir="false" afterPath="$PROJECT_DIR$/BeSmile13ekimae_theme/page-company.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616995537796</updated>
       <workItem from="1616995540724" duration="35525000" />
-      <workItem from="1617506278358" duration="7890000" />
+      <workItem from="1617506278358" duration="9090000" />
     </task>
     <servers />
   </component>
