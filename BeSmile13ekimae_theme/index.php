@@ -93,7 +93,7 @@
                 </p>
             </div>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sound.png" alt="指揮棒を振るうさぎ" loading="lazy" width="364.19" height="452.58">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sound.png" alt="指揮棒を振るうさぎ" loading="lazy" width="412" height="512">
                 <figcaption>※BeSmile（ビースマイル）イラストチーム制作</figcaption>
             </figure>
         </div>
