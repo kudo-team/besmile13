@@ -85,10 +85,12 @@ function getCookiesAndSetUp() {
                 if(currentSize == '130%') {
                     document.getElementById("fontZoom").style.opacity = '0.2';
                 }
+                // alert(cArray[0]);
             }
             if (cArray[0] == 'color') {
                 cookieColorFile = cArray[1];
                 changeCSS(cookieColorFile);
+                // alert(cArray[0]);
             }
         }
     }
