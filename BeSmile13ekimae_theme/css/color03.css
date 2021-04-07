@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body,header, section, footer, .vertical-1, .vertical-2,aside{
+body,header, section, footer, .vertical-1, .vertical-2,aside,div,dl,dt,ol,ul,li,table,td,th,tr,h1,h2,h3{
     background:#ffff00 !important;
     color: #000 !important;
 }
@@ -17,4 +17,8 @@ button, input, select, textarea {
 /*背景黒*/
 #menu_button a .icon_ham::before {
     background:#000 !important;
+}
+
+div.img_fit_div,#sakura_animation{
+    background:transparent!important;
 }

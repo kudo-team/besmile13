@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b207f8b4-44a1-4940-907f-982431ad6483" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color02.css" beforeDir="false" afterPath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color02.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color03.css" beforeDir="false" afterPath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color03.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color04.css" beforeDir="false" afterPath="$PROJECT_DIR$/BeSmile13ekimae_theme/css/color04.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeSmile13ekimae_theme/page-company.php" beforeDir="false" afterPath="$PROJECT_DIR$/BeSmile13ekimae_theme/page-company.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -39,7 +46,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -58,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616995537796</updated>
       <workItem from="1616995540724" duration="35525000" />
+      <workItem from="1617506278358" duration="7890000" />
     </task>
     <servers />
   </component>
@@ -69,11 +81,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="SHELVE_DETAILS_PREVIEW_SHOWN" value="true" />
