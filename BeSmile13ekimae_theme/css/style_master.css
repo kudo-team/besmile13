@@ -72,6 +72,18 @@ header .Hamburger__Menu__Content {
     display: none;
 }
 
+ul#submenu{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    width: fit-content;
+    width:-moz-fit-content;
+}
+
+ul#submenu li:first-child{
+    margin-left: 0;
+}
+
 .Hamburger__Menu__Content ul {
     width: 100%;
     list-style: none;
@@ -86,7 +98,7 @@ header .Hamburger__Menu__Content {
     opacity:0.7;
 }
 
-.Hamburger__Menu__Content ul li a {
+.Hamburger__Menu__Content ul li a ,ul#submenu li a{
     text-decoration: none;
     color: #e460d2;
     display: block;
@@ -94,13 +106,13 @@ header .Hamburger__Menu__Content {
     position: relative;
     z-index: 2;
 }
-.Hamburger__Menu__Content li{
+.Hamburger__Menu__Content li,ul#submenu li{
     margin-left: 15px;
     position: relative;
     transition: 0.2s;
 }
 
-.Hamburger__Menu__Content li::before{
+.Hamburger__Menu__Content li::before,ul#submenu li::before{
     position:absolute;
     content:'';
     width:0%;
@@ -110,14 +122,14 @@ header .Hamburger__Menu__Content {
     left:0;
     transition: 0.2s;
 }
-.Hamburger__Menu__Content li::after{    
+.Hamburger__Menu__Content li::after,ul#submenu li::after{    
     display: block;
     position: absolute;
     top:-0px;
     left:50%;
     transform: translateX(-50%);
 }
-.Hamburger__Menu__Content li:nth-child(1)::after{
+.Hamburger__Menu__Content li:nth-child(1)::after,ul#submenu li::after{
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju61_0002_s64_choju61_0002_0.png);
 }
 .Hamburger__Menu__Content li:nth-child(2)::after{
@@ -130,8 +142,15 @@ header .Hamburger__Menu__Content {
 .Hamburger__Menu__Content li:nth-child(4)::after{
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju51_0035_s64_choju51_0035_0.png);
 }
+ul#submenu li:nth-child(1)::after{
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/949246-min.png);
+    transform: translateX(-50%) translateY(-652px) scale(0.06);
+}
+ul#submenu li:nth-child(2)::after{
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju55_0030_s64_choju55_0030_0.png);
+}
 
-.Hamburger__Menu__Content li:hover::before{
+.Hamburger__Menu__Content li:hover::before,ul#submenu li:hover::before{
     width:100%;
 }
 
@@ -465,7 +484,30 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     top: 31%;
     left: 70%;
 }
-
+section#blog{
+    background-image: url(../images/1409443-min.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+section#blog article{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid yellowgreen;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+section#blog article a{
+    text-decoration: none;
+}
+section#blog article img{
+    width:100%;
+    height: auto;
+}
 
 .Section__Odd h2 {
     font-size: 250%;
