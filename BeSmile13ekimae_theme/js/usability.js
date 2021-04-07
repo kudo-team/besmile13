@@ -73,11 +73,15 @@ function setCookie(percent) {
 function getCookiesAndSetUp() {
     if(document.cookie != null) {
         var cookies = document.cookie;
-        var cookiesArray = cookies.split(';');
+        var cookiesArray = cookies.split('; ');
 
         for (var c of cookiesArray) {
             var cArray = c.split('=');
-            if (cArray[0] == 'fontSize') {
+            if (cArray[0] === 'color') {
+                cookieColorFile = cArray[1];
+                changeCSS(cookieColorFile);
+            }
+            if (cArray[0] === 'fontSize') {
                 cookieFontSize = cArray[1];
                 currentSize = cookieFontSize;
                 selectSize = cookieFontSize;
@@ -85,12 +89,6 @@ function getCookiesAndSetUp() {
                 if(currentSize == '130%') {
                     document.getElementById("fontZoom").style.opacity = '0.2';
                 }
-                // alert(cArray[0]);
-            }
-            if (cArray[0] == 'color') {
-                cookieColorFile = cArray[1];
-                changeCSS(cookieColorFile);
-                // alert(cArray[0]);
             }
         }
     }

@@ -78,8 +78,8 @@
     <ul>
         <li>
             <span>文字サイズ</span>
-            <a href="javascript:textSizeUp();">拡大</a>
-            <a href="javascript:textSizeReset();">標準</a>
+            <a href="javascript:textSizeUp();" id="fontZoom">拡大</a>
+            <a href="javascript:textSizeReset();" id="fontNormal">標準</a>
         </li>
         <li><!-- テスト -->
             <span>背景色</span>
