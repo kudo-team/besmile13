@@ -2,7 +2,6 @@
 html, body {
     font-size: 14px;
 }
-/*こんばんは*/
 *, *::after, *::before {
     box-sizing: border-box;
 }
