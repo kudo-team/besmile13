@@ -38,12 +38,14 @@ function textSizeUp() {
     }
     if (currentSize == "100%") {
         document.getElementById("fontZoom").style.opacity = '1';
+        document.getElementById("fontZoom").style.pointerEvents = 'auto';
         selectSize = "110%";
     } else if (currentSize == "110%") {
         selectSize = "120%";
     } else if (currentSize == "120%") {
         selectSize = "130%";
         document.getElementById("fontZoom").style.opacity = '0.2';
+        document.getElementById("fontZoom").style.pointerEvents = 'none';
     } else if (currentSize == "130%") {
         selectSize = "130%";
     } else {
@@ -58,16 +60,17 @@ function textSizeReset() {
     currentSize = "";
     document.getElementById("body").style.fontSize = currentSize;
     document.getElementById("fontZoom").style.opacity = '1';
+    document.getElementById("fontZoom").style.pointerEvents = 'auto';
     setCookie(currentSize);
 }
 
 function changeCSS(cssfile) {
     document.getElementById("css").href = "https://13-sunplace-osaka.com/wp/wp-content/themes/BeSmile13ekimae_theme/css/" + cssfile;
-    document.cookie = "color=" + cssfile + ";path=/; expires=" + new Date(2030, 1).toUTCString();
+    document.cookie = "color=" + cssfile + ";path=/; expires=" + new Date(2038, 1).toUTCString();
 }
 
 function setCookie(percent) {
-    document.cookie = "fontSize=" + percent + ";path=/; expires=" + new Date(2030, 1).toUTCString();
+    document.cookie = "fontSize=" + percent + ";path=/; expires=" + new Date(2038, 1).toUTCString();
 }
 
 function getCookiesAndSetUp() {
@@ -88,6 +91,7 @@ function getCookiesAndSetUp() {
                 document.getElementById("body").style.fontSize = selectSize;
                 if(currentSize == '130%') {
                     document.getElementById("fontZoom").style.opacity = '0.2';
+                    document.getElementById("fontZoom").style.pointerEvents = 'none';
                 }
             }
         }
