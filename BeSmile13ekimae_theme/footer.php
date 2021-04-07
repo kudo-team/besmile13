@@ -24,7 +24,7 @@
             </ul>
         </div>
     </div>
-    <p id="copyright">&copy; BeSmile十三駅前</p>
+    <p id="copyright">&copy;<?php echo date('Y'); ?> Be Smile（ビースマイル）十三駅前</p>
 </footer>
 <!--/footer-->
 

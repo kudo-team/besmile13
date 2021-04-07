@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="就労継続支援A型のBeSmile（ビースマイル）十三駅前 大阪淀川区。就労継続支援A型だけでなく就労継続支援B型もサポート。あなたの働きたいを形にします。ご見学・ご相談、いつでもどうぞ！">
     <meta name="theme-color" content="#e460d2">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style_master.css?<?php echo mt_rand(); ?>">
     <?php if(wp_is_mobile()) : ?>
     <link href="<?php echo get_template_directory_uri(); ?>/css/noto_serif.css" rel="stylesheet">
