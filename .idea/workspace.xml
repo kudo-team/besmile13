@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b207f8b4-44a1-4940-907f-982431ad6483" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeSmile13ekimae_theme/js/usability.js" beforeDir="false" afterPath="$PROJECT_DIR$/BeSmile13ekimae_theme/js/usability.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeSmile13ekimae_theme/page-company.php" beforeDir="false" afterPath="$PROJECT_DIR$/BeSmile13ekimae_theme/page-company.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -62,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616995537796</updated>
       <workItem from="1616995540724" duration="35525000" />
-      <workItem from="1617506278358" duration="9090000" />
+      <workItem from="1617506278358" duration="10232000" />
     </task>
     <servers />
   </component>
