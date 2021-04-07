@@ -17,7 +17,7 @@
         <div class="Footer__Inner__Links">
             <ul>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホーム</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/instructors/' ) ); ?>">指導員紹介</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/instructors/' ) ); ?>">支援員紹介</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/flow/' ) ); ?>">ご利用までの流れ</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>">企業情報</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">よくあるご質問</a></li>
