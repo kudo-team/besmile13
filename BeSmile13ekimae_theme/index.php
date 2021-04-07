@@ -4,6 +4,7 @@
         <nav id="hanabira">
             <div class="img_fit_div">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/wood-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">
+                <a href="https://sunplace-osaka.com/" id="sun"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/949246-min.png" alt="太陽"></a>
                 <div id="sakura_animation">
                     <div id="sakura_animation2"></div>
                 </div>

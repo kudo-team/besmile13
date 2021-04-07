@@ -27,6 +27,19 @@ body{
 .link_icon{
     width:15px;
 }
+#sun{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+    z-index: 6;
+    display: block;
+}
+#sun img{
+    width:100px;
+    height: auto;
+}
 /* header */
 header {
     height: 100px;
