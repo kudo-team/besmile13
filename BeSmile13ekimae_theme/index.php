@@ -18,6 +18,7 @@
                         <li class="menu_a menu"><a href="#section01">A型事業所</a></li>
                         <li class="menu_h menu"><a href="#section03">ホームページ</a></li>
                         <li class="menu_il menu"><a href="#section04">イラスト</a></li>
+                        <li class="menu_soto menu"><a href="#section07">施設外就労</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,6 +32,9 @@
             </li>
             <li>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度<br>地域連携報告</a>
+            </li>
+            <li>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">お仕事のご依頼<br>はこちら</a>
             </li>
         </ul>
     </section>
@@ -183,8 +187,27 @@
         </div>
         <div class="Section__Even--cherry">
             <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_2.png" alt="" loading="lazy">
-        </div>
-        <!--/サウンド-->
+        </div>        
     </section>
+    <!--/サウンド-->
+    <!--施設外就労-->
+    <section class="Section__Odd" id="section07">
+        <h2>施設外就労</h2>
+        <div class="Section__Odd__Contents">
+            <figure>
+                <img class="pc_2" src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/shisetsugai.png" alt="掃除をしているうさぎ" loading="lazy">
+                <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
+            </figure>
+            <div class="Section__Odd__Paragraph">
+                <p>IT事業に特化したBeSmile十三駅前ですが、実は普段いるオフィスを離れて<strong class="marker-animation">施設外就労</strong>というものもしておりまして、<br>
+具体的にはシェアハウスや特養ホームに赴いて、フロアやトイレの<strong class="marker-animation">清掃、ベッドメイキングから洗濯</strong>までこなします。<br>
+なのでIT系はちょっと苦手…だとか、パソコンに向かうの疲れた…とかいったような方は希望があればこちらの業務についていただくことも可能です。</p>
+            </div>
+        </div>
+        <div class="Section__Odd--cherry">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="" loading="lazy">
+        </div>
+    </section>
+    <!--施設外就労-->
 </main>
 <?php get_footer(); ?>

@@ -2,7 +2,6 @@
 html, body {
     font-size: 14px;
 }
-/*hello!!!!!!!*/
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -24,6 +23,25 @@ body{
     padding:0;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
   }
+.centering{
+    margin: 0 auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    display: block;
+}
+#wpcf7-f103-p93-o1 > form input[type="submit"]{
+    margin: 0 auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    display: block;
+}
+#wpcf7-f103-p93-o1 > form span.ajax-loader{
+    position: absolute;
+}
+.jobtype_margin{
+    margin-top: 17px;
+    display: block;
+}
 .link_icon{
     width:15px;
 }
@@ -76,11 +94,12 @@ main#archive_main hr:last-child{
 a.color444{
     color:#444;
 }
-article.article-content,main#archive_main{
+article.article-content,main#archive_main,main#page_main{
     width: 80%;
     margin: 30px auto;
     background-color: #ffffffdd;
     padding: 10px;
+    font-size: 1.2em;
 }
 article.article-content img{
     max-width: 100%;
@@ -166,6 +185,8 @@ ul#submenu li:first-child{
     padding-top: 65px;
     position: relative;
     z-index: 2;
+}
+ul#submenu li a{
     text-align: center;
 }
 .Hamburger__Menu__Content li,ul#submenu li{
@@ -211,6 +232,9 @@ ul#submenu li:nth-child(1)::after{
 ul#submenu li:nth-child(2)::after{
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju55_0030_s64_choju55_0030_0.png);
 }
+ul#submenu li:nth-child(3)::after{
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/job_request.png);
+}
 
 .Hamburger__Menu__Content li:hover::before,ul#submenu li:hover::before{
     width:100%;
@@ -228,8 +252,13 @@ body > header > h1 {
     text-shadow: 0 5px 5px rgba(0, 0, 0, .2),
                0 -5px 20px rgba(255, 255, 255, .2);
 }
-
+.only_mobile{
+    display: none;
+}
 @media (max-width: 768px) {
+    .only_mobile{
+        display: block;
+    }
     body > header > h1 {
         font-size: 140%;
     }
@@ -511,6 +540,10 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     white-space: nowrap;
 }
 
+.menu_soto{
+    bottom: 9%;
+    right: -24%;
+}
 .menu_s {
     top: 50%;
     left: 24.87%;
@@ -586,7 +619,8 @@ section#blog div.blog_text_area{
 }
 section#blog article img{
     width:100%;
-    height: auto;
+    height: 223.5px;
+    object-fit: cover;
 }
 
 .Section__Odd h2 {
@@ -784,7 +818,10 @@ figcaption {
         bottom: 0;
         font-size: 160%;
     }
-
+    .menu_soto{
+        bottom: 9%;
+        right: -6%;
+    }
     .menu_s {
         left: 29.87%;
         top: 51%;
@@ -923,7 +960,6 @@ footer #copyright{
 
 @media (max-width: 768px) {
     footer {
-        height: 600px;
         margin-top: 0;
     }
     footer ul{
