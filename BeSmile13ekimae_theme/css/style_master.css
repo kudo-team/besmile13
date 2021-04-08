@@ -40,13 +40,57 @@ body{
     width:100px;
     height: auto;
 }
-article.article-content{
+div.article-tag ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+div.article-tag ul li{
+    margin-left: 10px;
+}
+div.article-tag ul li:first-child{
+    margin-left:0;
+}
+span.cat-data > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #e460d2;
+    width: fit-content;
+    padding: 2px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+article.post > ul{
+    display: none;
+}
+body.archive > h1, body.page > h1{
+    text-align: center;
+}
+main#archive_main hr:last-child{
+    display: none;
+}
+a.color444{
+    color:#444;
+}
+article.article-content,main#archive_main{
     width: 80%;
     margin: 30px auto;
     background-color: #ffffffdd;
     padding: 10px;
 }
-article.article-content span.cat-data,article.article-content span.article-date{
+article.article-content img{
+    max-width: 100%;
+    height: auto;
+}
+article.article-content span.cat-data{
+    display: flex;
+    flex-wrap: wrap;
+}
+article.article-content span.article-date{
     display: block;
 }
 article.article-content p{
@@ -92,6 +136,7 @@ ul#submenu{
     display: flex;
     list-style: none;
     margin: 0 auto;
+    padding:0;
     width: fit-content;
     width:-moz-fit-content;
 }
@@ -121,6 +166,7 @@ ul#submenu li:first-child{
     padding-top: 65px;
     position: relative;
     z-index: 2;
+    text-align: center;
 }
 .Hamburger__Menu__Content li,ul#submenu li{
     margin-left: 15px;
@@ -159,8 +205,8 @@ ul#submenu li:first-child{
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju51_0035_s64_choju51_0035_0.png);
 }
 ul#submenu li:nth-child(1)::after{
-    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/949246-min.png);
-    transform: translateX(-50%) translateY(-652px) scale(0.06);
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sun100-min.png);
+    transform: translateX(-50%) scale(0.8) translateY(-24px)
 }
 ul#submenu li:nth-child(2)::after{
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju55_0030_s64_choju55_0030_0.png);
@@ -504,9 +550,26 @@ section#blog{
     background-image: url(../images/1409443-min.jpg);
     background-size: cover;
     background-position: center center;
+    padding-bottom: 10px;
+}
+section#blog div.wrap_articles{
     display: flex;
     justify-content: space-around;
     flex-wrap:wrap;
+    width:90%;
+    margin: 0 auto;
+}
+section#blog a.archive_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    margin:0 auto;
+    border: 1px solid yellowgreen;
+    background-color: #ffffffaa;
+    border-radius: 10px;
+    text-decoration: none;
 }
 section#blog article{
     width:300px;

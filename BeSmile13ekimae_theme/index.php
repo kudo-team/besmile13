@@ -4,7 +4,7 @@
         <nav id="hanabira">
             <div class="img_fit_div">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/wood-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">
-                <a href="https://sunplace-osaka.com/" id="sun"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/949246-min.png" alt="太陽" width="100" height="99.41" loading="lazy"></a>
+                <a href="https://sunplace-osaka.com/" id="sun"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sun100-min.png" alt="太陽" width="100" height="99.41" loading="lazy"></a>
                 <div id="sakura_animation">
                     <div id="sakura_animation2"></div>
                 </div>
@@ -27,15 +27,16 @@
     <section id="chiiki_renkei">
         <ul id="submenu">
             <li>
-                <a href="https://sunplace-osaka.com/">一般社団法人サンプレイス</a>
+                <a href="https://sunplace-osaka.com/">一般社団法人<br>サンプレイス</a>
             </li>
             <li>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度地域連携報告</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度<br>地域連携報告</a>
             </li>
         </ul>
     </section>
     <section id="blog">
     <?php if (have_posts()): ?>
+        <div class="wrap_articles">
         <?php while (have_posts()) : the_post(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <a href="<?php the_permalink(); ?>">
@@ -49,13 +50,15 @@
                     <a href="<?php the_permalink(); ?>">
                         <h2><?php echo get_the_title(); ?></h2>
                     </a>
-                        <time datetime="<?php the_time('Y-m-d'); ?>"><?php echo get_the_date(); ?></time>
-                    <a href="<?php the_permalink(); ?>">
+                    <time datetime="<?php the_time('Y-m-d'); ?>"><?php echo get_the_date(); ?></time>
+                    <a href="<?php the_permalink(); ?>" class="color444">
                         <?php the_excerpt(); ?>
                     </a>
                 </div>
             </article>
         <?php endwhile; ?>
+        </div>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>archive/" class="archive_link">記事一覧</a>
     <?php else: ?>
     <p>ブログ記事はまだありません。</p>
     <?php endif; ?>

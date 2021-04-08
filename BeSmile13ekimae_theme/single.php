@@ -28,8 +28,7 @@
   <?php the_content(); ?>
   <!--タグ-->
   <div class="article-tag">
-    <?php the_tags('<ul><li>タグ： </li><li>','</li><li>','</li></ul>'
-  ); ?>
+    <?php the_tags('<ul><li>タグ： </li><li>','</li><li>','</li></ul>'); ?>
   </div>
 </article>
 <?php endif; ?>
