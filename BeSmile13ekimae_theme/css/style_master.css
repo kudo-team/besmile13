@@ -2,7 +2,6 @@
 html, body {
     font-size: 14px;
 }
-/*hello!!!!!!!*/
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -11,7 +10,7 @@ a,a:visited,a:active{
     transition: 0.2s;
     text-underline-offset: 3px;
 }
-a:hover{
+a:hover, a:hover h2, a:hover p{
     opacity:0.7;
 }
 body{
@@ -24,6 +23,34 @@ body{
     padding:0;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
   }
+.centering{
+    margin: 0 auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    display: block;
+}
+#wpcf7-f103-p93-o1 > form input[type="submit"]{
+    margin: 0 auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    display: block;
+}
+#wpcf7-f103-p93-o1 > form span.ajax-loader{
+    position: absolute;
+}
+#wpcf7-f103-p93-o1 > form input[type="text"],#wpcf7-f103-p93-o1 > form input[type="email"],#wpcf7-f103-p93-o1 textarea{
+    width:100%;
+}
+div.wp-block-contact-form-7-contact-form-selector.centering{
+    width:50%;
+}
+.jobtype_margin{
+    margin-top: 17px;
+    display: block;
+}
+.komemark{
+    color:#dc3232;
+}
 .link_icon{
     width:15px;
 }
@@ -39,6 +66,68 @@ body{
 #sun img{
     width:100px;
     height: auto;
+}
+div.article-tag ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+div.article-tag ul li{
+    margin-left: 10px;
+}
+div.article-tag ul li:first-child{
+    margin-left:0;
+}
+span.cat-data > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #e460d2;
+    width: fit-content;
+    padding: 2px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+article.post > ul{
+    display: none;
+}
+body.archive > h1, body.page > h1{
+    text-align: center;
+    margin-bottom: -15px;
+}
+main#archive_main hr:last-child{
+    display: none;
+}
+a.color444{
+    color:#444;
+}
+article.article-content,main#archive_main,main#page_main{
+    width: 80%;
+    margin: 30px auto;
+    background-color: #ffffffdd;
+    padding: 10px;
+    font-size: 1.2em;
+}
+article.article-content img{
+    max-width: 100%;
+    height: auto;
+}
+article.article-content span.cat-data{
+    display: flex;
+    flex-wrap: wrap;
+}
+article.article-content span.article-date{
+    display: block;
+}
+article.article-content p{
+    font-size: 1.2em;
+    line-height: 1.75;
+}
+article.article-content h1{
+    font-size: 2.3em;
 }
 /* header */
 header {
@@ -76,6 +165,7 @@ ul#submenu{
     display: flex;
     list-style: none;
     margin: 0 auto;
+    padding:0;
     width: fit-content;
     width:-moz-fit-content;
 }
@@ -105,6 +195,9 @@ ul#submenu li:first-child{
     padding-top: 65px;
     position: relative;
     z-index: 2;
+}
+ul#submenu li a{
+    text-align: center;
 }
 .Hamburger__Menu__Content li,ul#submenu li{
     margin-left: 15px;
@@ -143,11 +236,14 @@ ul#submenu li:first-child{
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju51_0035_s64_choju51_0035_0.png);
 }
 ul#submenu li:nth-child(1)::after{
-    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/949246-min.png);
-    transform: translateX(-50%) translateY(-652px) scale(0.06);
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sun100-min.png);
+    transform: translateX(-50%) scale(0.8) translateY(-24px)
 }
 ul#submenu li:nth-child(2)::after{
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/c_choju55_0030_s64_choju55_0030_0.png);
+}
+ul#submenu li:nth-child(3)::after{
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/job_request.png);
 }
 
 .Hamburger__Menu__Content li:hover::before,ul#submenu li:hover::before{
@@ -166,8 +262,16 @@ body > header > h1 {
     text-shadow: 0 5px 5px rgba(0, 0, 0, .2),
                0 -5px 20px rgba(255, 255, 255, .2);
 }
-
+.only_mobile{
+    display: none;
+}
 @media (max-width: 768px) {
+    div.wp-block-contact-form-7-contact-form-selector.centering{
+        width:100%;
+    }
+    .only_mobile{
+        display: block;
+    }
     body > header > h1 {
         font-size: 140%;
     }
@@ -399,7 +503,8 @@ div#sakura_animation {
 }
 
 _::-webkit-full-page-media, _:future, :root .vertical-2 {
-    height: 94%;
+    height: auto;
+    bottom:30px;
 }
 
 _::-webkit-full-page-media, _:future, :root img#main_image {
@@ -449,6 +554,10 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     white-space: nowrap;
 }
 
+.menu_soto{
+    bottom: 9%;
+    right: -24%;
+}
 .menu_s {
     top: 50%;
     left: 24.87%;
@@ -484,13 +593,40 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     top: 31%;
     left: 70%;
 }
+section#section_tips{
+    min-height: 0!important;
+    padding-bottom: 15px;
+}
+section#section_tips h3{
+    padding-left:2em;
+}
+section#section_tips > p{
+    margin: 0 4em;
+}
 section#blog{
     background-image: url(../images/1409443-min.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: center center;
+    padding-bottom: 10px;
+}
+section#blog div.wrap_articles{
     display: flex;
     justify-content: space-around;
     flex-wrap:wrap;
+    width:90%;
+    margin: 0 auto;
+}
+section#blog a.archive_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    margin:0 auto;
+    border: 1px solid yellowgreen;
+    background-color: #ffffffaa;
+    border-radius: 10px;
+    text-decoration: none;
 }
 section#blog article{
     width:300px;
@@ -499,14 +635,16 @@ section#blog article{
     border-radius: 10px;
     border: 1px solid yellowgreen;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #ffffffaa;
+    margin:20px;
 }
-section#blog article a{
-    text-decoration: none;
+section#blog div.blog_text_area{
+    padding: 0 5px;
 }
 section#blog article img{
     width:100%;
-    height: auto;
+    height: 223.5px;
+    object-fit: cover;
 }
 
 .Section__Odd h2 {
@@ -704,7 +842,10 @@ figcaption {
         bottom: 0;
         font-size: 160%;
     }
-
+    .menu_soto{
+        bottom: 9%;
+        right: -6%;
+    }
     .menu_s {
         left: 29.87%;
         top: 51%;
@@ -843,7 +984,6 @@ footer #copyright{
 
 @media (max-width: 768px) {
     footer {
-        height: 600px;
         margin-top: 0;
     }
     footer ul{
@@ -1022,7 +1162,7 @@ header {
 .hover-effect1 .caption {
 	font-size:		130%;
 	text-align: 		center;
-	padding-top:		80px;
+	margin-top:		80px;
 	color:			#fff;
 }
 .hover-effect1 .mask1 {
@@ -1184,6 +1324,10 @@ header {
 }
 .hover-effect6:hover .mask6 {
 	opacity:		1;	/* マスクを表示する */
+}
+.hover-effect .caption{
+    margin-top:80px;
+    padding-top: 0;
 }
 @media (max-width: 768px)
 

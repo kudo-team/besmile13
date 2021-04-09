@@ -4,7 +4,7 @@
         <nav id="hanabira">
             <div class="img_fit_div">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/wood-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">
-                <a href="https://sunplace-osaka.com/" id="sun"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/949246-min.png" alt="太陽" width="100" height="99.41" loading="lazy"></a>
+                <a href="https://sunplace-osaka.com/" id="sun"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sun100-min.png" alt="太陽" width="100" height="99.41" loading="lazy"></a>
                 <div id="sakura_animation">
                     <div id="sakura_animation2"></div>
                 </div>
@@ -18,6 +18,7 @@
                         <li class="menu_a menu"><a href="#section01">A型事業所</a></li>
                         <li class="menu_h menu"><a href="#section03">ホームページ</a></li>
                         <li class="menu_il menu"><a href="#section04">イラスト</a></li>
+                        <li class="menu_soto menu"><a href="#section07">施設外就労</a></li>
                     </ul>
                 </div>
             </div>
@@ -27,15 +28,30 @@
     <section id="chiiki_renkei">
         <ul id="submenu">
             <li>
-                <a href="https://sunplace-osaka.com/">一般社団法人サンプレイス</a>
+                <a href="https://sunplace-osaka.com/">一般社団法人<br>サンプレイス</a>
             </li>
             <li>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度地域連携報告</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度<br>地域連携報告</a>
+            </li>
+            <li>
+                <a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼<br>はこちら</a>
             </li>
         </ul>
     </section>
+    <section class="Section__Odd" id="section_tips">
+        <h2>Today's TIPS<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/coffee-solid.svg" alt="コーヒーアイコン" width="15" height="15" loading="lazy"></h2>
+        <?php 
+        $tips_array = [111,115,113,117];
+        $tips_ids = array_rand($tips_array,1);
+        $page_id =  $tips_array[$tips_ids];
+        $post = get_post( $page_id );//表示したい固定ページのページID
+        echo '<h3>'.apply_filters('the_title', $post->post_title).'</h3>';
+        echo apply_filters('the_content', $post->post_content); //固定ページの内容
+        ?>
+    </section>
     <section id="blog">
     <?php if (have_posts()): ?>
+        <div class="wrap_articles">
         <?php while (have_posts()) : the_post(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <a href="<?php the_permalink(); ?>">
@@ -45,15 +61,19 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/images/noimage-min.png" alt="no-image">
                     <?php endif; ?>
                 </a>
-                <a href="<?php the_permalink(); ?>">
-                    <h2><?php echo get_the_title(); ?></h2>
-                </a>
+                <div class="blog_text_area">
+                    <a href="<?php the_permalink(); ?>">
+                        <h2><?php echo get_the_title(); ?></h2>
+                    </a>
                     <time datetime="<?php the_time('Y-m-d'); ?>"><?php echo get_the_date(); ?></time>
-                <a href="<?php the_permalink(); ?>">
-                    <p><?php the_excerpt(); ?></p>
-                </a>
+                    <a href="<?php the_permalink(); ?>" class="color444">
+                        <?php the_excerpt(); ?>
+                    </a>
+                </div>
             </article>
         <?php endwhile; ?>
+        </div>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>archive/" class="archive_link">記事一覧</a>
     <?php else: ?>
     <p>ブログ記事はまだありません。</p>
     <?php endif; ?>
@@ -91,7 +111,7 @@
                 </p>
             </div>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sound.png" alt="指揮棒を振るうさぎ" loading="lazy" width="364.19" height="452.58">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sound.png" alt="指揮棒を振るうさぎ" loading="lazy" width="412" height="512">
                 <figcaption>※BeSmile（ビースマイル）イラストチーム制作</figcaption>
             </figure>
         </div>
@@ -112,7 +132,7 @@
             <div class="Section__Odd__Paragraph">
                 <p>発足したての部門で現在のところ特に実績はなく、案件もあまりありませんが、将来的にはバリバリ仕事をこなして立派な一部門としたいと考えております。<br>
                     仕様・方針を定めるディレクター、それを元にデザインを生み出すデザイナー、さらにそのデザインを元にHTML・CSSに起こしていくコーダー、3部門いずれもまだまだ未熟ですので、初心者でも互いに切磋琢磨できる環境です。<br>
-                    もちろんチームを引っ張っていこう！というスキルの高い人材も歓迎しております。</p>
+                    もちろんチームを引っ張っていこう！という<strong class="marker-animation">スキルの高い人材も歓迎</strong>しております。</p>
             </div>
         </div>
         <div class="Section__Odd--cherry">
@@ -178,8 +198,27 @@
         </div>
         <div class="Section__Even--cherry">
             <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_2.png" alt="" loading="lazy">
-        </div>
-        <!--/サウンド-->
+        </div>        
     </section>
+    <!--/サウンド-->
+    <!--施設外就労-->
+    <section class="Section__Odd" id="section07">
+        <h2>施設外就労</h2>
+        <div class="Section__Odd__Contents">
+            <figure>
+                <img class="pc_2" src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/shisetsugai.png" alt="掃除をしているうさぎ" loading="lazy">
+                <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
+            </figure>
+            <div class="Section__Odd__Paragraph">
+                <p>IT事業に特化したBeSmile十三駅前ですが、実は普段いるオフィスを離れて<strong class="marker-animation">施設外就労</strong>というものもしておりまして、<br>
+具体的にはシェアハウスや特養ホームに赴いて、フロアやトイレの<strong class="marker-animation">清掃、ベッドメイキングから洗濯</strong>までこなします。<br>
+なのでIT系はちょっと苦手…だとか、パソコンに向かうの疲れた…とかいったような方は希望があればこちらの業務についていただくことも可能です。</p>
+            </div>
+        </div>
+        <div class="Section__Odd--cherry">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="" loading="lazy">
+        </div>
+    </section>
+    <!--施設外就労-->
 </main>
 <?php get_footer(); ?>
