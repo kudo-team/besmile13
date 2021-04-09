@@ -34,7 +34,7 @@
                 <li><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>">企業情報</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">よくあるご質問</a></li>
                 <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度地域連携報告</a></li>
-                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">お仕事のご依頼はこちら</a></li>
+                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼はこちら</a></li>
                 <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">お問い合わせ</a></li>
             </ul>
         </div>

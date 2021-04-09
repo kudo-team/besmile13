@@ -12,7 +12,7 @@
         </div>
         <div class="Footer__Inner__GoogleMaps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.346492076229!2d135.48241601546636!3d34.72165958960275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e5cd9af468ab%3A0x7b3e50be2a98139c!2z44CSNTMyLTAwMjMg5aSn6Ziq5bqc5aSn6Ziq5biC5reA5bed5Yy65Y2B5LiJ5p2x77yT5LiB55uu77yR77yY4oiS77yR77yS!5e0!3m2!1sja!2sjp!4v1616636849950!5m2!1sja!2sjp"
-                    width="300" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    width="300" height="180" style="border:0;" allowfullscreen="" loading="lazy" title="GoogleMap"></iframe>
         </div>
         <div class="Footer__Inner__Links">
             <ul>

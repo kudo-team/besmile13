@@ -34,9 +34,20 @@
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度<br>地域連携報告</a>
             </li>
             <li>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">お仕事のご依頼<br>はこちら</a>
+                <a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼<br>はこちら</a>
             </li>
         </ul>
+    </section>
+    <section class="Section__Odd" id="section_tips">
+        <h2>Today's TIPS<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/coffee-solid.svg" alt="コーヒーアイコン" width="15" height="15" loading="lazy"></h2>
+        <?php 
+        $tips_array = [111,115,113,117];
+        $tips_ids = array_rand($tips_array,1);
+        $page_id =  $tips_array[$tips_ids];
+        $post = get_post( $page_id );//表示したい固定ページのページID
+        echo '<h3>'.apply_filters('the_title', $post->post_title).'</h3>';
+        echo apply_filters('the_content', $post->post_content); //固定ページの内容
+        ?>
     </section>
     <section id="blog">
     <?php if (have_posts()): ?>
@@ -121,7 +132,7 @@
             <div class="Section__Odd__Paragraph">
                 <p>発足したての部門で現在のところ特に実績はなく、案件もあまりありませんが、将来的にはバリバリ仕事をこなして立派な一部門としたいと考えております。<br>
                     仕様・方針を定めるディレクター、それを元にデザインを生み出すデザイナー、さらにそのデザインを元にHTML・CSSに起こしていくコーダー、3部門いずれもまだまだ未熟ですので、初心者でも互いに切磋琢磨できる環境です。<br>
-                    もちろんチームを引っ張っていこう！というスキルの高い人材も歓迎しております。</p>
+                    もちろんチームを引っ張っていこう！という<strong class="marker-animation">スキルの高い人材も歓迎</strong>しております。</p>
             </div>
         </div>
         <div class="Section__Odd--cherry">

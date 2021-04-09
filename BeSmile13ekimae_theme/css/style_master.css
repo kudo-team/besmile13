@@ -38,9 +38,18 @@ body{
 #wpcf7-f103-p93-o1 > form span.ajax-loader{
     position: absolute;
 }
+#wpcf7-f103-p93-o1 > form input[type="text"],#wpcf7-f103-p93-o1 > form input[type="email"],#wpcf7-f103-p93-o1 textarea{
+    width:100%;
+}
+div.wp-block-contact-form-7-contact-form-selector.centering{
+    width:50%;
+}
 .jobtype_margin{
     margin-top: 17px;
     display: block;
+}
+.komemark{
+    color:#dc3232;
 }
 .link_icon{
     width:15px;
@@ -87,6 +96,7 @@ article.post > ul{
 }
 body.archive > h1, body.page > h1{
     text-align: center;
+    margin-bottom: -15px;
 }
 main#archive_main hr:last-child{
     display: none;
@@ -256,6 +266,9 @@ body > header > h1 {
     display: none;
 }
 @media (max-width: 768px) {
+    div.wp-block-contact-form-7-contact-form-selector.centering{
+        width:100%;
+    }
     .only_mobile{
         display: block;
     }
@@ -490,7 +503,8 @@ div#sakura_animation {
 }
 
 _::-webkit-full-page-media, _:future, :root .vertical-2 {
-    height: 94%;
+    height: auto;
+    bottom:30px;
 }
 
 _::-webkit-full-page-media, _:future, :root img#main_image {
@@ -579,9 +593,19 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     top: 31%;
     left: 70%;
 }
+section#section_tips{
+    min-height: 0!important;
+    padding-bottom: 15px;
+}
+section#section_tips h3{
+    padding-left:2em;
+}
+section#section_tips > p{
+    margin: 0 4em;
+}
 section#blog{
     background-image: url(../images/1409443-min.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: center center;
     padding-bottom: 10px;
 }
@@ -1138,7 +1162,7 @@ header {
 .hover-effect1 .caption {
 	font-size:		130%;
 	text-align: 		center;
-	padding-top:		80px;
+	margin-top:		80px;
 	color:			#fff;
 }
 .hover-effect1 .mask1 {
@@ -1300,6 +1324,10 @@ header {
 }
 .hover-effect6:hover .mask6 {
 	opacity:		1;	/* マスクを表示する */
+}
+.hover-effect .caption{
+    margin-top:80px;
+    padding-top: 0;
 }
 @media (max-width: 768px)
 
