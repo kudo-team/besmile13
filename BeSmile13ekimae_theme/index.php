@@ -4,7 +4,7 @@
         <nav id="hanabira">
             <div class="img_fit_div">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/wood-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">
-                <a href="https://sunplace-osaka.com/" id="sun"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sun100-min.png" alt="太陽" width="100" height="99.41" loading="lazy"></a>
+                <a href="https://sunplace-osaka.com/" id="sun"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sun_200-min.png" alt="太陽" width="100" height="99.41" loading="lazy"></a>
                 <div id="sakura_animation">
                     <div id="sakura_animation2"></div>
                 </div>
@@ -41,9 +41,27 @@
     <section class="Section__Odd" id="section_tips">
         <h2>Today's TIPS<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/coffee-solid.svg" alt="コーヒーアイコン" width="15" height="15" loading="lazy"></h2>
         <?php 
-        $tips_array = [111,115,113,117];
-        $tips_ids = array_rand($tips_array,1);
-        $page_id =  $tips_array[$tips_ids];
+        //子孫のページを取得するための親固定ページのID
+        $args     = ['child_of' => 109 ];
+        
+        //固定ページを取得する
+        $pages    = get_pages($args);
+        
+        //固定ページID格納用の配列を宣言
+        $page_ids = array();
+        
+        //子ページがあり配列で取得出来ていれば処理開始
+        if ( is_array($pages) && count($pages) ) {
+        
+            foreach ($pages as $page) {
+                //固定ページIDのみ配列に追加
+                $page_ids[]= $page->ID;
+            }
+        }
+            
+        //親固定ページIDを配列に追加
+        $tips_ids = array_rand($page_ids,1);
+        $page_id =  $page_ids[$tips_ids];
         $post = get_post( $page_id );//表示したい固定ページのページID
         echo '<h3>'.apply_filters('the_title', $post->post_title).'</h3>';
         echo apply_filters('the_content', $post->post_content); //固定ページの内容
@@ -132,7 +150,9 @@
             <div class="Section__Odd__Paragraph">
                 <p>発足したての部門で現在のところ特に実績はなく、案件もあまりありませんが、将来的にはバリバリ仕事をこなして立派な一部門としたいと考えております。<br>
                     仕様・方針を定めるディレクター、それを元にデザインを生み出すデザイナー、さらにそのデザインを元にHTML・CSSに起こしていくコーダー、3部門いずれもまだまだ未熟ですので、初心者でも互いに切磋琢磨できる環境です。<br>
-                    もちろんチームを引っ張っていこう！という<strong class="marker-animation">スキルの高い人材も歓迎</strong>しております。</p>
+                    もちろんチームを引っ張っていこう！という<strong class="marker-animation">スキルの高い人材も歓迎</strong>しております。<br>
+                    ちなみに今ご覧になられているこのホームページもBeSmile十三駅前のホームページチームが作成したものです。
+                </p>
             </div>
         </div>
         <div class="Section__Odd--cherry">
@@ -220,5 +240,13 @@
         </div>
     </section>
     <!--施設外就労-->
+    <section class="Section__Even" id="contact">
+        <h2>お問い合わせ</h2>
+        <div class="Section__Odd__Contents">
+            <?php $post = get_post( 47 );//表示したい固定ページのページID
+            echo apply_filters('the_content', $post->post_content); //固定ページの内容
+            ?>
+        </div>
+    </section>
 </main>
 <?php get_footer(); ?>
