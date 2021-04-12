@@ -35,8 +35,22 @@
                 <li><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">よくあるご質問</a></li>
                 <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度地域連携報告</a></li>
                 <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼はこちら</a></li>
-                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">お問い合わせ</a></li>
+                <li class="only_mobile" id="contact_li">
+                    <?php if(is_front_page()) : ?>
+                        <a href="#contact">お問い合わせ</a>
+                    <?php else: ?>
+                        <a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">お問い合わせ</a>
+                    <?php endif; ?>
+                </li>
             </ul>
         </div>
     </nav>
 </header>
+<?php if(!is_front_page()) : ?>
+    <nav class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+        <?php if(function_exists('bcn_display'))
+        {
+            bcn_display();
+        }?>
+    </nav>
+<?php endif; ?>

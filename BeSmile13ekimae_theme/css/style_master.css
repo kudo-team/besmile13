@@ -29,12 +29,6 @@ body{
     width: -moz-fit-content;
     display: block;
 }
-#wpcf7-f103-p93-o1 > form input[type="submit"]{
-    margin: 0 auto;
-    width: fit-content;
-    width: -moz-fit-content;
-    display: block;
-}
 #wpcf7-f103-p93-o1 > form span.ajax-loader{
     position: absolute;
 }
@@ -139,6 +133,7 @@ header {
     background-image: url("../images/1409443-min.jpg");
     background-size: cover;
     background-position: center center;
+    position: relative;
 }
 header h1 a{
     margin:0;
@@ -265,7 +260,14 @@ body > header > h1 {
 .only_mobile{
     display: none;
 }
+nav.breadcrumbs{
+    background-color: #ffffff77;
+}
 @media (max-width: 768px) {
+    article.article-content, main#archive_main, main#page_main{
+        width: calc(100% - 30px);
+        margin: 30px 15px;
+    }
     div.wp-block-contact-form-7-contact-form-selector.centering{
         width:100%;
     }
@@ -414,9 +416,7 @@ body > header > h1 {
 /* /header  */
 
 /* toppage */
-html {
-    scroll-behavior: smooth; /*スムーズに移動*/
-}
+
 
 body {
     width: 100%;
@@ -1778,7 +1778,7 @@ header {
 #wpcf7-f46-o1 > form > p:nth-child(9) > input{
 	border-radius: 5px;
 }
-#wpcf7-f46-o1 input[type="submit"]{
+#wpcf7-f46-o1 input[type="submit"],#wpcf7-f103-p93-o1 input[type="submit"]{
     background-color: #e460d2;
 	color: #fff;
     width: 100px;
@@ -1792,6 +1792,9 @@ header {
 	transition: 0.3s;
     display: block;
 }
+#wpcf7-f46-o1 input[type="submit"]:focus{
+    outline: none;
+}
 #wpcf7-f46-o1 input[type="submit"]:hover {
     background-color: #d380c8;
 	transform: translate3d(0px, 3px, 1px);
@@ -1801,12 +1804,12 @@ header {
 .wpcf7 .ajax-loader{
     position: absolute;
 }
-#wpcf7-f46-o1 > form > p > label{
-    font-weight: bold;
-}
 #contact > h2{
     text-align: center;
     padding-left:0;
+}
+.red{
+    color: #dc3232;
 }
 @media screen and (max-width:768px){
     #wpcf7-f46-o1 > form > p > label > span > input,#wpcf7-f46-o1 textarea{
@@ -1814,4 +1817,26 @@ header {
         display: block;
         margin:0 auto;
     }
+    .wpcf7-not-valid-tip, #wpcf7-f46-o1 > form > p > label{
+        margin-left: 10px;
+    }
+}
+/* iOSでのデフォルトスタイルをリセット */
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
 }

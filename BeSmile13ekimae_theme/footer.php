@@ -23,7 +23,13 @@
                 <li><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">よくあるご質問</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度地域連携報告</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">お仕事のご依頼はこちら</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">お問い合わせ</a></li>
+                <li>
+                    <?php if(is_front_page()) : ?>
+                        <a href="#contact">お問い合わせ</a>
+                    <?php else: ?>
+                        <a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">お問い合わせ</a>
+                    <?php endif; ?>
+                </li>
             </ul>
         </div>
     </div>
@@ -74,7 +80,33 @@
         });
     });
 </script>
+<script>
+    $('#contact_li').click(function() {
+        $("#menu-btn-check").prop("checked",false);
+    })
+</script>
+<script>
+      $('a[href^="#"]').click(function(e) {
+      var href = $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
 
+      $.when(
+        $("html, body").animate({
+          scrollTop: position
+        }, 800, "swing"),
+        e.preventDefault(),
+      ).done(function() {
+        var diff = target.offset().top;
+        if (diff === position) {
+        } else {
+          $("html, body").animate({
+            scrollTop: diff
+          }, 10, "swing");
+        }
+      });
+    });
+</script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" data-deferred="1"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/hanabira.js"></script>
 <aside class="usability">
