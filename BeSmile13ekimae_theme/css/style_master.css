@@ -518,13 +518,14 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     max-height: calc(100vh - 174px);
 }
 
-@media screen and (max-width: 984px) {
+@media screen and (max-width: 1049px) {
     .vertical-1 {
         right: 0;
+        font-size: 49px;
     }
-
     .vertical-2 {
         left: 0;
+        font-size: 49px;
     }
 }
 
@@ -571,7 +572,7 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
 }
 
 .menu_p {
-    top: 47%;
+    top: 54%;
     left: 75.38%;
 }
 
@@ -579,7 +580,7 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     width: 195px;
     height: 80px;
     top: 79%;
-    left: 48%;
+    left: 51%;
     border-radius: 5px;
 }
 
@@ -587,7 +588,7 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     width: 270px;
     height: 75px;
     top: 93%;
-    left: 48%;
+    left: 51%;
     border-radius: 5px;
 }
 
@@ -756,6 +757,7 @@ section#blog article img{
 
 .Section__Even__Content figure img {
     width: 100%;
+    height: auto;
 }
 
 .Section__Even--cherry img {
@@ -791,6 +793,16 @@ figcaption {
 }
 
 @media screen and (max-width: 768px) {
+    .menu{
+        background-color: rgba(204, 270, 24, 0.80);
+    }
+    section#section_tips h3{
+        padding-left: 0;
+        text-align: center;
+    }
+    section#section_tips > p{
+        margin: 0 2em;
+    }
     section#section_tips h2 > img{
         width: 20px;
         height: auto;
@@ -875,23 +887,21 @@ figcaption {
     .menu_p {
         width: 180px;
         height: 60px;
-
         left: 74.38%;
-        top: 48%;
+        top: 54%;
     }
 
     .menu_it {
         width: 150px;
         height: 40px;
-        left: 46%;
+        left: 51%;
         top: 72%;
     }
 
     .menu_a {
         width: 150px;
         height: 40px;
-
-        left: 46%;
+        left: 51%;
         top: 90%;
     }
 
