@@ -40,6 +40,13 @@
 <!--toppageへのボタン-->
 <div id="page_top" style="text-align: center"><div onclick="$('html,body').animate({ scrollTop: 0 }); return false;"><img src="<?php echo get_template_directory_uri(); ?>/images/up.svg" width="25px" height="30px" alt=""></div></div>
 <!--/toppageへのボタン-->
+<?php if(!wp_is_mobile()) : ?>
+    <?php if(is_front_page()): ?>
+        <a href="#contact" id="to_contact">お問い合わせ</a>
+    <?php else: ?>
+        <a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>" id="to_contact">お問い合わせ</a>
+    <?php endif; ?>
+<?php endif; ?>
 <!--jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--/jquery-->

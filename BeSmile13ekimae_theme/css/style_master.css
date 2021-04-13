@@ -34,6 +34,12 @@ body{
 }
 #wpcf7-f103-p93-o1 > form input[type="text"],#wpcf7-f103-p93-o1 > form input[type="email"],#wpcf7-f103-p93-o1 textarea{
     width:100%;
+    border: 2px solid #777;
+    border-radius: 5px;
+}
+#wpcf7-f103-p93-o1 select{
+    border: 2px solid #777;
+    border-radius: 5px;
 }
 div.wp-block-contact-form-7-contact-form-selector.centering{
     width:50%;
@@ -262,6 +268,7 @@ body > header > h1 {
 }
 nav.breadcrumbs{
     background-color: #ffffff77;
+    padding-left: 1em;
 }
 @media (max-width: 768px) {
     article.article-content, main#archive_main, main#page_main{
@@ -1041,6 +1048,30 @@ footer #copyright{
 
 /* footer */
 
+#to_contact{
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    padding-bottom: 10px;
+    width: 90px;
+    height: 90px;
+    z-index: 100;
+    right: 0;
+    bottom: 0;
+    color: #EC6A9F;
+}
+#to_contact::after{
+    position: absolute;
+    content: url("https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/envelope-regular.svg");
+    display: block;
+    top: 0;
+    left:50%;
+    width:50px;
+    height: auto;
+    transform: translateX(-50%);
+}
+
 /* toppageへのボタン*/
 #page_top {
     display: none;
@@ -1048,11 +1079,9 @@ footer #copyright{
     height: 90px;
     position: fixed;
     right: 0;
-    bottom: 0;
-    opacity: 0.6;
+    bottom: 90px;
     z-index: 100;
 }
-
 #page_top div {
     position: relative;
     display: block;
@@ -1061,12 +1090,15 @@ footer #copyright{
     text-decoration: none;
     cursor: pointer;
 }
+#page_top div:hover{
+    opacity:0.7;
+}
 
 #page_top div::before {
     font-weight: 900;
     /*content: '\f102';*/
     font-size: 120%;
-    color: #e20e67;
+    color: #EC6A9F;
     position: absolute;
     width: 25px;
     height: 25px;
@@ -1088,7 +1120,7 @@ footer #copyright{
     left: 0;
     margin: auto;
     text-align: center;
-    color: #e20e67;
+    color: #EC6A9F;
 }
 
 header {
@@ -1128,6 +1160,9 @@ header {
     }
     .Hamburger__Menu--btn {
         top: 70px;
+    }
+    #page_top{
+        bottom: 0;
     }
 }
 
@@ -1663,6 +1698,7 @@ header {
     transform: translateX(-50%);
     font-size:12px;
     white-space: nowrap;
+      letter-spacing: -1px;
   }
   ol.big{
     list-style: none;
@@ -1768,7 +1804,7 @@ header {
 #wpcf7-f46-o1 > form > p > label > span > input,#wpcf7-f46-o1 textarea{
 	border-radius: 5px;
     width:100%;
-    border-width: 2px;
+    border: 2px solid #777;
 }
 #wpcf7-f46-o1 > form > p:nth-child(7) > label:nth-child(3) > span > input,#wpcf7-f46-o1 > form > p:nth-child(7) > label:nth-child(5) > span > input,#wpcf7-f46-o1 > form > p:nth-child(7) > label:nth-child(7) > span > input{
 	margin-bottom:8px;
