@@ -22,7 +22,7 @@ body{
     margin:0;
     padding:0;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
-  }
+}
 .centering{
     margin: 0 auto;
     width: fit-content;
@@ -247,7 +247,12 @@ ul#submenu li:nth-child(2)::after{
 ul#submenu li:nth-child(3)::after{
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/job_request.png);
 }
-
+ul#submenu li:nth-child(4)::after{
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/column_usagi2-min.png);
+}
+ul#submenu li:nth-child(5)::after{
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/tarot-min.png);
+}
 .Hamburger__Menu__Content li:hover::before,ul#submenu li:hover::before{
     width:100%;
 }
@@ -279,6 +284,9 @@ nav.breadcrumbs{
     article.article-content, main#archive_main, main#page_main{
         width: calc(100% - 30px);
         margin: 30px 15px;
+    }
+    #chiiki_renkei{
+        display: none;
     }
     div.wp-block-contact-form-7-contact-form-selector.centering{
         width:100%;
@@ -320,7 +328,7 @@ nav.breadcrumbs{
         width: 60px;
         justify-content: center;
         align-items: center;
-        z-index: 90;
+        z-index: 130;
         background-color: #d675be;
     }
 
@@ -358,6 +366,9 @@ nav.breadcrumbs{
         top: 0;
         transform: rotate(-45deg); /* 中心を基準点に反時計回りに回転する */
     }
+    #menu-btn-check:checked ~ .Hamburger__Menu--btn{
+        top: 10px!important;
+    }
 
     /* menu */
     .Hamburger__Menu__Content {
@@ -373,7 +384,7 @@ nav.breadcrumbs{
     .Hamburger__Menu__Content ul {
         display: block;
         width: 98%;
-        padding: 130px 10px 0;
+        padding: 65px 10px 0;
         margin: 0 0 auto auto;
     }
 
@@ -390,7 +401,7 @@ nav.breadcrumbs{
         box-sizing: border-box;
         color: #fff;
         text-decoration: none;
-        padding: 9px 15px 10px 0;
+        padding: 9px 15px 5px 0;
         position: relative;
         padding-top:0;
     }
@@ -413,7 +424,7 @@ nav.breadcrumbs{
         position: fixed;
         top: 0;
         left: 100%; /*leftの値を変更してメニューを画面外へ*/
-        z-index: 80;
+        z-index: 120;
         background-color: #d675be;
         transition: all 0.5s; /*アニメーション設定*/
     }
@@ -516,7 +527,7 @@ div#sakura_animation {
 
 _::-webkit-full-page-media, _:future, :root .vertical-2 {
     height: auto;
-    bottom:30px;
+    bottom:40px;
 }
 
 _::-webkit-full-page-media, _:future, :root img#main_image {
@@ -809,6 +820,9 @@ figcaption {
 @media screen and (max-width: 768px) {
     #section_tips p img{
         position: static;
+    }
+    body > main > section:nth-child(1){
+        margin-bottom: -14px;
     }
     .menu{
         background-color: rgba(204, 270, 24, 0.80);

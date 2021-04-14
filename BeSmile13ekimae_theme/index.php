@@ -24,7 +24,6 @@
             </div>
         </nav>
     </section>
-
     <section id="chiiki_renkei">
         <ul id="submenu">
             <li>
@@ -35,6 +34,12 @@
             </li>
             <li>
                 <a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼<br>はこちら</a>
+            </li>
+            <li>
+                <a href="<?php echo esc_url( home_url( '/column/' ) ); ?>">スマイル<br>コラム</a>
+            </li>
+            <li>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">タロットカード<br>占い</a>
             </li>
         </ul>
     </section>
@@ -226,7 +231,7 @@
         <h2>施設外就労</h2>
         <div class="Section__Odd__Contents">
             <figure>
-                <img class="pc_2" src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/7-min.png" alt="掃除をしているキツネ" loading="lazy" width="500" height="542">
+                <img class="pc_2" src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/7-min-1.png" alt="掃除をしているキツネ" loading="lazy" width="500" height="542">
                 <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
             </figure>
             <div class="Section__Odd__Paragraph">
