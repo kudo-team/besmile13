@@ -7,6 +7,7 @@
     <meta name="description" content="就労継続支援A型のBeSmile（ビースマイル）十三駅前 大阪淀川区。就労継続支援A型だけでなく就労継続支援B型もサポート。あなたの働きたいを形にします。ご見学・ご相談、いつでもどうぞ！">
     <meta name="theme-color" content="#e460d2">
     <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style_master.css?<?php echo mt_rand(); ?>">
     <?php if(wp_is_mobile()) : ?>
     <link href="<?php echo get_template_directory_uri(); ?>/css/noto_serif.css" rel="stylesheet">
@@ -19,7 +20,7 @@
 <body id="body" <?php body_class(); ?>>
 <header>
     <h1>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/besmile_logo.png" alt="BeSmile（ビースマイル）"></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/beeh200.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="92" height="100"></a>
         大阪のA型事業所<br>
         BeSmile十三駅前
     </h1>

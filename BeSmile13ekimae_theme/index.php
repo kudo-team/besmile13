@@ -4,7 +4,7 @@
         <nav id="hanabira">
             <div class="img_fit_div">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/wood2-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">
-                <a href="https://sunplace-osaka.com/" id="sun"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sun_200-min.png" alt="太陽" width="100" height="99.41" loading="lazy"></a>
+                <a href="https://sunplace-osaka.com/" id="sun"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/sun_200-min.png" alt="太陽" width="100" height="99.41" loading="lazy"></a>
                 <div id="sakura_animation">
                     <div id="sakura_animation2"></div>
                 </div>
@@ -39,7 +39,7 @@
         </ul>
     </section>
     <section class="Section__Odd" id="section_tips">
-        <h2>Today's TIPS<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/coffee-solid.svg" alt="コーヒーアイコン" width="15" height="15" loading="lazy"></h2>
+        <h2>Today's TIPS<img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/coffee-solid.svg" alt="コーヒーアイコン" width="15" height="15" loading="lazy"></h2>
         <?php 
         //子孫のページを取得するための親固定ページのID
         $args     = ['child_of' => 109 ];
@@ -101,8 +101,8 @@
         <h2>就労継続支援A型とは？</h2>
         <div class="Section__Odd__Contents">
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/a_news.png" alt="ニュースを読むうさぎ" loading="lazy" width="327.77" height="372.92">
-                <figcaption>※BeSmile（ビースマイル）イラストチーム制作</figcaption>
+                <img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/1A-min.png" alt="ニュースを読むキツネ" loading="lazy" width="500" height="671">
+                <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
             </figure>
             <div class="Section__Odd__Paragraph">
                 <p>就労継続支援A型とは、主に心身に障害をお持ちの方に対して、将来的な一般就労を目標とした自立を支援するために<strong class="marker-animation">就労の場を提供する</strong>福祉サービスのことです。<br>
@@ -129,8 +129,8 @@
                 </p>
             </div>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sound.png" alt="指揮棒を振るうさぎ" loading="lazy" width="412" height="512">
-                <figcaption>※BeSmile（ビースマイル）イラストチーム制作</figcaption>
+                <img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/2IT-min.png" alt="見入るキツネ" loading="lazy" width="500" height="631">
+                <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
             </figure>
         </div>
         <div class="Section__Even--cherry">
@@ -144,8 +144,8 @@
         <h2>ホームページ制作</h2>
         <div class="Section__Odd__Contents">
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/pc.png" alt="ホームページを作るうさぎ" loading="lazy">
-                <figcaption>※BeSmile（ビースマイル）イラストチーム制作</figcaption>
+                <img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/3-min.png" alt="ホームページを作るキツネ" loading="lazy" width="500" height="388">
+                <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
             </figure>
             <div class="Section__Odd__Paragraph">
                 <p>発足したての部門で現在のところ特に実績はなく、案件もあまりありませんが、将来的にはバリバリ仕事をこなして立派な一部門としたいと考えております。<br>
@@ -169,10 +169,10 @@
                     主にゲーム制作で用いるイラスト制作を行います。
                     特にBeSmile十三駅前では週に一度、プロによる<strong class="marker-animation">イラスト講習会を開催</strong>しており、イラストのスキルアップを図れます。<br>
                     とはいえ現状かなりスキルの高いメンバーもそろっていて、以下でそのサンプル等ご覧になれます。<br>
-                    <a href="https://begroup-create.biz/service/illustration/" target="_blank" rel="noopener" class="blank">https://begroup-create.biz/service/illustration/<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon.svg" alt="リンクアイコン" class="link_icon"></a></p>
+                    <a href="https://begroup-create.biz/service/illustration/" target="_blank" rel="noopener" class="blank"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_here2.png" alt="イラストバナー" class="link_banner" width="300" height="99" loading="lazy"></a></p>
             </div>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/illust.png" alt="イラストを書くうさぎ" loading="lazy">
+                <img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/4-min.png" alt="イラストを書くキツネ" loading="lazy" width="500" height="335">
                 <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
             </figure>
         </div>
@@ -187,8 +187,8 @@
         <h2>ゲームプログラミング</h2>
         <div class="Section__Odd__Contents">
             <figure>
-                <img class="pc_2" src="<?php echo get_template_directory_uri(); ?>/images/pirograming.png" alt="プログラミングをしているうさぎ" loading="lazy">
-                <figcaption>※BeSmile（ビースマイル）十三駅前プログラミング制作</figcaption>
+                <img class="pc_2" src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/5-min.png" alt="プログラミングをしているキツネ" loading="lazy" width="500" height="522">
+                <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
             </figure>
             <div class="Section__Odd__Paragraph">
                 <p>プランナーの作成した仕様書を元に、Unityなどを使ってゲームの心臓部を作成していただきます。<br>
@@ -207,13 +207,13 @@
         <div class="Section__Even__Content">
             <div class="Section__Even__Paragraph">
                 <p>主にゲーム制作で用いるサウンドや、BGM等の制作を行います。<br>BeSmile十三駅前では、FMCocoroでDJを8年間担当・CD13枚リリースという経歴を持つ音楽のプロ、<strong class="marker-animation">フレディ・フローレス氏の監修</strong>を受けることができ、イラスト部門と同じくあなたのスキルアップに貢献できます。以下よりサンプル等お聞きできます。<br>
-                    <a href="https://begroup-create.biz/service/sound/" target="_blank" rel="noopener" class="blank">https://begroup-create.biz/service/sound/<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/link_icon.svg" alt="リンクアイコン" class="link_icon"></a>
+                    <a href="https://begroup-create.biz/service/sound/" target="_blank" rel="noopener" class="blank"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_here-min.png" alt="サウンドバナー" class="link_banner" width="300" height="99" loading="lazy"></a>
                 </p>
 
             </div>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/guiter.png" alt="ギターを引くうさぎ" loading="lazy">
-                <figcaption>※BeSmile（ビースマイル）十三駅前ゲームサウンド制作</figcaption>
+                <img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/6-min.png" alt="笛を吹くキツネ" loading="lazy" width="500" height="518">
+                <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
             </figure>
         </div>
         <div class="Section__Even--cherry">
@@ -226,7 +226,7 @@
         <h2>施設外就労</h2>
         <div class="Section__Odd__Contents">
             <figure>
-                <img class="pc_2" src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/shisetsugai.png" alt="掃除をしているうさぎ" loading="lazy">
+                <img class="pc_2" src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/7-min.png" alt="掃除をしているキツネ" loading="lazy" width="500" height="542">
                 <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
             </figure>
             <div class="Section__Odd__Paragraph">

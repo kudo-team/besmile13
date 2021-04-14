@@ -49,10 +49,11 @@ div.wp-block-contact-form-7-contact-form-selector.centering{
     display: block;
 }
 .komemark{
-    color:#dc3232;
+    color:#DC3232;
 }
-.link_icon{
-    width:15px;
+.link_banner{
+    width:300px;
+    height: auto;
 }
 #sun{
     position: absolute;
@@ -269,6 +270,10 @@ body > header > h1 {
 nav.breadcrumbs{
     background-color: #ffffff77;
     padding-left: 1em;
+}
+#wpcf7-f103-p93-o1 > form{
+    max-width: 500px;
+    margin: 0 auto;
 }
 @media (max-width: 768px) {
     article.article-content, main#archive_main, main#page_main{
@@ -788,11 +793,23 @@ section#blog article img{
 }
 
 figcaption {
-    font-size: 100%;
+    font-size: 12px;
     text-align: center;
+}
+#section_tips p{
+    display: flex;
+}
+#section_tips p img{
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 333px;
 }
 
 @media screen and (max-width: 768px) {
+    #section_tips p img{
+        position: static;
+    }
     .menu{
         background-color: rgba(204, 270, 24, 0.80);
     }
