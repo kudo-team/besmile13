@@ -22,7 +22,9 @@
                 <li><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>">企業情報</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">よくあるご質問</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度地域連携報告</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">お仕事のご依頼はこちら</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼はこちら</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/column/' ) ); ?>">スマイルコラム</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">タロットカード占い</a></li>
                 <li>
                     <?php if(is_front_page()) : ?>
                         <a href="#contact">お問い合わせ</a>
@@ -42,7 +44,7 @@
 <!--/toppageへのボタン-->
 <?php if(!wp_is_mobile()) : ?>
     <?php if(is_front_page()): ?>
-        <a href="#contact" id="to_contact">お問い合わせ</a>
+        <a href="#contact" id="to_contact">お問合わせ</a>
     <?php else: ?>
         <a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>" id="to_contact">お問い合わせ</a>
     <?php endif; ?>

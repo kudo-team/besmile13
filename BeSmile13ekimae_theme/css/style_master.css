@@ -23,6 +23,9 @@ body{
     padding:0;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
 }
+#page_main > figure.wp-block-video video{
+    width:36%;
+}
 .centering{
     margin: 0 auto;
     width: fit-content;
@@ -280,10 +283,16 @@ nav.breadcrumbs{
     max-width: 500px;
     margin: 0 auto;
 }
+body.archive > p{
+    text-align: center;
+}
 @media (max-width: 768px) {
     article.article-content, main#archive_main, main#page_main{
         width: calc(100% - 30px);
         margin: 30px 15px;
+    }
+    #page_main > figure.wp-block-video video{
+        width:100%;
     }
     #chiiki_renkei{
         display: none;
@@ -401,7 +410,7 @@ nav.breadcrumbs{
         box-sizing: border-box;
         color: #fff;
         text-decoration: none;
-        padding: 9px 15px 5px 0;
+        padding: 9px 15px 10px 0;
         position: relative;
         padding-top:0;
     }
@@ -534,17 +543,6 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     max-height: calc(100vh - 174px);
 }
 
-@media screen and (max-width: 1049px) {
-    .vertical-1 {
-        right: 0;
-        font-size: 49px;
-    }
-    .vertical-2 {
-        left: 0;
-        font-size: 49px;
-    }
-}
-
 .yoko {
     writing-mode: horizontal-tb;
 }
@@ -581,6 +579,20 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
 .menu_soto{
     bottom: 9%;
     right: -24%;
+}
+@media screen and (max-width: 1049px) {
+    .vertical-1 {
+        right: 0px;
+        font-size: 49px;
+    }
+    .vertical-2 {
+        left: 0px;
+        font-size: 49px;
+    }
+    .menu_soto{
+        bottom: 9%;
+        right: -9%;
+    }
 }
 .menu_s {
     top: 50%;
@@ -813,7 +825,7 @@ figcaption {
 #section_tips p img{
     height: auto;
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 333px;
 }
 
@@ -1092,6 +1104,7 @@ footer #copyright{
 #to_contact{
     position: fixed;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     text-decoration: none;
     padding-bottom: 10px;
@@ -1846,6 +1859,10 @@ header {
 	border-radius: 5px;
     width:100%;
     border: 2px solid #777;
+    transition: 0.2s;
+}
+#wpcf7-f46-o1 > form > p > label > span > input:focus,#wpcf7-f46-o1 textarea:focus{
+    box-shadow: 0 0 8px 1px magenta;
 }
 #wpcf7-f46-o1 > form > p:nth-child(7) > label:nth-child(3) > span > input,#wpcf7-f46-o1 > form > p:nth-child(7) > label:nth-child(5) > span > input,#wpcf7-f46-o1 > form > p:nth-child(7) > label:nth-child(7) > span > input{
 	margin-bottom:8px;

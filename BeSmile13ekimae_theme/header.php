@@ -20,7 +20,34 @@
 <body id="body" <?php body_class(); ?>>
 <header>
     <h1>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/beeh200.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="92" height="100"></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+	        <?php $today = date("m");
+	        $upload_dir = wp_upload_dir();
+	        switch($today){
+                case "01":
+                case "12":
+                case "02":
+                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/bee_winter.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="92" height="100">';
+                    break;
+                case "03":
+                case "04":
+                case "05":
+		            echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/beeh200.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="92" height="100">';
+		            break;
+                case "06":
+                case "07":
+                case "08":
+		            echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/bee_spring.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="92" height="100">';
+		            break;
+                case "09":
+                case "10":
+                case "11":
+                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/bee_fall.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="92" height="100">';
+		            break;
+	        }
+	        ?>
+
+        </a>
         大阪のA型事業所<br>
         BeSmile十三駅前
     </h1>

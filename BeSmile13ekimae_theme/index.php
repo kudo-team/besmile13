@@ -130,7 +130,7 @@
                 <p>様々なA型事業所がある中、BeSmile十三駅前の特色として、IT事業に特化しているというところがあります。
                     例えばゲームプログラミング、ゲームイラスト制作、ゲームサウンド制作、ホームページ制作等、あなたの<strong class="marker-animation">ITスキルを存分に発揮できる</strong>環境がBeSmile十三駅前にはあります。<br>
                     世間には軽作業等をメインに行っている事業所が多い中、イマドキなBeSmile十三駅前にご興味ございませんか？<br>
-                    ちなみに案件がないときは軽作業・清掃等の業務も一部行っているため、ちょっとそっちで息抜きなんていうこともできます。
+                    ちなみに案件がないときは<a href="<?php echo esc_url( home_url( '/easy_work/' ) ); ?>">軽作業</a>・清掃等の業務も一部行っているため、ちょっとそっちで息抜きなんていうこともできます。
                 </p>
             </div>
             <figure>
@@ -174,7 +174,9 @@
                     主にゲーム制作で用いるイラスト制作を行います。
                     特にBeSmile十三駅前では週に一度、プロによる<strong class="marker-animation">イラスト講習会を開催</strong>しており、イラストのスキルアップを図れます。<br>
                     とはいえ現状かなりスキルの高いメンバーもそろっていて、以下でそのサンプル等ご覧になれます。<br>
-                    <a href="https://begroup-create.biz/service/illustration/" target="_blank" rel="noopener" class="blank"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_here2.png" alt="イラストバナー" class="link_banner" width="300" height="99" loading="lazy"></a></p>
+                    <a href="https://begroup-create.biz/service/illustration/" target="_blank" rel="noopener" class="blank"><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_here2.png" alt="イラストバナー" class="link_banner" width="300" height="99" loading="lazy"></a><br>
+                    <a href="<?php echo esc_url( home_url( '/work_scenery/' ) ); ?>">こちら</a>よりイラストチーム作業風景もご覧になれます。
+                </p>
             </div>
             <figure>
                 <img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2021/04/4-min.png" alt="イラストを書くキツネ" loading="lazy" width="500" height="335">
