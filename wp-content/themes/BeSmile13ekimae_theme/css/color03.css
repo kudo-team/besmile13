@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body,header, section, footer, .vertical-1, .vertical-2,aside,div,dl,dt,ol,ul,li,table,td,th,tr,h1,h2,h3{
+    background:#ffff00 !important;
+    color: #000 !important;
+}
+#body a { background: #ffff8d !important; }
+#body a:LINK { text-decoration:underline; color:#0000bc !important; }
+#body a:VISITED { text-decoration:underline; color:#0000bc !important; }
+#body a:ACTIVE  { text-decoration:none; color:#0000bc !important; }
+#body a:HOVER   { text-decoration:none; color:#0000bc !important; }
+
+/*入力エリア*/
+button, input, select, textarea {
+    color: #333 !important;
+}
+
+/*背景黒*/
+#menu_button a .icon_ham::before {
+    background:#000 !important;
+}
+
+div.img_fit_div,#sakura_animation{
+    background:transparent!important;
+}
