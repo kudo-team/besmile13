@@ -18,7 +18,7 @@
     <?php wp_head(); ?>
 </head>
 <body id="body" <?php body_class(); ?>>
-<header>
+<header> 
     <h1>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 	        <?php $today = date("m");

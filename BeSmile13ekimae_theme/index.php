@@ -20,7 +20,7 @@
                         <li class="menu_il menu"><a href="#section04">イラスト</a></li>
                         <li class="menu_soto menu"><a href="#section07">施設外就労</a></li>
                     </ul>
-                </div>
+                </div> 
             </div>
         </nav>
     </section>

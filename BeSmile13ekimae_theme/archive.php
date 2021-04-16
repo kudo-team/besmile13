@@ -1,6 +1,5 @@
 <?php get_header(); ?>
-<h1>スマイルコラム</h1>
-<p>大阪や就労継続支援A型についてのコラムを発信します！</p>
+<h1><?php single_term_title(); ?></h1>
 <main id="archive_main">
 <?php
 if ( have_posts() ) {
@@ -12,7 +11,8 @@ if ( have_posts() ) {
         <?php the_excerpt(); ?>
     </article>
     <hr>
-<?php   } 
+<?php
+    }
 } ?>
     <?php wp_reset_postdata(); ?>
     <?php
