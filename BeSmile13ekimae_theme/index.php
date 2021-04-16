@@ -49,7 +49,7 @@
         <section class="Section__Odd" id="section_tips">
             <h2>Today's TIPS<img src="<?php $upload_dir = wp_upload_dir();
 				echo $upload_dir['baseurl']; ?>/2021/04/coffee-solid.svg" alt="コーヒーアイコン" width="15" height="15"
-                                 loading="lazy"></h2>
+                                 loading="lazy" class="fuwafuwa"></h2>
 			<?php
 			//子孫のページを取得するための親固定ページのID
 			$args = [ 'child_of' => 109 ];
@@ -114,11 +114,11 @@
                 <figure>
                     <img src="<?php $upload_dir = wp_upload_dir();
 					echo $upload_dir['baseurl']; ?>/2021/04/1A-min.png" alt="ニュースを読むキツネ" loading="lazy" width="500"
-                         height="671">
+                         height="671" class="fadeup">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
                 <div class="Section__Odd__Paragraph">
-                    <p>就労継続支援A型とは、主に心身に障害をお持ちの方に対して、将来的な一般就労を目標とした自立を支援するために<strong
+                    <p><strong>就労継続支援A型</strong>とは、主に心身に障害をお持ちの方に対して、将来的な一般就労を目標とした自立を支援するために<strong
                                 class="marker-animation">就労の場を提供する</strong>福祉サービスのことです。<br>
                         そこには、そのサービスを利用する「利用者」と利用者を支える「支援員」がいて、利用者は支援員の手厚いサポートを受けながら、一方でしっかりと雇用契約を結び、”就労”をしていただきます。つまり、仕事をする意欲はあるものの、まだ一般就労は気が引けるという方に対して最適なサービスとなっております。<br>
                         中には営利目的で本サービスを行っている事業所もある中、弊所、BeSmile十三駅前は福祉の意識が高く、<strong
@@ -148,7 +148,7 @@
                 <figure>
                     <img src="<?php $upload_dir = wp_upload_dir();
 					echo $upload_dir['baseurl']; ?>/2021/04/2IT-min.png" alt="見入るキツネ" loading="lazy" width="500"
-                         height="631">
+                         height="631" class="fadeup">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
             </div>
@@ -166,7 +166,7 @@
                 <figure>
                     <img src="<?php $upload_dir = wp_upload_dir();
 					echo $upload_dir['baseurl']; ?>/2021/04/3-min.png" alt="ホームページを作るキツネ" loading="lazy" width="500"
-                         height="388">
+                         height="388" class="fadeup">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
                 <div class="Section__Odd__Paragraph">
@@ -198,22 +198,22 @@
 		                        case "01":
 		                        case "12":
 		                        case "02":
-			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_winter-min.png" alt="イラストバナー" class="link_banner" width="300" height="99" loading="lazy">';
+			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_winter-min.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
 			                        break;
 		                        case "03":
 		                        case "04":
 		                        case "05":
-			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_here2.png" alt="イラストバナー" class="link_banner" width="300" height="99" loading="lazy">';
+			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_here2.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
 			                        break;
 		                        case "06":
 		                        case "07":
 		                        case "08":
-			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_summer-min.png" alt="イラストバナー" class="link_banner" width="300" height="99" loading="lazy">';
+			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_summer-min.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
 			                        break;
 		                        case "09":
 		                        case "10":
 		                        case "11":
-			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_fall-min.png" alt="イラストバナー" class="link_banner" width="300" height="99" loading="lazy">';
+			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_fall-min.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
 			                        break;
 	                        }
 	                        ?>
@@ -224,7 +224,7 @@
                 <figure>
                     <img src="<?php $upload_dir = wp_upload_dir();
 					echo $upload_dir['baseurl']; ?>/2021/04/4-min.png" alt="イラストを書くキツネ" loading="lazy" width="500"
-                         height="335">
+                         height="335" class="fadeup">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
             </div>
@@ -239,7 +239,7 @@
             <h2>ゲームプログラミング</h2>
             <div class="Section__Odd__Contents">
                 <figure>
-                    <img class="pc_2" src="<?php $upload_dir = wp_upload_dir();
+                    <img class="pc_2 fadeup" src="<?php $upload_dir = wp_upload_dir();
 					echo $upload_dir['baseurl']; ?>/2021/04/5-min.png" alt="プログラミングをしているキツネ" loading="lazy" width="500"
                          height="522">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
@@ -269,22 +269,22 @@
 		                        case "01":
 		                        case "12":
 		                        case "02":
-			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_winter-min.png" alt="イラストバナー" class="link_banner" width="300" height="99" loading="lazy">';
+			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_winter-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
 			                        break;
 		                        case "03":
 		                        case "04":
 		                        case "05":
-			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_here-min.png" alt="イラストバナー" class="link_banner" width="300" height="99" loading="lazy">';
+			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_here-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
 			                        break;
 		                        case "06":
 		                        case "07":
 		                        case "08":
-			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_summer-min.png" alt="イラストバナー" class="link_banner" width="300" height="99" loading="lazy">';
+			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_summer-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
 			                        break;
 		                        case "09":
 		                        case "10":
 		                        case "11":
-			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_fall-min.png" alt="イラストバナー" class="link_banner" width="300" height="99" loading="lazy">';
+			                        echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_fall-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
 			                        break;
 	                        }
 	                        ?>
@@ -295,7 +295,7 @@
                 <figure>
                     <img src="<?php $upload_dir = wp_upload_dir();
 					echo $upload_dir['baseurl']; ?>/2021/04/6-min.png" alt="笛を吹くキツネ" loading="lazy" width="500"
-                         height="518">
+                         height="518" class="fadeup">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
             </div>
@@ -309,7 +309,7 @@
             <h2>施設外就労</h2>
             <div class="Section__Odd__Contents">
                 <figure>
-                    <img class="pc_2" src="<?php $upload_dir = wp_upload_dir();
+                    <img class="pc_2 fadeup" src="<?php $upload_dir = wp_upload_dir();
 					echo $upload_dir['baseurl']; ?>/2021/04/7-min-1.png" alt="掃除をしているキツネ" loading="lazy" width="500"
                          height="542">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>

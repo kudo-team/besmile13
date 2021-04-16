@@ -49,8 +49,7 @@
 			}
 			?>
         </a>
-        大阪のA型事業所<br>
-        BeSmile十三駅前
+        <div class="flex"><span class="osaka_agata">大阪の就労継続支援A型</span>BeSmile十三駅前</div>
     </h1>
     <nav class="Hamburger__Menu" id="Hamburger__Menu">
         <input type="checkbox" id="menu-btn-check">
