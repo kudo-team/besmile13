@@ -128,8 +128,10 @@
         });
     });
 </script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" data-deferred="1"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/hanabira.js"></script>
+<?php if ( is_front_page() ): ?>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" data-deferred="1"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/hanabira.js"></script>
+<?php endif; ?>
 <aside class="usability">
     <ul>
         <li>
