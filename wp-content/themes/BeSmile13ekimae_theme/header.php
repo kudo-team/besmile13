@@ -20,7 +20,7 @@
 <header>
     <h1>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/besmile_logo.png" alt="BeSmile（ビースマイル）"></a>
-        大阪のA型事業所<br>
+        大阪の就労継続支援A型事業所<br>
         BeSmile十三駅前
     </h1>
     <nav class="Hamburger__Menu" id="Hamburger__Menu">

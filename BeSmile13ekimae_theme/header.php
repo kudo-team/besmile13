@@ -48,7 +48,7 @@
 	        ?>
 
         </a>
-        大阪のA型事業所<br>
+        大阪の就労継続支援A型事業所<br>
         BeSmile十三駅前
     </h1>
     <nav class="Hamburger__Menu" id="Hamburger__Menu">
