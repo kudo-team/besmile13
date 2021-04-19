@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
           content="大阪から世界へ。就労継続支援A型のBeSmile（ビースマイル）十三駅前では、あなたの働きたいを形にします。利用者募集。ご見学やご相談などいつでも歓迎します。お気軽にお問い合わせください。大阪市淀川区十三">
-    <meta name="keywords" content="大阪,就労継続支援A型,大阪府,大阪市,淀川区,大阪 就労継続支援A型,大阪市淀川区,BeSmile,Be Smile,ビースマイル,ビー スマイル,十三駅前,十三駅,十三">
+    <meta name="keywords"
+          content="大阪,就労継続支援A型,大阪府,大阪市,淀川区,大阪 就労継続支援A型,大阪市淀川区,BeSmile,Be Smile,ビースマイル,ビー スマイル,十三駅前,十三駅,十三">
     <meta name="theme-color" content="#e460d2">
     <meta name="format-detection" content="telephone=no">
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
@@ -17,6 +18,19 @@
 	<?php endif; ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/color01.css" id="css">
     <script src="<?php echo get_template_directory_uri(); ?>/js/usability.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VD11YFK1%22%3E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-L5VD11YFK1');
+    </script>
     <title><?php echo wp_get_document_title(); ?></title>
 	<?php wp_head(); ?>
 </head>

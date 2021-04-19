@@ -153,7 +153,7 @@
                 </figure>
             </div>
             <div class="Section__Even--cherry">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_2.png" alt="" loading="lazy"
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="" loading="lazy"
                      width="607" height="276.73">
             </div>
 
@@ -229,7 +229,7 @@
                 </figure>
             </div>
             <div class="Section__Even--cherry">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_2.png" alt="桜の枝の装飾" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="桜の枝の装飾" loading="lazy">
             </div>
         </section>
 
@@ -300,7 +300,7 @@
                 </figure>
             </div>
             <div class="Section__Even--cherry">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_2.png" alt="" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="" loading="lazy">
             </div>
         </section>
         <!--/サウンド-->

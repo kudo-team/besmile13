@@ -932,6 +932,7 @@ section#blog article img {
     position: absolute;
     bottom: 0;
     left: 0;
+    transform: rotateZ(180deg);
 }
 
 .Section__Odd--cherry img {
