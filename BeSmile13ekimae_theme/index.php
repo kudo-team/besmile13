@@ -8,6 +8,7 @@
                     <a href="https://sunplace-osaka.com/" id="sun"><img src="<?php $upload_dir = wp_upload_dir();
 						echo $upload_dir['baseurl']; ?>/2021/04/sun_200-min.png" alt="太陽" width="100" height="99.41"
                                                                         loading="lazy"></a>
+
                     <div id="sakura_animation">
                         <div id="sakura_animation2"></div>
                     </div>
