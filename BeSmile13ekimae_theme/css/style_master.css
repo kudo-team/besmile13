@@ -944,6 +944,13 @@ section#blog article img {
     padding-left: 1em;
     margin-top: 0;
 }
+.Section__Even .tel_contact {
+    font-size: 140%;
+    width: fit-content;
+    width: -moz-fit-content;
+    max-width: 95%;
+    margin: 0 auto;
+}
 
 .Section__Even__Content {
     display: flex;
@@ -1478,7 +1485,7 @@ header {
     position: relative;
     width: 100%;
     height: calc(100vh - 160px);
-    min-height: 700px;
+    min-height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1575,7 +1582,7 @@ header {
     border-radius: 50%;
     margin: 10px 8px 10px 16px;
     position: absolute; /* 相対位置指定 */
-    top: -100px;
+    top: -162px;
     left: -417px;
 }
 
@@ -1615,8 +1622,8 @@ header {
     border-radius: 50%;
     margin: 10px 8px 10px 16px;
     position: absolute; /* 相対位置指定 */
-    top: -104px;
-    left: 175px;
+    top: -162px;
+    left: 205px;
 }
 
 .hover-effect4 img {
@@ -1660,9 +1667,9 @@ header {
     left: -119px;
 }
 
-.hover-effect6 img {
+.hover_width img {
     width: 200px;
-    height: 20 s0px;
+    height: 200px;
     border-radius: 50%;
 }
 
@@ -1689,6 +1696,52 @@ header {
 .hover-effect6:hover .mask6 {
     opacity: 1; /* マスクを表示する */
 }
+.hover-effect7 .caption {
+    font-size: 130%;
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+}
+
+.hover-effect7 .mask7 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* 絶対位置指定 */
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    opacity: 0; /* マスクを表示しない */
+    background-color: rgba(0, 0, 0, 0.4); /* マスクは半透明 */
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.hover-effect7:hover .mask7 {
+    opacity: 1; /* マスクを表示する */
+}
+.hover-effect8 .caption {
+    font-size: 130%;
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+}
+
+.hover-effect8 .mask8 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* 絶対位置指定 */
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    opacity: 0; /* マスクを表示しない */
+    background-color: rgba(0, 0, 0, 0.4); /* マスクは半透明 */
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.hover-effect8:hover .mask8 {
+    opacity: 1; /* マスクを表示する */
+}
 
 .hover-effect .caption {
     margin-top: 80px;
@@ -1708,7 +1761,14 @@ header {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     font-size: 15px;
 }
-
+.kodama_comment{
+    left: -225px;
+    top: 44px;
+}
+.ishigaki_comment{
+    right: -230px;
+    top: 39px;
+}
 .kudo_comment {
     top: -45px;
     left: -214px;
@@ -1720,10 +1780,16 @@ header {
 }
 
 .matoba_comment {
-    bottom: -102px;
-    right: -156px;
+    top: 203px;
+    right: 0px;
 }
-
+.hayakawa_comment{
+    top: 203px;
+}
+.fuchigami_comment{
+    top: 203px;
+    left: -22px;
+}
 .inst_comment::before {
     content: '';
     display: block;
@@ -1732,16 +1798,26 @@ header {
     border-bottom: 10px solid transparent;
     position: absolute;
 }
-
+.kodama_comment::before{
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ishigaki_comment::before{
+    left: -10px;
+    top: 50%;
+    transform: scale(-1,1) translateY(-50%);
+}
 .kudo_comment::before {
     top: 50%;
     right: -10px;
+    transform: translateY(-50%);
 }
 
 .isami_comment::before {
     top: 50%;
     left: -10px;
-    transform: rotateZ(180deg);
+    transform: rotateZ(180deg) translateY(50%);
 }
 
 .matoba_comment::before {
@@ -1749,7 +1825,38 @@ header {
     left: 26px;
     transform: rotateZ(270deg);
 }
-
+.hayakawa_comment::before{
+    top: -15px;
+    left: 26px;
+    transform: rotateZ(
+            270deg
+    );
+}
+.fuchigami_comment::before{
+    top: -15px;
+    left: 26px;
+    transform: rotateZ(
+            270deg
+    );
+}
+.hover_width{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px 8px 10px 16px;
+    position: absolute;
+}
+.hover-effect7{
+    top: 45px;
+    left: 105px;
+}
+.hover-effect8{
+    top: 44px;
+    left: -339px;
+}
+body.page-id-19{
+    overflow-x: hidden;
+}
 @media (max-width: 768px) {
     body {
         background-color: #faebf9;
@@ -1774,11 +1881,11 @@ header {
 
     .matoba_comment::before {
         top: 50%;
-        right: -10px;
+        right: -9px;
         left: unset;
         transform: rotateZ(
                 360deg
-        );
+        ) translateY(-50%);
     }
 
     .isami_comment {
@@ -1787,7 +1894,7 @@ header {
     }
 
     .matoba_comment {
-        bottom: 0px;
+        top: -179px;
         left: -85px;
         right: unset;
     }
@@ -1798,7 +1905,7 @@ header {
     }
 
     .kodama_comment::before {
-        left: 50px;
+        left: 49px;
     }
 
     .ishigaki_comment {
@@ -1813,7 +1920,26 @@ header {
                 180deg
         );
     }
-
+    .hayakawa_comment {
+        top: -182px;
+        right: -84px;
+    }
+    .hayakawa_comment::before {
+        top: 50%;
+        left: -10px;
+        transform: rotateZ(
+                180deg
+        ) translateY(50%);
+    }
+    .fuchigami_comment{
+        top: -184px;
+        left: -83px;
+    }
+    .fuchigami_comment::before {
+        top: 50%;
+        left: 49px;
+        transform: translateY(-50%);
+    }
     .staff {
         position: static;
         height: auto;
@@ -1835,161 +1961,19 @@ header {
         display: block;
         height: auto;
     }
-
-    .hover-effect1 {
-        top: 15%;
-        right: 35%;
+    .hover-effect{
         position: static;
         margin: 15px auto;
         overflow: unset;
     }
-
-    .hover-effect1 img {
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-    }
-
-    .hover-effect1 .mask1 {
-        position: static; /* 絶対位置指定 */
-        top: auto;
-        left: auto;
-        opacity: 1; /* マスクを表示しない */
-        background-color: transparent; /*親のbgk適用*/
-    }
-
-    .hover-effect1 .caption {
-        color: #000;
-        transform: translateX(0px) translateY(-77px);
-    }
-
-    .hover-effect2 {
-        top: 48%;
-        right: 35%;
-        position: static;
-        margin: 15px auto;
-        overflow: unset;
-    }
-
     .mask2 .caption {
         font-size: 15px;
     }
-
-    .hover-effect2 img {
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-    }
-
-    .hover-effect2 .mask2 {
-        position: static; /* 絶対位置指定 */
-        top: auto;
-        left: auto;
-        opacity: 1; /* マスクを表示しない */
-        background-color: transparent; /*親のbgk適用*/
-    }
-
-    .hover-effect2 .caption {
-        color: #000;
-        transform: translateX(0px) translateY(-77px);
-    }
-
     .hover-effect2 .caption span {
         font-size: 150%;
     }
 
-    .hover-effect3 {
-        position: static;
-        margin: 15px auto;
-        overflow: unset;
-    }
-
-    .hover-effect3 img {
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-    }
-
-    .hover-effect3 .mask3 {
-        position: static; /* 絶対位置指定 */
-        top: auto;
-        left: auto;
-        opacity: 1; /* マスクを表示しない */
-        background-color: transparent; /*親のbgk適用*/
-    }
-
-    .hover-effect3 .caption {
-        color: #000;
-        transform: translateX(0px) translateY(-77px);
-    }
-
-    .hover-effect4 {
-        position: static;
-        margin: 15px auto;
-        overflow: unset;
-    }
-
-    .hover-effect4 img {
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-    }
-
-    .hover-effect4 .mask4 {
-        position: static; /* 絶対位置指定 */
-        top: auto;
-        left: auto;
-        opacity: 1; /* マスクを表示しない */
-        background-color: transparent; /*親のbgk適用*/
-    }
-
-    .hover-effect4 .caption {
-        color: #000;
-        transform: translateX(0px) translateY(-77px);
-    }
-
-    .hover-effect5 {
-        top: 145%;
-        right: 35%;
-        position: static;
-        margin: 15px auto;
-        overflow: unset;
-    }
-
-    .hover-effect5 img {
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-    }
-
-    .hover-effect5 .mask5 {
-        position: static; /* 絶対位置指定 */
-        top: auto;
-        left: auto;
-        opacity: 1; /* マスクを表示しない */
-        background-color: transparent; /*親のbgk適用*/
-    }
-
-    .hover-effect5 .caption {
-        color: #000;
-        transform: translateX(0px) translateY(-77px);
-    }
-
-    .hover-effect6 {
-        top: 180%;
-        right: 35%;
-        position: static;
-        margin: 15px auto;
-        overflow: unset;
-    }
-
-    .hover-effect6 img {
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-    }
-
-    .hover-effect6 .mask6 {
+    .hover-effect1 .mask1, .hover-effect2 .mask2,.hover-effect3 .mask3, .hover-effect4 .mask4, .hover-effect5 .mask5 ,.hover-effect6 .mask6,.hover-effect7 .mask7,.hover-effect8 .mask8{
         position: static; /* 絶対位置指定 */
         top: auto;
         left: auto;
@@ -1998,15 +1982,18 @@ header {
         height: 0;
     }
 
-    .hover-effect6 .caption {
+    .hover-effect1 .caption, .hover-effect2 .caption, .hover-effect3 .caption, .hover-effect4 .caption, .hover-effect5 .caption ,.hover-effect6 .caption,.hover-effect7 .caption,.hover-effect8 .caption{
         color: #000;
         transform: translateX(0px) translateY(-77px);
     }
-
     .hover_width {
         height: 170px !important;
         width: 170px !important;
         margin-bottom: 80px;
+    }
+    .hover_width img{
+        width: 100%;
+        height: 100%;
     }
 }
 

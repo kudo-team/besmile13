@@ -85,7 +85,7 @@
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                             <a href="<?php the_permalink(); ?>">
 								<?php if ( has_post_thumbnail() ): ?>
-									<?php the_post_thumbnail( 'large' ); ?>
+									<?php the_post_thumbnail( 'medium' ); ?>
 								<?php else: ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/noimage-min.png"
                                          alt="no-image">
@@ -121,8 +121,8 @@
                 <div class="Section__Odd__Paragraph">
                     <p><strong>就労継続支援A型</strong>とは、主に心身に障がいをお持ちの方に対して、将来的な一般就労を目標とした自立を支援するために<strong
                                 class="marker-animation">就労の場を提供する</strong>福祉サービスのことです。<br>
-                        そこには、そのサービスを利用する「利用者」と利用者を支える「支援員」がいて、利用者は支援員の手厚いサポートを受けながら、一方でしっかりと雇用契約を結び、”就労”をしていただきます。つまり、仕事をする意欲はあるものの、まだ一般就労は気が引けるという方に対して最適なサービスとなっております。<br>
-                        中には営利目的で本サービスを行っている事業所もある中、弊所、BeSmile十三駅前は福祉の意識が高く、<strong
+                        そこには、そのサービスを利用する「利用者」と利用者を支える「支援員」がいて、利用者は支援員のサポートを受けながら、一方でしっかりと雇用契約を結び、”就労”をしていただきます。つまり、仕事をする意欲はあるものの、まだ一般就労は気が引けるという方に対して最適なサービスとなっております。<br>
+                        中には営利目的で本サービスを行っている事業所もある中、弊所、BeSmile十三駅前は<strong
                                 class="marker-animation">サポートが充実している</strong>と自負しております。是非一度ご見学に来ていただいて、その雰囲気を肌で感じてみてくださいね。
                     </p>
                 </div>
@@ -319,7 +319,9 @@
                     <p>IT事業に特化したBeSmile十三駅前ですが、実は普段いるオフィスを離れて<strong class="marker-animation">施設外就労</strong>というものもしておりまして、<br>
                         具体的にはシェアハウスや特養ホームに赴いて、フロアやトイレの<strong
                                 class="marker-animation">清掃、ベッドメイキングから洗濯</strong>までこなします。<br>
-                        なのでIT系はちょっと苦手…だとか、パソコンに向かうの疲れた…とかいったような方は希望があればこちらの業務についていただくことも可能です。</p>
+                        なのでIT系はちょっと苦手…だとか、パソコンに向かうの疲れた…とかいったような方は希望があればこちらの業務についていただくことも可能です。<br>
+                        <a href="https://13-sunplace-osaka.com/outside_gallery/">こちら</a>より作業風景ご覧になれます。
+                    </p>
                 </div>
             </div>
             <div class="Section__Odd--cherry">
@@ -328,7 +330,10 @@
         </section>
         <!--施設外就労-->
         <section class="Section__Even" id="contact">
-            <h2>お問い合わせ</h2>
+            <h2>お電話でのお問い合わせ</h2>
+                <p class=tel_contact>お電話でのお問い合わせは、下記電話番号にて承ります。お気軽にご連絡ください。<br>
+                <strong>TEL 06-6770-9011</strong>（平日10:00～18:00)</p>
+            <h2>お問い合わせフォーム</h2>
             <div class="Section__Odd__Contents">
 				<?php $post = get_post( 47 );//表示したい固定ページのページID
 				echo apply_filters( 'the_content', $post->post_content ); //固定ページの内容
