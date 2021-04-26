@@ -3,12 +3,40 @@
         <section class="Cherry__Menu">
             <nav id="hanabira">
                 <div class="img_fit_div">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/wood2-min.png" id="main_image" alt="桜"
-                         loading="lazy" width="754.8" height="762">
+	                <?php $today = date( "m" );
+	                switch ( $today ) {
+		                case "01":
+		                case "12":
+		                case "02":
+			                echo '<img src="'.get_template_directory_uri().'/images/wood2-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">';
+			                break;
+		                case "03":
+		                case "04":
+		                case "05":
+			                echo '<img src="'.get_template_directory_uri().'/images/wood2-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">';
+			                break;
+		                case "06":
+		                case "07":
+		                case "08":
+			                echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/green_wood2-min.png" id="main_image" alt="緑の木" loading="lazy" width="847" height="707">';
+			                echo '<style>img#main_image{padding-bottom: 15px;} .menu{background-color: #dccb18cc;}</style>';
+			                break;
+		                case "09":
+		                case "10":
+		                case "11":
+		                    echo '<img src="'.get_template_directory_uri().'/images/wood2-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">';
+			                break;
+	                }
+	                ?>
+
                     <a href="https://sunplace-osaka.com/" id="sun"><img src="<?php $upload_dir = wp_upload_dir();
 						echo $upload_dir['baseurl']; ?>/2021/04/sun_200-min.png" alt="太陽" width="100" height="99.41"
                                                                         loading="lazy"></a>
-
+                    <?php if( is_user_logged_in()): ?>
+                    <img src="<?php $upload_dir = wp_upload_dir();
+	                echo $upload_dir['baseurl']; ?>/2021/04/2IT-min.png" alt="見入るキツネ" loading="lazy" width="500"
+                         height="631" class="mv_kitsune">
+                    <?php endif;?>
                     <div id="sakura_animation">
                         <div id="sakura_animation2"></div>
                     </div>

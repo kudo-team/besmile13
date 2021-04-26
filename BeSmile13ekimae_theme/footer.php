@@ -129,8 +129,33 @@
     });
 </script>
 <?php if ( is_front_page() ): ?>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" data-deferred="1"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/hanabira.js"></script>
+    <script src="<?php echo get_template_directory_uri();?>/js/particles.min.js" data-deferred="1"></script>
+
+	<?php $today = date( "m" );
+	switch ( $today ) {
+		case "01":
+		case "12":
+		case "02":
+		    echo '<script src="'.get_template_directory_uri().'/js/snow.js"></script>';
+		    echo '<style>body > main > section:nth-child(1){background-image: linear-gradient(to bottom, #e6e9f0 0%, #eef1f5 100%);} .menu_s {top: 46%; left: 20.87%;} .menu_p {top: 37%; left: 83.38%;} .menu_h {top: 11%; left: 28.92%;}.menu_il {top: 18%; left: 73%;} .menu{background-color: #f2f2b0cc;}</style>';
+			break;
+		case "03":
+		case "04":
+		case "05":
+			echo '<script src="'.get_template_directory_uri().'/js/hanabira.js"></script>';
+			break;
+		case "06":
+		case "07":
+		case "08":
+			echo '<script src="'.get_template_directory_uri().'/js/leaf.js"></script>';
+			break;
+		case "09":
+		case "10":
+		case "11":
+		    echo '<script src="'.get_template_directory_uri().'/js/maple.js"></script>';
+			break;
+	}
+	?>
 <?php endif; ?>
 <aside class="usability">
     <ul>

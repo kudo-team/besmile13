@@ -10,7 +10,30 @@
           content="大阪,就労継続支援A型,大阪府,大阪市,淀川区,大阪 就労継続支援A型,大阪市淀川区,BeSmile,Be Smile,ビースマイル,ビー スマイル,十三駅前,十三駅,十三">
     <meta name="theme-color" content="#e460d2">
     <meta name="format-detection" content="telephone=no">
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
+	<?php $today = date( "m" );
+	switch ( $today ) {
+		case "01":
+		case "12":
+		case "02":
+			echo '<link rel="icon" href=".get_template_directory_uri()./images/favicon_winter.ico">';
+			break;
+		case "03":
+		case "04":
+		case "05":
+			echo '<link rel="icon" href="'.get_template_directory_uri().'/images/favicon_spring.ico">';
+			break;
+		case "06":
+		case "07":
+		case "08":
+			echo '<link rel="icon" href=".get_template_directory_uri()./images/favicon_summer.ico">';
+			break;
+		case "09":
+		case "10":
+		case "11":
+			echo '<link rel="icon" href=".get_template_directory_uri()./images/favicon_fall.ico">';
+			break;
+	}
+	?>
     <link rel="stylesheet"
           href="<?php echo get_template_directory_uri(); ?>/css/style_master.css?<?php echo mt_rand(); ?>">
 	<?php if ( wp_is_mobile() ) : ?>
@@ -43,22 +66,22 @@
 				case "01":
 				case "12":
 				case "02":
-					echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/bee_winter.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="87.5" height="100">';
+					echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/bee_winter-min.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="100" height="100">';
 					break;
 				case "03":
 				case "04":
 				case "05":
-					echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/beeh200.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="92" height="100">';
+					echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/bee_spring-min.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="100" height="100">';
 					break;
 				case "06":
 				case "07":
 				case "08":
-					echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/bee_spring.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="86" height="100">';
+					echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/bee_summer-min.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="100" height="100">';
 					break;
 				case "09":
 				case "10":
 				case "11":
-					echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/beefall.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="87.5" height="100">';
+					echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/bee_fall-min.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="100" height="100">';
 					break;
 			}
 			?>
