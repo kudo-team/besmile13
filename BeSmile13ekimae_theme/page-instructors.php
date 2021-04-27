@@ -52,7 +52,15 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/fuchigami-min.png" alt="渕上">
             <div class="mask8 mask">
                 <div class="caption">渕上
-                    <p class="inst_comment fuchigami_comment">よろぴく</p>
+                    <p class="inst_comment fuchigami_comment">皆さんと一から学んでます</p>
+                </div>
+            </div>
+        </div>
+        <div class="hover-effect hover-effect9 hover_width">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/komesu-min.png" alt="米須">
+            <div class="mask9 mask">
+                <div class="caption">米須
+                    <p class="inst_comment komesu_comment">なんくるないさ<span class="yokobo">～</span></p>
                 </div>
             </div>
         </div>

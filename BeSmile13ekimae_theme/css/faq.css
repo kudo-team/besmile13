@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+.cp_qa h1 {
+  margin-bottom: 0.5em;
+  padding: 10px;
+  border-radius: 0.2em;
+  background: #faeef7;
+  font-weight: bold;
+  text-align: center;
+}
+.acd-check{
+  display: none;
+}
+.fa-quora:before {
+  content: "Q";
+}
+.acd-label{
+  background: #faeef7;
+  font-weight: bolder;
+  color: #242222;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  padding: 10px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.acd-label:after{
+  background: #faeef7;
+  box-sizing: border-box;
+  content: '＋';
+  display: block;
+  font-weight: 900;
+  height: 44px;
+  padding: 10px 20px;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+.acd-content{
+  display: flex;
+  align-items: center;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: .5s;
+  visibility: hidden;
+}
+.acd-check:checked + .acd-label:after{
+  content: "－";
+}
+.acd-check:checked + .acd-label + .acd-content{
+  height: 100px;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+  display: flex;
+  align-items: center;
+}
+.fab {
+  font-size: 170%;
+  margin-right: 18px;
+  color: #69467f;
+}
+.fa-adn:before {
+  content: "A";
+  color: #86d3d5;
+}
