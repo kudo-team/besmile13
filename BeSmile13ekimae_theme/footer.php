@@ -22,7 +22,8 @@
                 <li><a href="<?php echo esc_url( home_url( '/flow/' ) ); ?>">ご利用までの流れ</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>">企業情報</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">よくあるご質問</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度地域連携報告</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>wp/pdf/cooperation.pdf">令和二年度地域連携報告</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>wp/pdf/score.pdf">令和二年度スコア表</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼はこちら</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/column/' ) ); ?>">大阪就労支援A型コラム</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">タロットカード占い</a></li>

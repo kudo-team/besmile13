@@ -2,7 +2,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lightbox.css">
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/lightbox.js"></script>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/faq.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/faq.css?<?php echo mt_rand(); ?>">
     <div class="cp_qa">
         <h1>よくあるご質問</h1>
         <input id="acd-check1" class="acd-check" type="checkbox">
@@ -10,7 +10,7 @@
         <div class="acd-content">
             <i class="fab fa-adn"></i>
             <p>サービスご利用の殆どの場合は免除になりますが、前年度の収入により自己負担が発生する場合があります。<br>
-                <span style="font-size:0.9em;">※入所施設ご利用者（20歳以上）、グループホーム、ケアホームご利用者は、市町村民税課税世帯の場合、有料になります。</span></p>
+                <span style="font-size:0.9em;">※入所施設ご利用者（20歳以上）、グループホーム、ケアホームご利用者は、市町村民税課税世帯の場合、有料になります。詳しくは<a href="<?php echo esc_url( home_url( '/' ) ); ?>wp/pdf/burden.pdf">こちら</a></span></p>
         </div>
         <input id="acd-check2" class="acd-check" type="checkbox">
         <label class="acd-label" for="acd-check2"><i class="fab fa-quora"></i>見学をしたいのですが、どうすればいいでしょうか？</label>

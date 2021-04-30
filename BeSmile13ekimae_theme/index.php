@@ -8,12 +8,12 @@
 		                case "01":
 		                case "12":
 		                case "02":
-			                echo '<img src="'.get_template_directory_uri().'/images/wood2-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">';
+			                echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/snow_wood-min.png" id="main_image" alt="ご神木" loading="lazy" width="1082" height="940">';
 			                break;
 		                case "03":
 		                case "04":
 		                case "05":
-			                echo '<img src="'.get_template_directory_uri().'/images/wood2-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">';
+			                echo '<img src="'.get_template_directory_uri().'/images/wood2-min.png" id="main_image" alt="桜" srcset="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-320w-min.png 320w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-640w-min.png 640w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-750w-min.png 750w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-min.png 1000w" width="754.8" height="762">';
 			                break;
 		                case "06":
 		                case "07":
@@ -24,7 +24,7 @@
 		                case "09":
 		                case "10":
 		                case "11":
-		                    echo '<img src="'.get_template_directory_uri().'/images/wood2-min.png" id="main_image" alt="桜" loading="lazy" width="754.8" height="762">';
+		                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/188336-min-min.png" id="main_image" alt="楓" loading="lazy" width="1000" height="970">';
 			                break;
 	                }
 	                ?>
@@ -33,9 +33,9 @@
 						echo $upload_dir['baseurl']; ?>/2021/04/sun_200-min.png" alt="太陽" width="100" height="99.41"
                                                                         loading="lazy"></a>
                     <?php if( is_user_logged_in()): ?>
-                    <img src="<?php $upload_dir = wp_upload_dir();
+                    <!--<img src="<?php $upload_dir = wp_upload_dir();
 	                echo $upload_dir['baseurl']; ?>/2021/04/2IT-min.png" alt="見入るキツネ" loading="lazy" width="500"
-                         height="631" class="mv_kitsune">
+                         height="631" class="mv_kitsune">-->
                     <?php endif;?>
                     <div id="sakura_animation">
                         <div id="sakura_animation2"></div>
@@ -62,7 +62,10 @@
                     <a href="https://sunplace-osaka.com/">一般社団法人<br>サンプレイス</a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度<br>地域連携報告</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>wp/pdf/cooperation.pdf">令和二年度<br>地域連携報告</a>
+                </li>
+                <li>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>wp/pdf/score.pdf">令和二年度<br>スコア表</a>
                 </li>
                 <li>
                     <a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼<br>はこちら</a>

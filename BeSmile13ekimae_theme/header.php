@@ -15,7 +15,7 @@
 		case "01":
 		case "12":
 		case "02":
-			echo '<link rel="icon" href=".get_template_directory_uri()./images/favicon_winter.ico">';
+			echo '<link rel="icon" href="'.get_template_directory_uri().'/images/favicon_winter.ico">';
 			break;
 		case "03":
 		case "04":
@@ -25,12 +25,12 @@
 		case "06":
 		case "07":
 		case "08":
-			echo '<link rel="icon" href=".get_template_directory_uri()./images/favicon_summer.ico">';
+			echo '<link rel="icon" href="'.get_template_directory_uri().'/images/favicon_summer.ico">';
 			break;
 		case "09":
 		case "10":
 		case "11":
-			echo '<link rel="icon" href=".get_template_directory_uri()./images/favicon_fall.ico">';
+			echo '<link rel="icon" href="'.get_template_directory_uri().'/images/favicon_fall.ico">';
 			break;
 	}
 	?>
@@ -99,7 +99,9 @@
                 <li><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>">企業情報</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">よくあるご質問</a></li>
                 <li class="only_mobile"><a href="https://sunplace-osaka.com/">一般社団法人サンプレイス</a></li>
-                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/bbq.pdf">令和二年度地域連携報告</a>
+                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/' ) ); ?>wp/pdf/cooperation.pdf">令和二年度地域連携報告</a>
+                </li>
+                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/' ) ); ?>wp/pdf/score.pdf">令和二年度スコア表</a>
                 </li>
                 <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼はこちら</a>
                 </li>

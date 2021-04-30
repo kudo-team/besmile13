@@ -339,19 +339,19 @@ ul#submenu li:nth-child(1)::after {
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/image4-min.png);
 }
 
-ul#submenu li:nth-child(2)::after {
+ul#submenu li:nth-child(2)::after,ul#submenu li:nth-child(3)::after {
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/image5-min.png);
 }
 
-ul#submenu li:nth-child(3)::after {
+ul#submenu li:nth-child(4)::after {
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/image6-min.png);
 }
 
-ul#submenu li:nth-child(4)::after {
+ul#submenu li:nth-child(5)::after {
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/image7-min.png);
 }
 
-ul#submenu li:nth-child(5)::after {
+ul#submenu li:nth-child(6)::after {
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/image8-min.png);
 }
 
@@ -731,7 +731,7 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
 }
 
 
-@media screen and (max-width: 1049px) {
+@media screen and (max-width: 1134px) {
     .vertical-1 {
         right: 0px;
         font-size: 49px;
@@ -1028,8 +1028,10 @@ figcaption {
 #section_tips p img {
     height: auto;
     position: absolute;
-    top: 10px;
-    left: 333px;
+    bottom: 60px;
+    left: 350px;
+    max-height: 150px;
+    object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {
