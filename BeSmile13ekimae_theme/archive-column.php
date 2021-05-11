@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h1>スマイルコラム</h1>
+<h1>大阪就労支援A型コラム</h1>
 <p>大阪や就労継続支援A型についてのコラムを発信します！</p>
 <main id="archive_main">
 <?php
@@ -15,24 +15,7 @@ if ( have_posts() ) {
 <?php   } 
 } ?>
     <?php wp_reset_postdata(); ?>
-    <?php
-    $big = 9999999999;
-    $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-    if ($the_query->max_num_pages > 1) {
-        echo '<nav class="pagination">';
-        echo paginate_links( array(
-            'base' => get_pagenum_link(1).'%_%',
-            'format' => 'page/%#%/',
-            'current' => max(1, $paged),
-            'total' => $wp_query->max_num_pages,
-            'type' => 'list',
-            'mid_size' => '1',
-            'prev_text' => '«',
-            'next_text' => '»'
-            ) );
-        echo '</nav>';
-        } 
-    ?>
+	<?php wp_pagenavi(); ?>
     
 </main>
 <?php get_footer(); ?>

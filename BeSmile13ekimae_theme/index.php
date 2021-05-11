@@ -9,6 +9,7 @@
 		                case "12":
 		                case "02":
 			                echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/snow_wood-min.png" id="main_image" alt="ご神木" loading="lazy" width="1082" height="940">';
+		                echo '<style>@media screen and (max-width: 870px){#hanabira > div.img_fit_div{height: calc(100vw * 0.8687 - 14px);}} @media screen and (max-width: 1159px){.vertical-1,.vertical-2{background-color: #ffffff66; backdrop-filter: blur(16px);}}</style>';
 			                break;
 		                case "03":
 		                case "04":
@@ -19,13 +20,14 @@
 		                case "07":
 		                case "08":
 			                echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/green_wood2-min.png" id="main_image" alt="緑の木" loading="lazy" width="847" height="707">';
-			                echo '<style>img#main_image{padding-bottom: 15px;} .menu{background-color: #dccb18cc;}</style>';
+			                echo '<style>img#main_image{padding-bottom: 15px;} .menu{background-color: #dccb18cc;} @media screen and (max-width: 1159px){.vertical-1,.vertical-2{background-color: #ffffff66; backdrop-filter: blur(16px);}}</style>';
 			                break;
 		                case "09":
 		                case "10":
 		                case "11":
 		                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/188336-min-min.png" id="main_image" alt="楓" loading="lazy" width="1000" height="970">';
-			                break;
+			                echo '<style>@media screen and (max-width: 870px){#hanabira > div.img_fit_div{height: calc(100vw * 0.97);}}</style>';
+		                    break;
 	                }
 	                ?>
 
@@ -112,7 +114,19 @@
         <section id="blog">
 			<?php if ( have_posts() ): ?>
                 <div class="wrap_articles">
-					<?php while ( have_posts() ) : the_post(); ?>
+	                <?php
+	                global $max_num_page;
+	                $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+	                $args = array(
+		                'post_type' => 'post',
+		                'posts_per_page' => 3,
+		                'orderby' => 'date',
+		                'order' => 'DESC',
+		                'paged' => $paged,
+	                );
+	                $the_query = new WP_Query( $args );
+	                while ( $the_query->have_posts() ) : $the_query->the_post();
+		                ?>
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                             <a href="<?php the_permalink(); ?>">
 								<?php if ( has_post_thumbnail() ): ?>
@@ -132,7 +146,7 @@
                                 </a>
                             </div>
                         </article>
-					<?php endwhile; ?>
+	                <?php endwhile; wp_reset_postdata(); ?>
                 </div>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>archive/" class="archive_link">記事一覧</a>
 			<?php else: ?>
@@ -364,7 +378,7 @@
             <h2>お電話でのお問い合わせ</h2>
                 <p class=tel_contact>お電話でのお問い合わせは、下記電話番号にて承ります。お気軽にご連絡ください。<br>
                 <strong>TEL 06-6770-9011</strong>（平日10:00～18:00)</p>
-            <h2>お問い合わせフォーム</h2>
+            <h2>メールでのお問い合わせ</h2>
             <div class="Section__Odd__Contents">
 				<?php $post = get_post( 47 );//表示したい固定ページのページID
 				echo apply_filters( 'the_content', $post->post_content ); //固定ページの内容

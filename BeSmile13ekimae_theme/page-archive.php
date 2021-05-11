@@ -23,6 +23,7 @@
     <?php endwhile; wp_reset_postdata(); ?>
     <?php
     if ($the_query->max_num_pages > 1) {
+
     echo '<nav class="pagination">';
     echo paginate_links( array(
         'base' => get_pagenum_link(1).'%_%',

@@ -64,6 +64,14 @@
                 </div>
             </div>
         </div>
+        <div class="hover-effect hover-effect10 hover_width">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/honjou-min.png" alt="本城">
+            <div class="mask10 mask">
+                <div class="caption">本城
+                    <p class="inst_comment honjou_comment">施設外就労は<br>一般就労への架け橋だ</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <?php get_footer(); ?>
