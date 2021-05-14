@@ -45,7 +45,7 @@
 
 <!--toppageへのボタン-->
 <div id="page_top" style="text-align: center">
-    <div onclick="$('html,body').animate({ scrollTop: 0 }); return false;"><img
+    <div onclick="jQuery('html,body').animate({ scrollTop: 0 }); return false;"><img
                 src="<?php echo get_template_directory_uri(); ?>/images/up.svg" width="25px" height="30px" alt=""></div>
 </div>
 <!--/toppageへのボタン-->

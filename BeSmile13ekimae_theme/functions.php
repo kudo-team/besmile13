@@ -21,18 +21,18 @@ function twpp_change_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'twpp_change_excerpt_length', 999 );
 
-function custom_enqueue_scripts(){
-	if(!is_admin()){ //管理画面以外
-		wp_enqueue_script('jquery');
-		remove_action('wp_head', 'wp_print_scripts');
-		remove_action('wp_head', 'wp_print_head_scripts', 9);
-		remove_action('wp_head', 'wp_enqueue_scripts', 1);
-		add_action('wp_footer', 'wp_print_scripts');
-		add_action('wp_footer', 'wp_print_head_scripts');
-		add_action('wp_footer', 'wp_enqueue_scripts');
-	}
-}
-add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
+//function custom_enqueue_scripts(){
+//	if(!is_admin()){ //管理画面以外
+//		wp_enqueue_script('jquery');
+//		remove_action('wp_head', 'wp_print_scripts');
+//		remove_action('wp_head', 'wp_print_head_scripts', 9);
+//		remove_action('wp_head', 'wp_enqueue_scripts', 1);
+//		add_action('wp_footer', 'wp_print_scripts');
+//		add_action('wp_footer', 'wp_print_head_scripts');
+//		add_action('wp_footer', 'wp_enqueue_scripts');
+//	}
+//}
+//add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
 
 function pagenation($pages = '', $range = 2){
 	$showitems = ($range * 1)+1;
@@ -73,9 +73,9 @@ function pagenation($pages = '', $range = 2){
 	}
 }
 
-// deferの付与
-add_filter('script_loader_tag', 'add_defer', 10, 2);
-
-function add_defer($tag, $handle) {
-	return str_replace(' src=', ' defer src=', $tag);
-}
+//// deferの付与
+//add_filter('script_loader_tag', 'add_defer', 10, 2);
+//
+//function add_defer($tag, $handle) {
+//	return str_replace(' src=', ' defer src=', $tag);
+//}
