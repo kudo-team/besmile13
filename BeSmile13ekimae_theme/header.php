@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<meta name="description"
-          content="大阪から世界へ。就労継続支援A型のBeSmile（ビースマイル）十三駅前では、あなたの働きたいを形にします。利用者募集。ご見学やご相談などいつでも歓迎します。お気軽にお問い合わせください。大阪市淀川区十三">-->
     <meta name="keywords"
           content="大阪,就労継続支援A型,大阪府,大阪市,淀川区,大阪 就労継続支援A型,大阪市淀川区,BeSmile,Be Smile,ビースマイル,ビー スマイル,十三駅前,十三駅,十三">
     <meta name="theme-color" content="#e460d2">
@@ -36,9 +34,6 @@
 	?>
     <link rel="stylesheet"
           href="<?php echo get_template_directory_uri(); ?>/css/style_master.css?<?php echo mt_rand(); ?>">
-	<?php if ( wp_is_mobile() ) : ?>
-        <link href="<?php echo get_template_directory_uri(); ?>/css/noto_serif.css" rel="stylesheet">
-	<?php endif; ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/color01.css" id="css">
     <script src="<?php echo get_template_directory_uri(); ?>/js/usability.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -86,7 +81,8 @@
 			}
 			?>
         </a>
-        <div class="flex"><span class="osaka_agata">大阪の就労継続支援A型</span>BeSmile十三駅前</div>
+        <a class="flex" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span class="osaka_agata">大阪の就労継続支援A型</span>BeSmile十三駅前</a>
+
     </h1>
     <nav class="Hamburger__Menu" id="Hamburger__Menu">
         <input type="checkbox" id="menu-btn-check">
@@ -99,9 +95,9 @@
                 <li><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>">企業情報</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">よくあるご質問</a></li>
                 <li class="only_mobile"><a href="https://sunplace-osaka.com/">一般社団法人サンプレイス</a></li>
-                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/' ) ); ?>wp/pdf/cooperation.pdf">令和二年度地域連携報告</a>
+                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/cooperation.pdf">令和二年度地域連携報告</a>
                 </li>
-                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/' ) ); ?>wp/pdf/score.pdf">令和二年度スコア表</a>
+                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/score.pdf">令和二年度スコア表</a>
                 </li>
                 <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼はこちら</a>
                 </li>
@@ -114,6 +110,7 @@
                         <a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">お問い合わせ</a>
 					<?php endif; ?>
                 </li>
+                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/agreement/' ) ); ?>">利用規約</a></li>
             </ul>
         </div>
     </nav>

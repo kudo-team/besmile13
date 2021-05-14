@@ -14,7 +14,7 @@
 		                case "03":
 		                case "04":
 		                case "05":
-			                echo '<img src="'.get_template_directory_uri().'/images/wood2-min.png" id="main_image" alt="桜" srcset="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-320w-min.png 320w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-640w-min.png 640w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-750w-min.png 750w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-min.png 1000w" width="754.8" height="762">';
+			                echo '<img src="'.get_template_directory_uri().'/images/wood2-min.webp" id="main_image" alt="桜" srcset="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-320w-min.png 320w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-640w-min.png 640w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-750w-min.png 750w,'.get_template_directory_uri().'/images/wood2-min_1000.webp 1000w" width="754.8" height="762">';
 			                break;
 		                case "06":
 		                case "07":
@@ -31,7 +31,7 @@
 	                }
 	                ?>
 
-                    <a href="https://sunplace-osaka.com/" id="sun"><img src="<?php $upload_dir = wp_upload_dir();
+                    <a href="https://sunplace-osaka.com/" id="sun" rel="nofollow"><img src="<?php $upload_dir = wp_upload_dir();
 						echo $upload_dir['baseurl']; ?>/2021/04/sun_200-min.png" alt="太陽" width="100" height="99.41"
                                                                         loading="lazy"></a>
                     <?php if( is_user_logged_in()): ?>
@@ -61,13 +61,13 @@
         <section id="chiiki_renkei">
             <ul id="submenu">
                 <li>
-                    <a href="https://sunplace-osaka.com/">一般社団法人<br>サンプレイス</a>
+                    <a href="https://sunplace-osaka.com/" rel="nofollow">一般社団法人<br>サンプレイス</a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>wp/pdf/cooperation.pdf">令和二年度<br>地域連携報告</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/cooperation.pdf">令和二年度<br>地域連携報告</a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>wp/pdf/score.pdf">令和二年度<br>スコア表</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/score.pdf">令和二年度<br>スコア表</a>
                 </li>
                 <li>
                     <a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼<br>はこちら</a>
@@ -80,67 +80,51 @@
                 </li>
             </ul>
         </section>
-        <section class="Section__Odd" id="section_tips">
-            <h2>Today's TIPS<img src="<?php $upload_dir = wp_upload_dir();
-				echo $upload_dir['baseurl']; ?>/2021/04/coffee-solid.svg" alt="コーヒーアイコン" width="15" height="15"
-                                 loading="lazy" class="fuwafuwa"></h2>
-			<?php
-			//子孫のページを取得するための親固定ページのID
-			$args = [ 'child_of' => 109 ];
-
-			//固定ページを取得する
-			$pages = get_pages( $args );
-
-			//固定ページID格納用の配列を宣言
-			$page_ids = array();
-
-			//子ページがあり配列で取得出来ていれば処理開始
-			if ( is_array( $pages ) && count( $pages ) ) {
-
-				foreach ( $pages as $page ) {
-					//固定ページIDのみ配列に追加
-					$page_ids[] = $page->ID;
-				}
-			}
-
-			//親固定ページIDを配列に追加
-			$tips_ids = array_rand( $page_ids, 1 );
-			$page_id  = $page_ids[ $tips_ids ];
-			$post     = get_post( $page_id );//表示したい固定ページのページID
-			echo '<h3>' . apply_filters( 'the_title', $post->post_title ) . '</h3>';
-			echo apply_filters( 'the_content', $post->post_content ); //固定ページの内容
-			?>
-        </section>
         <section id="blog">
+            <h2>ブログ＆コラム</h2>
 			<?php if ( have_posts() ): ?>
                 <div class="wrap_articles">
 	                <?php
 	                global $max_num_page;
 	                $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-	                $args = array(
-		                'post_type' => 'post',
-		                'posts_per_page' => 3,
-		                'orderby' => 'date',
-		                'order' => 'DESC',
-		                'paged' => $paged,
-	                );
+
+	                if(wp_is_mobile() ) {
+		                $args = array(
+			                'post_type'      => array( 'post', 'column' ),
+			                'posts_per_page' => 5,
+			                'orderby'        => 'date',
+			                'order'          => 'DESC',
+			                'paged'          => $paged,
+		                );
+	                } else {
+		                $args = array(
+			                'post_type'      => array( 'post', 'column' ),
+			                'posts_per_page' => 3,
+			                'orderby'        => 'date',
+			                'order'          => 'DESC',
+			                'paged'          => $paged,
+		                );
+                    }
 	                $the_query = new WP_Query( $args );
 	                while ( $the_query->have_posts() ) : $the_query->the_post();
 		                ?>
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                            <?php if(!wp_is_mobile() ): ?>
+	                        <?php if ( has_post_thumbnail() ): ?>
                             <a href="<?php the_permalink(); ?>">
-								<?php if ( has_post_thumbnail() ): ?>
 									<?php the_post_thumbnail( 'medium' ); ?>
 								<?php else: ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/noimage-min.png"
                                          alt="no-image">
-								<?php endif; ?>
                             </a>
+	                        <?php endif; ?>
+                            <?php endif; ?>
                             <div class="blog_text_area">
                                 <a href="<?php the_permalink(); ?>">
                                     <h2><?php echo get_the_title(); ?></h2>
                                 </a>
                                 <time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php echo get_the_date(); ?></time>
+                                <div>記事タイプ：<?php if(get_post_type( get_the_ID() ) == 'post'){echo 'ブログ';}else{echo 'コラム';} ?></div>
                                 <a href="<?php the_permalink(); ?>" class="color444">
 									<?php the_excerpt(); ?>
                                 </a>
@@ -148,7 +132,10 @@
                         </article>
 	                <?php endwhile; wp_reset_postdata(); ?>
                 </div>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>archive/" class="archive_link">記事一覧</a>
+            <div class="flex_row">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>archive/" class="archive_link">ブログ記事一覧</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>column/" class="archive_link">コラム記事一覧</a>
+            </div>
 			<?php else: ?>
                 <p>ブログ記事はまだありません。</p>
 			<?php endif; ?>
@@ -173,7 +160,7 @@
                 </div>
             </div>
             <div class="Section__Odd--cherry">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="" loading="lazy"
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
                      width="607" height="276.73">
             </div>
         </section>
@@ -199,7 +186,7 @@
                 </figure>
             </div>
             <div class="Section__Even--cherry">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="" loading="lazy"
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
                      width="607" height="276.73">
             </div>
 
@@ -224,7 +211,7 @@
                 </div>
             </div>
             <div class="Section__Odd--cherry">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="桜の枝の装飾" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="桜の枝の装飾" loading="lazy">
             </div>
         </section>
         <!--/ホームページ制作-->
@@ -275,7 +262,7 @@
                 </figure>
             </div>
             <div class="Section__Even--cherry">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="桜の枝の装飾" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="桜の枝の装飾" loading="lazy">
             </div>
         </section>
 
@@ -297,7 +284,7 @@
                 </div>
             </div>
             <div class="Section__Odd--cherry">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy">
             </div>
         </section>
         <!--/プログラミング-->
@@ -346,7 +333,7 @@
                 </figure>
             </div>
             <div class="Section__Even--cherry">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy">
             </div>
         </section>
         <!--/サウンド-->
@@ -370,20 +357,51 @@
                 </div>
             </div>
             <div class="Section__Odd--cherry">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.png" alt="" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy">
             </div>
         </section>
         <!--施設外就労-->
         <section class="Section__Even" id="contact">
             <h2>お電話でのお問い合わせ</h2>
                 <p class=tel_contact>お電話でのお問い合わせは、下記電話番号にて承ります。お気軽にご連絡ください。<br>
-                <strong>TEL 06-6770-9011</strong>（平日10:00～18:00)</p>
+                    <strong><a href="tel:0667709011">TEL 06-6770-9011</a></strong>（平日10:00～18:00)</p>
             <h2>メールでのお問い合わせ</h2>
             <div class="Section__Odd__Contents">
 				<?php $post = get_post( 47 );//表示したい固定ページのページID
 				echo apply_filters( 'the_content', $post->post_content ); //固定ページの内容
 				?>
             </div>
+        </section>
+        <section class="Section__Odd" id="section_tips">
+            <h2>Be Smile TIPS<img src="<?php $upload_dir = wp_upload_dir();
+			    echo $upload_dir['baseurl']; ?>/2021/04/coffee-solid.svg" alt="コーヒーアイコン" width="15" height="15"
+                                  loading="lazy" class="fuwafuwa"></h2>
+		    <?php
+		    //子孫のページを取得するための親固定ページのID
+		    $args = [ 'child_of' => 109 ];
+
+		    //固定ページを取得する
+		    $pages = get_pages( $args );
+
+		    //固定ページID格納用の配列を宣言
+		    $page_ids = array();
+
+		    //子ページがあり配列で取得出来ていれば処理開始
+		    if ( is_array( $pages ) && count( $pages ) ) {
+
+			    foreach ( $pages as $page ) {
+				    //固定ページIDのみ配列に追加
+				    $page_ids[] = $page->ID;
+			    }
+		    }
+
+		    //親固定ページIDを配列に追加
+		    $tips_ids = array_rand( $page_ids, 1 );
+		    $page_id  = $page_ids[ $tips_ids ];
+		    $post     = get_post( $page_id );//表示したい固定ページのページID
+		    echo '<h3>' . apply_filters( 'the_title', $post->post_title ) . '</h3>';
+		    echo apply_filters( 'the_content', $post->post_content ); //固定ページの内容
+		    ?>
         </section>
     </main>
 <?php get_footer(); ?>

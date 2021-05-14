@@ -28,7 +28,33 @@ body {
     color: #222;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
 }
-
+#blog > h2{
+    font-size: 250%;
+    padding-top: 1em;
+    padding-left: 1em;
+    margin-top: 0;
+}
+body.archive article>img, body.page-id-51 article.post > img{
+    display: block;
+    width:150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+    float:left;
+    margin-right: 0.8em;
+}
+body.archive article>img ~ p, body.page-id-51 article.post > img ~ p{
+    min-height: 110px;
+}
+footer .addtoany_content{
+    text-align: center;
+}
+#copyright a{
+    color: white;
+}
+#copyright a:last-child{
+    text-decoration: none;
+}
 img.clock_svg {
     width: 14px;
     height: auto;
@@ -62,8 +88,16 @@ div.wp-pagenavi span.current, div.wp-pagenavi a.page, div.wp-pagenavi a.nextpost
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-
+#body > header > h1 > a.flex{
+    color: #451722;
+    text-decoration: none;
+}
+#body > footer > div > h1 > a{
+    color: white;
+    text-decoration: none;
+}
 
 @keyframes fuwafuwa {
     0% {
@@ -421,13 +455,28 @@ nav.breadcrumbs {
 body.archive > p {
     text-align: center;
 }
-
+.flex_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width: 768px) {
     article.article-content, main#archive_main, main#page_main {
         width: calc(100% - 30px);
         margin: 30px 15px;
     }
 
+    #blog > h2{
+        font-size: 140%;
+        padding-left: 0;
+        text-align: center;
+    }
+    img.usagigi{
+        max-width: 100%;
+    }
+    img.link_banner{
+        max-width: 100%;
+    }
     #sun img {
         width: 55px;
         height: auto;
@@ -825,7 +874,26 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     left: 52%;*/
     border-radius: 5px;
 }
-
+@media screen and (max-height: 720px) {
+    .menu{
+        width: 110px;
+        height: 45px;
+    }
+    .mainmenu li{
+        font-size: 100%;
+    }
+    .menu_it{
+        width: 120px;
+        height: 35px;
+    }
+    .menu_a{
+        width: 180px;
+        height: 45px;
+    }
+    .vertical-2,.vertical-1{
+        font-size: 25px;
+    }
+}
 .menu_h {
     top: 23%;
     left: 37.92%;
@@ -881,7 +949,7 @@ section#blog a.archive_link {
     align-items: center;
     width: 130px;
     height: 50px;
-    margin: 0 auto;
+    margin: 0 10px;
     border: 1px solid yellowgreen;
     background-color: #ffffffaa;
     border-radius: 10px;
@@ -2327,4 +2395,9 @@ input[type="button"]::-webkit-search-decoration {
 input[type="submit"]::focus,
 input[type="button"]::focus {
     outline-offset: -2px;
+}
+
+hr {
+    clear: both;
+    margin: 8px;
 }
