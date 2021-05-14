@@ -116,7 +116,7 @@ div.wp-pagenavi span.current, div.wp-pagenavi a.page, div.wp-pagenavi a.nextpost
 }
 
 .fadeup {
-    opacity: 0;
+    /*opacity: 0;*/
     transform: translateY(30px);
 }
 

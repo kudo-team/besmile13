@@ -72,3 +72,10 @@ function pagenation($pages = '', $range = 2){
 		echo "</div>\n";
 	}
 }
+
+// deferの付与
+add_filter('script_loader_tag', 'add_defer', 10, 2);
+
+function add_defer($tag, $handle) {
+	return str_replace(' src=', ' defer src=', $tag);
+}

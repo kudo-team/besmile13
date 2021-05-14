@@ -1,7 +1,15 @@
 <?php
 
-$file = "index.php";
-
+//$wp_dir = "/home/users/2/hippy.jp-sunplace/web/13-sunplace-osaka/pdf/pdf";
+//$top_dir = "/home/users/2/hippy.jp-sunplace/web/13-sunplace-osaka/";
+echo '<pre>';
+echo `mv ../.htaccess ../.htaccess_bak`;
+echo `mv htaccess.txt ../.htaccess`;
+//echo `cat ../.htaccess`;
+//echo `mv {$top_dir}pdf~/pdf/score.pdf /home/users/2/hippy.jp-sunplace/web/13-sunplace-osaka/pdf/score.pdf`;
+//echo `ls -al {$top_dir}/pdf`;
+//echo `mv -b {$wp_dir} {$top_dir}`;
+exit();
 //$f_r = file($file);
 //echo '<pre>';
 //echo 'here';

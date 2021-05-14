@@ -14,7 +14,7 @@
 		                case "03":
 		                case "04":
 		                case "05":
-			                echo '<img src="'.get_template_directory_uri().'/images/wood2-min.webp" id="main_image" alt="桜" srcset="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-320w-min.png 320w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-640w-min.png 640w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-750w-min.png 750w,'.get_template_directory_uri().'/images/wood2-min_1000.webp 1000w" width="754.8" height="762">';
+			                echo '<img src="'.get_template_directory_uri().'/images/wood2-min.webp" id="main_image" alt="桜" srcset="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-320w-min.png 320w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-640w-min.png 640w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-750w-min.png 750w,'.get_template_directory_uri().'/images/wood2-min_1000.webp 1000w" width="754.8" height="762" loading="lazy">';
 			                break;
 		                case "06":
 		                case "07":
