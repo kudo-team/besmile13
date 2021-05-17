@@ -111,7 +111,7 @@
     </ul>
 </aside>
 <?php wp_footer(); ?>
-<script src="<?php echo get_template_directory_uri(); ?>/js/main.js" defer></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/main.js?<?php echo mt_rand(); ?>" defer></script>
 <?php if ( wp_is_mobile() ) : ?>
     <link href="<?php echo get_template_directory_uri(); ?>/css/noto_serif.css" rel="stylesheet">
 <?php endif; ?>

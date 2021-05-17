@@ -62,3 +62,39 @@ jQuery('a[href^="#"]').click(function (e) {
         }
     });
 });
+
+let intervalId;
+let image = document.getElementById('main_image');
+if (window.matchMedia('(max-width: 767px)').matches)
+{
+    window.onload = changeImage();
+}
+
+function changeImage(){
+
+    if(image.style.opacity == ''){
+        image.style.opacity = 1;
+    }
+
+    let opacityInt = image.style.opacity * 100;
+    //フェードアウトの処理（opacityを100ミリ秒ごとに0.1づつ減らす）
+    let intervalId = setInterval( () => {
+        opacityInt = opacityInt - 10;
+        image.style.opacity = opacityInt / 100;
+        if(image.style.opacity <= 0){
+            clearInterval(intervalId);
+            //画像を交換
+                image.src = 'https://13-sunplace-osaka.com/wp/wp-content/themes/BeSmile13ekimae_theme/images/wood2_w500.webp';
+
+            opacityInt = image.style.opacity * 100;
+            //フェードインの処理（opacityを100ミリ秒ごとに0.1づつ増やす）
+            intervalId = setInterval( () => {
+                opacityInt = opacityInt + 10;
+                image.style.opacity = opacityInt / 100;
+                if(image.style.opacity >= 1){
+                    clearInterval(intervalId);
+                }
+            }, 100);
+        }
+    }, 100);
+}
