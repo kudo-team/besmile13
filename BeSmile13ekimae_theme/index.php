@@ -216,8 +216,12 @@
                 </figure>
             </div>
             <div class="Section__Even--cherry">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
-                     width="607" height="276.73">
+                <?php if(wp_is_mobile()): ?><img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
+                                                 width="607" height="276.73">
+                <?php else: ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
+                         width="607" height="276.73">
+                <?php endif; ?>
             </div>
 
         </section>

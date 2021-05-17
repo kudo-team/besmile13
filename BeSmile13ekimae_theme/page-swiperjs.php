@@ -45,12 +45,24 @@
             display: block;
             width: 100%;
         }
+        h1{
+            position: absolute;
+            width:fit-content;
+            width: -moz-fit-content;
+            left:50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            text-shadow: 0 5px 5px rgb(0 0 0 / 20%), 0 -5px 20px rgb(255 255 255 / 20%);
+            color: #444444;
+        }
     </style>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lightbox.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/lightbox.js"></script>
 </head>
 <body>
+<h1>BeSmile十三駅前<br>イラストチームサンプル集</h1>
 <div class="swiper-container mySwiper">
     <div class="swiper-wrapper">
         <div class="swiper-slide">

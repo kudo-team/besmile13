@@ -60,7 +60,7 @@
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 <!--/jquery-->
 <?php if ( is_front_page() ): ?>
-    <script src="<?php echo get_template_directory_uri();?>/js/particles.min.js" data-deferred="1" async></script>
+    <script src="<?php echo get_template_directory_uri();?>/js/particles.min.js" data-deferred="1"></script>
 
 	<?php $today = date( "m" );
 	switch ( $today ) {
@@ -73,7 +73,7 @@
 		case "03":
 		case "04":
 		case "05":
-			echo '<script src="'.get_template_directory_uri().'/js/hanabira.js" async></script>';
+			echo '<script src="'.get_template_directory_uri().'/js/hanabira.js"></script>';
 			break;
 		case "06":
 		case "07":
@@ -110,10 +110,11 @@
         </li>
     </ul>
 </aside>
+<script type='text/javascript' src='https://13-sunplace-osaka.com/wp/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js?<?php echo mt_rand(); ?>" defer></script>
-<?php if ( wp_is_mobile() ) : ?>
-    <link href="<?php echo get_template_directory_uri(); ?>/css/noto_serif.css" rel="stylesheet">
+<?php if ( wp_is_mobile() && !$is_iphone) : ?>
+    <link href="<?php echo get_template_directory_uri(); ?>/css/noto_serif.css" rel="stylesheet" media="print" onload="this.media='all'">
 <?php endif; ?>
 </body>
 </html>
