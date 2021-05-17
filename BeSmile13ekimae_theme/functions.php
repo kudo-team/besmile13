@@ -34,6 +34,14 @@ add_filter( 'excerpt_length', 'twpp_change_excerpt_length', 999 );
 //}
 //add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
 
+// webp許可
+function custom_mime_types( $mimes ) {
+    $mimes['webp'] = 'image/webp';
+    return $mimes;
+}
+add_filter( 'upload_mimes', 'custom_mime_types' );
+
+
 function pagenation($pages = '', $range = 2){
 	$showitems = ($range * 1)+1;
 	global $paged;

@@ -18,7 +18,7 @@ a:hover, a:hover h2, a:hover p {
 }
 
 body {
-    background-image: url("../images/1174006.jpg");
+    background-image: url("../images/1174006.jpg.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -28,6 +28,7 @@ body {
     color: #222;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
 }
+
 #blog > h2{
     font-size: 250%;
     padding-top: 1em;
@@ -116,7 +117,7 @@ div.wp-pagenavi span.current, div.wp-pagenavi a.page, div.wp-pagenavi a.nextpost
 }
 
 .fadeup {
-    /*opacity: 0;*/
+    opacity: 0;
     transform: translateY(30px);
 }
 
@@ -907,22 +908,22 @@ _::-webkit-full-page-media, _:future, :root img#main_image {
     left: 70%;
 }
 
-section#section_tips {
+#section_tips {
     min-height: 0 !important;
     padding-bottom: 15px;
 }
 
-section#section_tips h3 {
+#section_tips h3 {
     padding-left: 2em;
     font-size: 1.4em;
 }
 
-section#section_tips > p {
+#section_tips > p {
     margin: 0 4em;
     font-size: 1.2em;
 }
 
-section#section_tips h2 > img {
+#section_tips h2 > img {
     width: 30px;
     height: auto;
     margin-left: 10px;
@@ -1150,16 +1151,16 @@ figcaption {
         background-color: rgba(204, 270, 24, 0.80);
     }
 
-    section#section_tips h3 {
+    #section_tips h3 {
         padding-left: 0;
         text-align: center;
     }
 
-    section#section_tips > p {
+    #section_tips > p {
         margin: 0 2em;
     }
 
-    section#section_tips h2 > img {
+    #section_tips h2 > img {
         width: 20px;
         height: auto;
         margin-left: 10px;
@@ -1308,7 +1309,11 @@ figcaption {
     }
 
 }
-
+@media (max-width: 320px) {
+    .vertical-1,.vertical-2{
+        font-size: 133%;
+    }
+}
 /* toppage */
 
 /* footer */

@@ -26,7 +26,7 @@
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/score.pdf">令和二年度スコア表</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼はこちら</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/column/' ) ); ?>">大阪就労支援A型コラム</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">タロットカード占い</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/tarot/' ) ); ?>">タロットカード占い</a></li>
                 <li>
 					<?php if ( is_front_page() ) : ?>
                         <a href="#contact">お問い合わせ</a>
@@ -60,7 +60,7 @@
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 <!--/jquery-->
 <?php if ( is_front_page() ): ?>
-    <script src="<?php echo get_template_directory_uri();?>/js/particles.min.js" data-deferred="1"></script>
+    <script src="<?php echo get_template_directory_uri();?>/js/particles.min.js" data-deferred="1" async></script>
 
 	<?php $today = date( "m" );
 	switch ( $today ) {
@@ -73,7 +73,7 @@
 		case "03":
 		case "04":
 		case "05":
-			echo '<script src="'.get_template_directory_uri().'/js/hanabira.js"></script>';
+			echo '<script src="'.get_template_directory_uri().'/js/hanabira.js" async></script>';
 			break;
 		case "06":
 		case "07":
