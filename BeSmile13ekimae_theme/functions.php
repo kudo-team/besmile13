@@ -22,10 +22,10 @@ function twpp_change_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'twpp_change_excerpt_length', 999 );
 
 //jquery削除
-function my_delete_local_jquery() {
-    wp_deregister_script('jquery');
-}
-add_action( 'wp_enqueue_scripts', 'my_delete_local_jquery' );
+//function my_delete_local_jquery() {
+//    wp_deregister_script('jquery');
+//}
+//add_action( 'wp_enqueue_scripts', 'my_delete_local_jquery' );
 
 // webp許可
 function custom_mime_types( $mimes ) {

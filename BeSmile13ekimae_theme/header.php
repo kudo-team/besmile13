@@ -102,7 +102,7 @@
                 <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼はこちら</a>
                 </li>
                 <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/column/' ) ); ?>">大阪就労支援A型コラム</a></li>
-                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/tarot/' ) ); ?>">タロットカード占い</a></li>
+                <li class="only_mobile"><a href="https://13-sunplace-osaka.2bee.jp/">タロットカード占い</a></li>
                 <li class="only_mobile" id="contact_li">
 					<?php if ( is_front_page() ) : ?>
                         <a href="#contact">お問い合わせ</a>
