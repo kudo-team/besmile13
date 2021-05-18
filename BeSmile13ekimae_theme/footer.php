@@ -56,9 +56,6 @@
         <a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>" id="to_contact">お問い合わせ</a>
 	<?php endif; ?>
 <?php endif; ?>
-<!--jquery-->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-<!--/jquery-->
 <?php if ( is_front_page() ): ?>
     <script src="<?php echo get_template_directory_uri();?>/js/particles.min.js" data-deferred="1"></script>
 
@@ -111,6 +108,8 @@
     </ul>
 </aside>
 <script type='text/javascript' src='https://13-sunplace-osaka.com/wp/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://13-sunplace-osaka.com/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://13-sunplace-osaka.com/wp/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1' id='addtoany-js'></script>
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js?<?php echo mt_rand(); ?>" defer></script>
 <?php if ( wp_is_mobile() && !$is_iphone) : ?>
