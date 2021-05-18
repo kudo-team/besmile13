@@ -97,7 +97,7 @@
                     <a href="<?php echo esc_url(home_url('/column/')); ?>">大阪就労支援<br>A型コラム</a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url( home_url( '/tarot/' ) ); ?>">タロットカード<br>占い</a>
+                    <a href="https://13-sunplace-osaka.2bee.jp/">タロットカード<br>占い</a>
                 </li>
             </ul>
         </section>

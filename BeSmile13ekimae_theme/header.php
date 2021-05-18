@@ -66,7 +66,7 @@
 				case "03":
 				case "04":
 				case "05":
-					echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/bee_spring-min.png" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="100" height="100">';
+					echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/bee_spring-min.webp" alt="BeSmile（ビースマイル）ロゴ" loading="lazy" width="100" height="100">';
 					break;
 				case "06":
 				case "07":
@@ -102,7 +102,7 @@
                 <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼はこちら</a>
                 </li>
                 <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/column/' ) ); ?>">大阪就労支援A型コラム</a></li>
-                <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/tarot/' ) ); ?>">タロットカード占い</a></li>
+                <li class="only_mobile"><a href="https://13-sunplace-osaka.2bee.jp/">タロットカード占い</a></li>
                 <li class="only_mobile" id="contact_li">
 					<?php if ( is_front_page() ) : ?>
                         <a href="#contact">お問い合わせ</a>

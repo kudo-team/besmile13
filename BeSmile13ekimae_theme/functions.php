@@ -22,10 +22,10 @@ function twpp_change_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'twpp_change_excerpt_length', 999 );
 
 //jquery削除
-function my_delete_local_jquery() {
-    wp_deregister_script('jquery');
-}
-add_action( 'wp_enqueue_scripts', 'my_delete_local_jquery' );
+//function my_delete_local_jquery() {
+//    wp_deregister_script('jquery');
+//}
+//add_action( 'wp_enqueue_scripts', 'my_delete_local_jquery' );
 
 // webp許可
 function custom_mime_types( $mimes ) {
@@ -87,3 +87,16 @@ function is_ios()
 
     return preg_match('/iphone|ipod|ipad/ui', $user_agent) != 0; // 既知の判定用文字列を検索
 }
+
+function custom_enqueue_scripts(){
+	if(!is_admin()){ //管理画面以外
+		wp_enqueue_script('jquery');
+		remove_action('wp_head', 'wp_print_scripts');
+		remove_action('wp_head', 'wp_print_head_scripts', 9);
+		remove_action('wp_head', 'wp_enqueue_scripts', 1);
+		add_action('wp_footer', 'wp_print_scripts');
+		add_action('wp_footer', 'wp_print_head_scripts');
+		add_action('wp_footer', 'wp_enqueue_scripts');
+	}
+}
+add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
