@@ -288,13 +288,12 @@ header h1 a {
     margin: 0;
     padding: 0;
     display: block;
-    height: 100px;
 }
 
-header h1 img {
-    width: auto;
-    height: 100px;
-}
+/*header h1 img {*/
+/*    width: auto;*/
+/*    height: 100px;*/
+/*}*/
 
 header .Hamburger__Menu__Content {
     display: flex;
@@ -323,7 +322,6 @@ ul#submenu li:first-child {
     width: 100%;
     list-style: none;
     display: flex;
-    /* justify-content: space-around; */
     align-items: flex-end;
     margin-top: 100px;
     padding: 0;
@@ -536,7 +534,7 @@ body.archive > p {
     /* ハンバーガー*/
     .Hamburger__Menu--btn {
         position: fixed;
-        top: 10px;
+        top: 50px;
         right: 10px;
         display: flex;
         height: 60px;
