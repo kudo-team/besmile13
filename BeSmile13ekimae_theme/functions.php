@@ -87,3 +87,16 @@ function is_ios()
 
     return preg_match('/iphone|ipod|ipad/ui', $user_agent) != 0; // 既知の判定用文字列を検索
 }
+
+function custom_enqueue_scripts(){
+	if(!is_admin()){ //管理画面以外
+		wp_enqueue_script('jquery');
+		remove_action('wp_head', 'wp_print_scripts');
+		remove_action('wp_head', 'wp_print_head_scripts', 9);
+		remove_action('wp_head', 'wp_enqueue_scripts', 1);
+		add_action('wp_footer', 'wp_print_scripts');
+		add_action('wp_footer', 'wp_print_head_scripts');
+		add_action('wp_footer', 'wp_enqueue_scripts');
+	}
+}
+add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
