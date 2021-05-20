@@ -46,6 +46,7 @@ body.archive article>img, body.page-id-51 article.post > img{
 }
 body.archive article>img ~ p, body.page-id-51 article.post > img ~ p{
     min-height: 110px;
+    line-height: 1.6;
 }
 footer .addtoany_content{
     text-align: center;
@@ -2019,7 +2020,7 @@ ul.page-numbers {
 }
 
 ul.page-numbers li {
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 #archive_main > hr:nth-last-child(2) {
