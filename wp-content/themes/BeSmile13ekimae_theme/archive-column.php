@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<h1><?php single_term_title(); ?></h1>
+<h1>大阪就労支援A型コラム</h1>
+<p>大阪や就労継続支援A型についてのコラムを発信します！</p>
 <main id="archive_main">
 <?php
 if ( have_posts() ) {
@@ -17,10 +18,10 @@ if ( have_posts() ) {
         <?php the_excerpt(); ?>
     </article>
     <hr>
-<?php
-    }
+<?php   } 
 } ?>
     <?php wp_reset_postdata(); ?>
 	<?php wp_pagenavi(); ?>
+    
 </main>
 <?php get_footer(); ?>

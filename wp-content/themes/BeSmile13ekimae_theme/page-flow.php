@@ -11,10 +11,10 @@
         <li>③体験</li>
         <li>④面接<br><span class="kome">※受給者証・ハローワークの紹介状が必要です</span></li>
         <li>⑤雇用契約の締結</li>
-      </ol>
+      </ol> 
     <figure class="usagi_figure">
-      <img class="usagigi" src="<?php echo get_template_directory_uri(); ?>/images/_c_choju57_0024_s512_choju57_0024_1.png" alt="案内をするうさぎ">
-      <figcaption>ご案内致します！</figcaption>
+      <img class="usagigi" src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/neko2-min.png" alt="案内をするネコ">
+      <figcaption>ご案内致しますニャ！</figcaption>
     </figure>
   </div>
   <img class="kousagi" src="<?php echo get_template_directory_uri(); ?>/images/sakura_2.png" alt="桜の枝">
