@@ -100,3 +100,58 @@ function custom_enqueue_scripts(){
 	}
 }
 add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
+
+/**
+ * Summary
+ *  見出しに id を自動挿入
+ *
+ * @param string $the_content 記事の本文.
+ **/
+function add_auto_id( $the_content ) {
+
+	/* idを付加する見出しレベルを設定 */
+	$start = 2;
+	$end   = 6;
+
+	/* 見出しのパターンを作成 */
+	$pattern = '/^<h([' . $start . '-' . $end . ']).*?>.+?<\/h[' . $start . '-' . $end . ']>$/im';
+
+	/*
+		$headingsにページ内の見出し要素を格納
+		$headings[0]：マッチした文字列
+		$headings[1]：見出しレベル（h3なら"3"）
+	*/
+	if ( ! preg_match_all( $pattern, $the_content, $headings ) ) {
+		/* 見出しがない場合は終了 */
+		return $the_content;
+	}
+
+	/* idが設定されているかどうかを判断するためのパターン */
+	$id_pattern = '/^<h([' . $start . '-' . $end . ']).+?id\s*=\s*\"(.+?)\".*>(.+?)<\/h[' . $start . '-' . $end . ']>$/im';
+
+	/* 見出しごとにidが設定されていない見出しにidを付加 */
+	$num_count = count( $headings[0] );
+	for ( $i = 0; $i < $num_count; $i++ ) {
+
+		/* 見出しにidが設定されているかどうかの判断. 見出しにidが設定されている場合のみマッチ */
+		if ( ! preg_match( $id_pattern, $headings[0][ $i ], $dummy ) ) {
+
+			/* idが設定されていない見出しの場合に行う処理. idを付加した文字列（<hX id=autoid-Y）を作成 */
+			$id_str = '<h' . $headings[1][ $i ] . ' id="autoid-' . $i . '"';
+
+			/* id_str（<hX id=autoid-Y）で元々の見出しの"<hX"部分に置換 */
+			$replaced_heading =
+				str_replace( '<h' . $headings[1][ $i ], $id_str, $headings[0][ $i ] );
+
+			/* id付加後の見出しで元々のコンテンツ内の見出しを置換 */
+			$the_content =
+				str_replace( $headings[0][ $i ], $replaced_heading, $the_content );
+		}
+	}
+
+	return $the_content;
+}
+
+/* the_contentフックに関数をフック */
+add_filter( 'the_content', 'add_auto_id', 9 );
+/* 見出しにid属性を自動挿入 End */

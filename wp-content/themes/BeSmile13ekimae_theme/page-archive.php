@@ -20,7 +20,7 @@
 	    <?php if ( has_post_thumbnail() ): ?>
 		    <?php the_post_thumbnail( 'thumbnail' ); ?>
 	    <?php else: ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/noimage-min.png"
+            <img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/besmilelogo.jpg"
                  alt="no-image">
 	    <?php endif; ?>
         <?php the_excerpt(); ?>
