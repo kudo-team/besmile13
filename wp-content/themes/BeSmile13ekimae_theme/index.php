@@ -30,7 +30,8 @@
                         case "06":
                         case "07":
                         case "08":
-                            echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/green_wood2-min.png" id="main_image" alt="緑の木" loading="lazy" width="847" height="707">';
+                            echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/06/green_wood2-min.webp" id="main_image" alt="緑の木" loading="lazy" width="847" height="707">';
+                            echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/06/yellow_line_animated.svg" style="position:absolute;top:0;left:0;width:100%;height:100%;" width="1045" height="885" loading="lazy" alt="枝分かれ">';
                             echo '<style>img#main_image{padding-bottom: 15px;} .menu{background-color: #dccb18cc;} @media screen and (max-width: 1159px){.vertical-1,.vertical-2{background-color: #ffffff66; backdrop-filter: blur(16px);}}</style>';
                             break;
                         case "09":
@@ -102,6 +103,9 @@
                 <li>
                     <a href="<?php echo esc_url(home_url('/banner/')); ?>">バナー制作<br>サンプル集</a>
                 </li>
+                <li>
+                    <a href="<?php echo esc_url(home_url('/portfolio/')); ?>">イラストチーム<br>ポートフォリオ</a>
+                </li>
             </ul>
         </section>
         <section id="blog">
@@ -164,12 +168,20 @@
                     wp_reset_postdata(); ?>
                 </div>
                 <div class="flex_row">
-                    <a href="<?php echo esc_url(home_url('/')); ?>archive/" class="archive_link">ブログ記事一覧</a>
-                    <a href="<?php echo esc_url(home_url('/')); ?>column/" class="archive_link">コラム記事一覧</a>
+                    <a href="<?php echo esc_url(home_url('/')); ?>archive/" class="archive_link">もっとブログ</a>
+                    <a href="<?php echo esc_url(home_url('/')); ?>column/" class="archive_link">もっと就Aコラム</a>
                 </div>
             <?php else: ?>
                 <p>ブログ記事はまだありません。</p>
             <?php endif; ?>
+        </section>
+        <section class="Section__Even insta">
+            <div class="Section__Even__Content">
+	            <?php $post = get_post(1683);//表示したい固定ページのページID
+	            echo apply_filters('the_content', $post->post_content); //固定ページの内容
+	            ?>
+                <a class="twitter-timeline" data-lang="ja" data-height="500" href="https://twitter.com/besm13a?ref_src=twsrc%5Etfw" data-chrome=”transparent” data-link-color="#E460D2">Tweets by besm13a</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
         </section>
         <!--A型事業所とは-->
         <section class="Section__Odd" id="section01">
@@ -265,8 +277,7 @@
                         IllustratorやPhotoshopを使い、ゲーム制作やホームページ制作等で用いるイラスト制作・<a href="<?php echo esc_url(home_url('/banner/')); ?>">バナー制作</a>を行います。<br>
                         特にBeSmile十三駅前では<strong class="marker-animation">美大卒のプロの講師が常駐</strong>しており、イラストのスキルアップを図れます。<br>
                         とはいえ現状かなりスキルの高いメンバーもそろっていて、以下でそのサンプル等ご覧になれます。<br>
-                        <a href="https://begroup-create.biz/service/illustration/" target="_blank" rel="noopener"
-                           class="blank">
+                        <a href="https://13-sunplace-osaka.com/portfolio/">
                             <?php $today = date("m");
                             switch ($today) {
                                 case "01":

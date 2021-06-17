@@ -363,8 +363,10 @@ ul#submenu {
     list-style: none;
     margin: 25px auto;
     padding: 0;
-    width: fit-content;
-    width: -moz-fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 479px;
+    align-items: center;
 }
 
 ul#submenu li:first-child {
@@ -398,10 +400,14 @@ ul#submenu li a {
 }
 
 .Hamburger__Menu__Content li, ul#submenu li {
-    margin-left: 15px;
+    margin: 7.5px;
     position: relative;
     transition: 0.2s;
 }
+ul#submenu li{
+    min-width: 98px;
+}
+
 
 .Hamburger__Menu__Content li::before, ul#submenu li::before {
     position: absolute;
@@ -486,8 +492,8 @@ body > header > h1 {
     align-items: center;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
     white-space: nowrap;
-    text-shadow: 0 5px 5px rgba(0, 0, 0, .2),
-    0 -5px 20px rgba(255, 255, 255, .2);
+    /*text-shadow: 0 5px 5px rgba(0, 0, 0, .2),
+    0 -5px 20px rgba(255, 255, 255, .2);*/
     color: #451722;
 }
 
@@ -519,6 +525,9 @@ body.archive > p {
     align-items: center;
 }
 @media (max-width: 768px) {
+    body.parent-pageid-548 .blocks-gallery-item__caption{
+        pointer-events: none;
+    }
     article.article-content, main#archive_main, main#page_main {
         width: calc(100% - 30px);
         margin: 30px 15px;
@@ -1103,7 +1112,10 @@ section#blog article img {
     overflow: hidden;
     min-height: 600px;
 }
-
+.insta{
+    min-height: 0px;
+    padding: 50px;
+}
 .Section__Even h2 {
     font-size: 250%;
     padding-top: 1em;

@@ -28,6 +28,7 @@
                 <li><a href="<?php echo esc_url( home_url( '/column/' ) ); ?>">大阪就労支援A型コラム</a></li>
                 <li><a href="https://13-sunplace-osaka.2bee.jp/">タロットカード占い</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/banner/' ) ); ?>">バナー制作サンプル集</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/portfolio/' ) ); ?>">イラストチームポートフォリオ</a></li>
                 <li>
 					<?php if ( is_front_page() ) : ?>
                         <a href="#contact">お問い合わせ</a>
@@ -114,7 +115,7 @@
 <!--<script type='text/javascript' src='https://13-sunplace-osaka.com/wp/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>-->
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js?<?php echo mt_rand(); ?>" defer></script>
-<?php if ( wp_is_mobile() && !$is_iphone) : ?>
+<?php if ( wp_is_mobile() && !$is_iphone && is_front_page()) : ?>
     <link href="<?php echo get_template_directory_uri(); ?>/css/noto_serif.css" rel="stylesheet" media="print" onload="this.media='all'">
 <?php endif; ?>
 </body>
