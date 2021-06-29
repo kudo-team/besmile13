@@ -225,7 +225,7 @@
             </div>
             <div class="swiper-slide">
                 <a href="#kid"><img
-                            src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/06/besmile_logo_200-min_whiteback.png"/></a>
+                            src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/06/kid2.jpg"/></a>
             </div>
             <div class="swiper-slide">
                 <a href="#kid"><img

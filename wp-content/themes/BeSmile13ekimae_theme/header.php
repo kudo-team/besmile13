@@ -94,6 +94,8 @@
                 <li class="only_mobile"><a href="https://13-sunplace-osaka.2bee.jp/">タロットカード占い</a></li>
                 <li class="only_mobile"><a href="<?php echo esc_url( home_url( '/banner/' ) ); ?>">バナー制作サンプル集</a></li>
                 <li class="only_mobile"><a href="<?php echo esc_url(home_url('/portfolio/')); ?>">イラストチームポートフォリオ</a></li>
+                <li class="only_mobile"><a href="<?php echo esc_url(home_url('/web_portfolio/')); ?>">WEBチームポートフォリオ</a></li>
+                <li class="only_mobile"><a href="https://shop.bsma.team/">BSMA! CREATORS SHOP</a></li>
                 <li class="only_mobile" id="contact_li">
 					<?php if ( is_front_page() ) : ?>
                         <a href="#contact">お問い合わせ</a>

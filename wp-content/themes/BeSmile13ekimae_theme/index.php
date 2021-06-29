@@ -106,6 +106,12 @@
                 <li>
                     <a href="<?php echo esc_url(home_url('/portfolio/')); ?>">イラストチーム<br>ポートフォリオ</a>
                 </li>
+                <li>
+                    <a href="<?php echo esc_url(home_url('/web_portfolio/')); ?>">WEBチーム<br>ポートフォリオ</a>
+                </li>
+                <li>
+                    <a href="https://shop.bsma.team/">BSMA!<br>CREATORS SHOP</a>
+                </li>
             </ul>
         </section>
         <section id="blog">
@@ -378,7 +384,7 @@
         <!--/プログラミング-->
         <!--サウンド-->
         <section class="Section__Even" id="section06">
-            <h2>ゲームサウンド制作</h2>
+            <h2>サウンド制作</h2>
             <div class="Section__Even__Content">
                 <div class="Section__Even__Paragraph">
                     <p>主にゲーム制作で用いるサウンドや、BGM等の制作を行います。<br>BeSmile十三駅前では、FMCocoroでDJを8年間担当・CD13枚リリースという経歴を持つ音楽のプロ、<strong
@@ -411,6 +417,9 @@
                             ?>
                         </a>
                     </p>
+	                <?php $post = get_post(1725);//表示したい固定ページのページID
+	                echo apply_filters('the_content', $post->post_content); //固定ページの内容
+	                ?>
 
                 </div>
                 <figure>
@@ -499,5 +508,198 @@
             echo apply_filters('the_content', $post->post_content); //固定ページの内容
             ?>
         </aside>
+        <!--<section class="Section__Even" id="shopify">
+            <div id='product-component-1624335874476'></div>
+            <script type="text/javascript">
+                /*<![CDATA[*/
+                (function () {
+                    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                    if (window.ShopifyBuy) {
+                        if (window.ShopifyBuy.UI) {
+                            ShopifyBuyInit();
+                        } else {
+                            loadScript();
+                        }
+                    } else {
+                        loadScript();
+                    }
+                    function loadScript() {
+                        var script = document.createElement('script');
+                        script.async = true;
+                        script.src = scriptURL;
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                        script.onload = ShopifyBuyInit;
+                    }
+                    function ShopifyBuyInit() {
+                        var client = ShopifyBuy.buildClient({
+                            domain: 'bsma-cr.myshopify.com',
+                            storefrontAccessToken: 'ba77bcd695e92e17c73c03ec964fa0f3',
+                        });
+                        ShopifyBuy.UI.onReady(client).then(function (ui) {
+                            ui.createComponent('product', {
+                                id: '6839698161832',
+                                node: document.getElementById('product-component-1624335874476'),
+                                moneyFormat: '%C2%A5%7B%7Bamount_no_decimals%7D%7D',
+                                options: {
+                                    "product": {
+                                        "styles": {
+                                            "product": {
+                                                "@media (min-width: 601px)": {
+                                                    "max-width": "calc(25% - 20px)",
+                                                    "margin-left": "20px",
+                                                    "margin-bottom": "50px"
+                                                }
+                                            }
+                                        },
+                                        "buttonDestination": "modal",
+                                        "contents": {
+                                            "options": false
+                                        },
+                                        "width": "280px",
+                                        "text": {
+                                            "button": "商品を見る"
+                                        }
+                                    },
+                                    "productSet": {
+                                        "styles": {
+                                            "products": {
+                                                "@media (min-width: 601px)": {
+                                                    "margin-left": "-20px"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "modalProduct": {
+                                        "contents": {
+                                            "img": false,
+                                            "imgWithCarousel": true
+                                        },
+                                        "styles": {
+                                            "product": {
+                                                "@media (min-width: 601px)": {
+                                                    "max-width": "100%",
+                                                    "margin-left": "0px",
+                                                    "margin-bottom": "0px"
+                                                }
+                                            }
+                                        },
+                                        "text": {
+                                            "button": "カートに追加する"
+                                        }
+                                    },
+                                    "option": {},
+                                    "cart": {
+                                        "text": {
+                                            "title": "買い物かご",
+                                            "total": "小計",
+                                            "button": "購入する"
+                                        }
+                                    },
+                                    "toggle": {}
+                                },
+                            });
+                        });
+                    }
+                })();
+                /*]]>*/
+            </script>
+
+
+            <div id='product-component-1624336009998'></div>
+            <script type="text/javascript">
+                /*<![CDATA[*/
+                (function () {
+                    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                    if (window.ShopifyBuy) {
+                        if (window.ShopifyBuy.UI) {
+                            ShopifyBuyInit();
+                        } else {
+                            loadScript();
+                        }
+                    } else {
+                        loadScript();
+                    }
+                    function loadScript() {
+                        var script = document.createElement('script');
+                        script.async = true;
+                        script.src = scriptURL;
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                        script.onload = ShopifyBuyInit;
+                    }
+                    function ShopifyBuyInit() {
+                        var client = ShopifyBuy.buildClient({
+                            domain: 'bsma-cr.myshopify.com',
+                            storefrontAccessToken: 'ba77bcd695e92e17c73c03ec964fa0f3',
+                        });
+                        ShopifyBuy.UI.onReady(client).then(function (ui) {
+                            ui.createComponent('product', {
+                                id: '6839701700776',
+                                node: document.getElementById('product-component-1624336009998'),
+                                moneyFormat: '%C2%A5%7B%7Bamount_no_decimals%7D%7D',
+                                options: {
+                                    "product": {
+                                        "styles": {
+                                            "product": {
+                                                "@media (min-width: 601px)": {
+                                                    "max-width": "calc(25% - 20px)",
+                                                    "margin-left": "20px",
+                                                    "margin-bottom": "50px"
+                                                }
+                                            }
+                                        },
+                                        "buttonDestination": "modal",
+                                        "contents": {
+                                            "options": false
+                                        },
+                                        "width": "280px",
+                                        "text": {
+                                            "button": "商品を見る"
+                                        }
+                                    },
+                                    "productSet": {
+                                        "styles": {
+                                            "products": {
+                                                "@media (min-width: 601px)": {
+                                                    "margin-left": "-20px"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "modalProduct": {
+                                        "contents": {
+                                            "img": false,
+                                            "imgWithCarousel": true
+                                        },
+                                        "styles": {
+                                            "product": {
+                                                "@media (min-width: 601px)": {
+                                                    "max-width": "100%",
+                                                    "margin-left": "0px",
+                                                    "margin-bottom": "0px"
+                                                }
+                                            }
+                                        },
+                                        "text": {
+                                            "button": "カートに追加する"
+                                        }
+                                    },
+                                    "option": {},
+                                    "cart": {
+                                        "text": {
+                                            "title": "買い物かご",
+                                            "total": "小計",
+                                            "button": "購入する"
+                                        }
+                                    },
+                                    "toggle": {}
+                                },
+                            });
+                        });
+                    }
+                })();
+                /*]]>*/
+            </script>
+        </section>
+        -->
     </main>
 <?php get_footer(); ?>

@@ -16,7 +16,10 @@ a, a:visited, a:active {
 a:hover, a:hover h2, a:hover p {
     opacity: 0.7;
 }
-
+#fredy_bgm{
+    position: relative;
+    z-index: 3;
+}
 body {
     background-image: url("../images/1174006.jpg.webp");
     background-repeat: no-repeat;
@@ -28,7 +31,11 @@ body {
     color: #222;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
 }
-
+body.page-id-1698 #page_main > div > figure > a > img{
+    width:100%;
+    height: auto;
+    max-width: 1065px;
+}
 #blog > h2{
     font-size: 250%;
     padding-top: 1em;
@@ -365,7 +372,7 @@ ul#submenu {
     padding: 0;
     flex-wrap: wrap;
     justify-content: center;
-    width: 479px;
+    width: 591px;
     align-items: center;
 }
 
@@ -469,6 +476,15 @@ ul#submenu li:nth-child(6)::after {
 ul#submenu li:nth-child(7)::after {
     content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/imagebanner-min.png);
 }
+ul#submenu li:nth-child(8)::after {
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/06/image1.png);
+}
+ul#submenu li:nth-child(9)::after {
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/06/image2.png);
+}
+ul#submenu li:nth-child(10)::after {
+    content: url(https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/06/image0.png);
+}
 
 .Hamburger__Menu__Content li:hover::before, ul#submenu li:hover::before {
     width: 100%;
@@ -524,9 +540,21 @@ body.archive > p {
     justify-content: center;
     align-items: center;
 }
+#shopify{
+    display: flex;
+    justify-content: space-around;
+    padding:50px;
+}
 @media (max-width: 768px) {
     body.parent-pageid-548 .blocks-gallery-item__caption{
         pointer-events: none;
+    }
+    #shopify{
+        flex-direction: column;
+        align-items: center;
+    }
+    #fredy_bgm{
+        width:100%;
     }
     article.article-content, main#archive_main, main#page_main {
         width: calc(100% - 30px);
@@ -616,6 +644,7 @@ body.archive > p {
         align-items: center;
         z-index: 130;
         background-color: #d675be;
+        transition: 0.2s;
     }
 
     .Hamburger__Menu--btn span,
