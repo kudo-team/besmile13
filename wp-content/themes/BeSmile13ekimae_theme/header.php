@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <script>
-        var url = location.href
-
-        if (url.indexOf('http:') >= 0) { // 判定方法の修正
-            // url文字列の書き換え
-            var newUrl = url.replace('http:', 'https:'); // 書き換え方法の修正
-
-            // リダイレクト
-            location.replace(newUrl);
-        }
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

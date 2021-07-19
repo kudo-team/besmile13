@@ -1,66 +1,67 @@
 <?php get_header(); ?>
-    <?php if(wp_is_mobile()): ?>
-        <style>
-            body.home{
-                background-image: unset;
-            }
-        </style>
-    <?php endif; ?>
+<?php if ( wp_is_mobile() ): ?>
+    <style>
+        body.home {
+            background-image: unset;
+        }
+    </style>
+<?php endif; ?>
     <main>
         <section class="Cherry__Menu">
             <nav id="hanabira">
                 <div class="img_fit_div">
-                    <?php $today = date("m");
-                    switch ($today) {
-                        case "01":
-                        case "12":
-                        case "02":
-                            echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/snow_wood-min.png" id="main_image" alt="ご神木" loading="lazy" width="1082" height="940">';
-                            echo '<style>@media screen and (max-width: 870px){#hanabira > div.img_fit_div{height: calc(100vw * 0.8687 - 14px);}} @media screen and (max-width: 1159px){.vertical-1,.vertical-2{background-color: #ffffff66; backdrop-filter: blur(16px);}}</style>';
-                            break;
-                        case "03":
-                        case "04":
-                        case "05":
-                            if(!wp_is_mobile()):
-                            echo '<img src="' . get_template_directory_uri() . '/images/wood2-min.webp" id="main_image" alt="桜" srcset="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-320w-min.png 320w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-640w-min.png 640w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-750w-min.png 750w,' . get_template_directory_uri() . '/images/wood2-min_1000.webp 1000w" width="754.8" height="762" loading="lazy">';
-                            else:
-                            echo '<img src="' . get_template_directory_uri() . '/images/spacer.gif" id="main_image" alt="桜" width="754.8" height="762" loading="lazy">';
-                            endif;
-                            break;
-                        case "06":
-                        case "07":
-                        case "08":
-                            echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/06/green_wood2-min.webp" id="main_image" alt="緑の木" loading="lazy" width="847" height="707">';
-                            echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/06/yellow_line_animated.svg" style="position:absolute;top:0;left:0;width:100%;height:100%;" width="1045" height="885" loading="lazy" alt="枝分かれ">';
-                            echo '<style>img#main_image{padding-bottom: 15px;} .menu{background-color: #dccb18cc;} @media screen and (max-width: 1159px){.vertical-1,.vertical-2{background-color: #ffffff66; backdrop-filter: blur(16px);}}</style>';
-                            break;
-                        case "09":
-                        case "10":
-                        case "11":
-                            echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/188336-min-min.png" id="main_image" alt="楓" loading="lazy" width="1000" height="970">';
-                            echo '<style>@media screen and (max-width: 870px){#hanabira > div.img_fit_div{height: calc(100vw * 0.97);}}</style>';
-                            break;
-                    }
-                    ?>
+					<?php $today = date( "m" );
+					switch ( $today ) {
+						case "01":
+						case "12":
+						case "02":
+							echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/snow_wood-min.png" id="main_image" alt="ご神木" loading="lazy" width="1082" height="940">';
+							echo '<style>@media screen and (max-width: 870px){#hanabira > div.img_fit_div{height: calc(100vw * 0.8687 - 14px);}} @media screen and (max-width: 1159px){.vertical-1,.vertical-2{background-color: #ffffff66; backdrop-filter: blur(16px);}}</style>';
+							break;
+						case "03":
+						case "04":
+						case "05":
+							if ( ! wp_is_mobile() ):
+								echo '<img src="' . get_template_directory_uri() . '/images/wood2-min.webp" id="main_image" alt="桜" srcset="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-320w-min.png 320w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-640w-min.png 640w,https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/wood2-750w-min.png 750w,' . get_template_directory_uri() . '/images/wood2-min_1000.webp 1000w" width="754.8" height="762" loading="lazy">';
+							else:
+								echo '<img src="' . get_template_directory_uri() . '/images/spacer.gif" id="main_image" alt="桜" width="754.8" height="762" loading="lazy">';
+							endif;
+							break;
+						case "06":
+						case "07":
+						case "08":
+							echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/06/green_wood2-min.webp" id="main_image" alt="緑の木" loading="lazy" width="847" height="707">';
+							echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/06/yellow_line_animated.svg" style="position:absolute;top:0;left:0;width:100%;height:100%;" width="1045" height="885" loading="lazy" alt="枝分かれ">';
+							echo '<style>img#main_image{padding-bottom: 15px;} .menu{background-color: #dccb18cc;} @media screen and (max-width: 1159px){.vertical-1,.vertical-2{background-color: #ffffff66; backdrop-filter: blur(16px);}}</style>';
+							break;
+						case "09":
+						case "10":
+						case "11":
+							echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/188336-min-min.png" id="main_image" alt="楓" loading="lazy" width="1000" height="970">';
+							echo '<style>@media screen and (max-width: 870px){#hanabira > div.img_fit_div{height: calc(100vw * 0.97);}}</style>';
+							break;
+					}
+					?>
 
                     <a href="https://sunplace-osaka.com/" id="sun" rel="nofollow">
-                        <?php if(!wp_is_mobile()): ?>
-                        <img
-                                src="<?php $upload_dir = wp_upload_dir();
-                                echo $upload_dir['baseurl']; ?>/2021/04/sun_200-min.png" alt="太陽" width="100"
-                                height="99.41"
-                                loading="lazy">
-                        <?php else: ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/sun_200-min.webp" alt="太陽" width="100"
+						<?php if ( ! wp_is_mobile() ): ?>
+                            <img
+                                    src="<?php $upload_dir = wp_upload_dir();
+									echo $upload_dir['baseurl']; ?>/2021/04/sun_200-min.png" alt="太陽" width="100"
                                     height="99.41"
                                     loading="lazy">
-                        <?php endif; ?>
+						<?php else: ?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/sun_200-min.webp" alt="太陽"
+                                 width="100"
+                                 height="99.41"
+                                 loading="lazy">
+						<?php endif; ?>
                     </a>
-                    <?php if (is_user_logged_in()): ?>
+					<?php if ( is_user_logged_in() ): ?>
                         <!--<img src="<?php $upload_dir = wp_upload_dir();
-                        echo $upload_dir['baseurl']; ?>/2021/04/2IT-min.png" alt="見入るキツネ" loading="lazy" width="500"
+						echo $upload_dir['baseurl']; ?>/2021/04/2IT-min.png" alt="見入るキツネ" loading="lazy" width="500"
                          height="631" class="mv_kitsune">-->
-                    <?php endif; ?>
+					<?php endif; ?>
                     <div id="sakura_animation">
                         <div id="sakura_animation2"></div>
                     </div>
@@ -86,107 +87,150 @@
                     <a href="https://sunplace-osaka.com/" rel="nofollow">一般社団法人<br>サンプレイス</a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url(home_url('/')); ?>pdf/cooperation.pdf">令和二年度<br>地域連携報告</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/cooperation.pdf">令和二年度<br>地域連携報告</a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url(home_url('/')); ?>pdf/score.pdf">令和二年度<br>スコア表</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>pdf/score.pdf">令和二年度<br>スコア表</a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url(home_url('/jobrequest/')); ?>">お仕事のご依頼<br>はこちら</a>
+                    <a href="<?php echo esc_url( home_url( '/jobrequest/' ) ); ?>">お仕事のご依頼<br>はこちら</a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url(home_url('/column/')); ?>">大阪就労支援<br>A型コラム</a>
+                    <a href="<?php echo esc_url( home_url( '/column/' ) ); ?>">大阪就労支援<br>A型コラム</a>
                 </li>
                 <li>
                     <a href="https://13-sunplace-osaka.2bee.jp/">タロットカード<br>占い</a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url(home_url('/banner/')); ?>">バナー制作<br>サンプル集</a>
+                    <a href="<?php echo esc_url( home_url( '/banner/' ) ); ?>">バナー制作<br>サンプル集</a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url(home_url('/portfolio/')); ?>">イラストチーム<br>ポートフォリオ</a>
+                    <a href="<?php echo esc_url( home_url( '/portfolio/' ) ); ?>">イラストチーム<br>ポートフォリオ</a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url(home_url('/web_portfolio/')); ?>">WEBチーム<br>ポートフォリオ</a>
+                    <a href="<?php echo esc_url( home_url( '/web_portfolio/' ) ); ?>">WEBチーム<br>ポートフォリオ</a>
                 </li>
                 <li>
-                    <a href="https://shop.bsma.team/">BSMA!<br>CREATORS SHOP</a>
+                    <a href="https://base.bsma.team/">BSMA!<br>CREATORS SHOP</a>
                 </li>
             </ul>
         </section>
         <section id="blog">
             <h2>ブログ＆コラム</h2>
-            <?php if (have_posts()): ?>
+			<?php if ( have_posts() ): ?>
                 <div class="wrap_articles">
-                    <?php
-                    global $max_num_page;
-                    $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+					<?php
+					global $max_num_page;
+					$paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 
-                    if (wp_is_mobile()) {
-                        $args = array(
-                            'post_type' => array('post', 'column'),
-                            'posts_per_page' => 5,
-                            'orderby' => 'date',
-                            'order' => 'DESC',
-                            'paged' => $paged,
-                        );
-                    } else {
-                        $args = array(
-                            'post_type' => array('post', 'column'),
-                            'posts_per_page' => 3,
-                            'orderby' => 'date',
-                            'order' => 'DESC',
-                            'paged' => $paged,
-                        );
-                    }
-                    $the_query = new WP_Query($args);
-                    while ($the_query->have_posts()) : $the_query->the_post();
-                        ?>
+					if ( wp_is_mobile() ) {
+						$args = array(
+							'post_type'      => array( 'post', 'column' ),
+							'posts_per_page' => 5,
+							'orderby'        => 'date',
+							'order'          => 'DESC',
+							'paged'          => $paged,
+						);
+					} else {
+						$args = array(
+							'post_type'      => array( 'post', 'column' ),
+							'posts_per_page' => 3,
+							'orderby'        => 'date',
+							'order'          => 'DESC',
+							'paged'          => $paged,
+						);
+					}
+					$the_query = new WP_Query( $args );
+					while ( $the_query->have_posts() ) : $the_query->the_post();
+						?>
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                            <?php if (!wp_is_mobile()): ?>
-                                <?php if (has_post_thumbnail()): ?>
+							<?php if ( ! wp_is_mobile() ): ?>
+								<?php if ( has_post_thumbnail() ): ?>
                                     <a href="<?php the_permalink(); ?>">
-                                        <?php the_post_thumbnail('medium'); ?>
+										<?php the_post_thumbnail( 'medium' ); ?>
                                     </a>
-                                <?php else: ?>
+								<?php else: ?>
                                     <a href="<?php the_permalink(); ?>">
                                         <img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/besmilelogo.jpg"
                                              alt="no-image">
                                     </a>
-                                <?php endif; ?>
-                            <?php endif; ?>
+								<?php endif; ?>
+							<?php endif; ?>
                             <div class="blog_text_area">
                                 <a href="<?php the_permalink(); ?>">
                                     <h2><?php echo get_the_title(); ?></h2>
                                 </a>
-                                <time datetime="<?php the_time('Y-m-d'); ?>"><?php echo get_the_date(); ?></time>
-                                <div>記事タイプ：<?php if (get_post_type(get_the_ID()) == 'post') {
-                                        echo 'ブログ';
-                                    } else {
-                                        echo 'コラム';
-                                    } ?></div>
+                                <time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php echo get_the_date(); ?></time>
+                                <div>記事タイプ：<?php if ( get_post_type( get_the_ID() ) == 'post' ) {
+										echo 'ブログ';
+									} else {
+										echo 'コラム';
+									} ?></div>
                                 <a href="<?php the_permalink(); ?>" class="color444">
-                                    <?php the_excerpt(); ?>
+									<?php the_excerpt(); ?>
                                 </a>
                             </div>
                         </article>
-                    <?php endwhile;
-                    wp_reset_postdata(); ?>
+					<?php endwhile;
+					wp_reset_postdata(); ?>
                 </div>
                 <div class="flex_row">
-                    <a href="<?php echo esc_url(home_url('/')); ?>archive/" class="archive_link">もっとブログ</a>
-                    <a href="<?php echo esc_url(home_url('/')); ?>column/" class="archive_link">もっと就Aコラム</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>archive/" class="archive_link">もっとブログ</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>column/" class="archive_link">もっと就Aコラム</a>
                 </div>
-            <?php else: ?>
+			<?php else: ?>
                 <p>ブログ記事はまだありません。</p>
-            <?php endif; ?>
+			<?php endif; ?>
         </section>
         <section class="Section__Even insta">
             <div class="Section__Even__Content">
-	            <?php $post = get_post(1683);//表示したい固定ページのページID
-	            echo apply_filters('the_content', $post->post_content); //固定ページの内容
-	            ?>
-                <a class="twitter-timeline" data-lang="ja" data-height="500" href="https://twitter.com/besm13a?ref_src=twsrc%5Etfw" data-chrome=”transparent” data-link-color="#E460D2">Tweets by besm13a</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<?php $post = get_post( 1683 );//表示したい固定ページのページID
+				echo apply_filters( 'the_content', $post->post_content ); //固定ページの内容
+				?>
+                <a class="twitter-timeline" data-lang="ja" data-height="500"
+                   href="https://twitter.com/besm13a?ref_src=twsrc%5Etfw" data-chrome=”transparent”
+                   data-link-color="#E460D2">Tweets by besm13a</a>
+                <script>
+                    (function(window, document) {
+                        function main1() {
+                            // ツイート JS 読み込み
+                            var ad = document.createElement('script');
+                            ad.type = 'text/javascript';
+                            ad.async = true;
+                            ad.src = 'https://platform.twitter.com/widgets.js';
+                            var sc = document.getElementsByTagName('script')[0];
+                            sc.parentNode.insertBefore(ad, sc);
+                        }
+
+
+                        // 遅延読込み
+                        var lazyLoad = false;
+                        function onLazyLoad() {
+                            if (lazyLoad === false) {
+                                // 複数呼び出し回避 + イベント解除
+                                lazyLoad = true;
+                                window.removeEventListener('scroll', onLazyLoad);
+                                window.removeEventListener('mousemove', onLazyLoad);
+                                window.removeEventListener('mousedown', onLazyLoad);
+                                window.removeEventListener('touchstart', onLazyLoad);
+                                window.removeEventListener('keydown', onLazyLoad);
+
+                                main1(); // ツイート JS 読み込み
+                            }
+                        }
+                        window.addEventListener('scroll', onLazyLoad);
+                        window.addEventListener('mousemove', onLazyLoad);
+                        window.addEventListener('mousedown', onLazyLoad);
+                        window.addEventListener('touchstart', onLazyLoad);
+                        window.addEventListener('keydown', onLazyLoad);
+                        window.addEventListener('load', function() {
+                            // ドキュメント途中（更新時 or ページ内リンク）
+                            if (window.pageYOffset) {
+                                onLazyLoad();
+                            }
+                        });
+                    })(window, document);
+                </script>
             </div>
         </section>
         <!--A型事業所とは-->
@@ -194,7 +238,8 @@
             <h2>就労継続支援A型とは？</h2>
             <div class="Section__Odd__Contents">
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/1A-min.webp" alt="ニュースを読むキツネ" loading="lazy" width="500"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/1A-min.webp" alt="ニュースを読むキツネ"
+                         loading="lazy" width="500"
                          height="671" class="fadeup">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
@@ -208,12 +253,13 @@
                 </div>
             </div>
             <div class="Section__Odd--cherry">
-                <?php if(wp_is_mobile()): ?><img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
+				<?php if ( wp_is_mobile() ): ?><img
+                    src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
+                    width="607" height="276.73">
+				<?php else: ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
                          width="607" height="276.73">
-                <?php else: ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
-                     width="607" height="276.73">
-                <?php endif; ?>
+				<?php endif; ?>
             </div>
         </section>
         <!--/A型事業所とは-->
@@ -227,22 +273,24 @@
                         例えばゲームプログラミング、ゲームイラスト制作、ゲームサウンド制作、ホームページ制作等、あなたの<strong
                                 class="marker-animation">ITスキルを存分に発揮できる</strong>環境がBeSmile十三駅前にはあります。<br>
                         世間には軽作業等をメインに行っている事業所が多い中、イマドキなBeSmile十三駅前にご興味ございませんか？<br>
-                        ちなみに案件がないときは<a href="<?php echo esc_url(home_url('/easy_work/')); ?>">軽作業</a>・清掃等の業務も一部行っているため、ちょっとそっちで息抜きなんていうこともできます。
+                        ちなみに案件がないときは<a href="<?php echo esc_url( home_url( '/easy_work/' ) ); ?>">軽作業</a>・清掃等の業務も一部行っているため、ちょっとそっちで息抜きなんていうこともできます。
                     </p>
                 </div>
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/2IT-min.webp" alt="見入るキツネ" loading="lazy" width="500"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/2IT-min.webp" alt="見入るキツネ"
+                         loading="lazy" width="500"
                          height="631" class="fadeup">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
             </div>
             <div class="Section__Even--cherry">
-                <?php if(wp_is_mobile()): ?><img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
-                                                 width="607" height="276.73">
-                <?php else: ?>
+				<?php if ( wp_is_mobile() ): ?><img
+                    src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
+                    width="607" height="276.73">
+				<?php else: ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
                          width="607" height="276.73">
-                <?php endif; ?>
+				<?php endif; ?>
             </div>
 
         </section>
@@ -252,7 +300,8 @@
             <h2>ホームページ制作</h2>
             <div class="Section__Odd__Contents">
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/3-min.webp" alt="ホームページを作るキツネ" loading="lazy" width="500"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/3-min.webp" alt="ホームページを作るキツネ"
+                         loading="lazy" width="500"
                          height="388" class="fadeup">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
@@ -265,12 +314,13 @@
                 </div>
             </div>
             <div class="Section__Odd--cherry">
-                <?php if(wp_is_mobile()): ?><img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
-                                                 width="607" height="276.73">
-                <?php else: ?>
+				<?php if ( wp_is_mobile() ): ?><img
+                    src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
+                    width="607" height="276.73">
+				<?php else: ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
                          width="607" height="276.73">
-                <?php endif; ?>
+				<?php endif; ?>
             </div>
         </section>
         <!--/ホームページ制作-->
@@ -280,51 +330,54 @@
             <div class="Section__Even__Content">
                 <div class="Section__Even__Paragraph">
                     <p>
-                        IllustratorやPhotoshopを使い、ゲーム制作やホームページ制作等で用いるイラスト制作・<a href="<?php echo esc_url(home_url('/banner/')); ?>">バナー制作</a>を行います。<br>
+                        IllustratorやPhotoshopを使い、ゲーム制作やホームページ制作等で用いるイラスト制作・<a
+                                href="<?php echo esc_url( home_url( '/banner/' ) ); ?>">バナー制作</a>を行います。<br>
                         特にBeSmile十三駅前では<strong class="marker-animation">美大卒のプロの講師が常駐</strong>しており、イラストのスキルアップを図れます。<br>
                         とはいえ現状かなりスキルの高いメンバーもそろっていて、以下でそのサンプル等ご覧になれます。<br>
                         <a href="https://13-sunplace-osaka.com/portfolio/">
-                            <?php $today = date("m");
-                            switch ($today) {
-                                case "01":
-                                case "12":
-                                case "02":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_winter-min.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                                case "03":
-                                case "04":
-                                case "05":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_here2.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                                case "06":
-                                case "07":
-                                case "08":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_summer-min.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                                case "09":
-                                case "10":
-                                case "11":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_fall-min.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                            }
-                            ?>
+							<?php $today = date( "m" );
+							switch ( $today ) {
+								case "01":
+								case "12":
+								case "02":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_winter-min.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+								case "03":
+								case "04":
+								case "05":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_here2.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+								case "06":
+								case "07":
+								case "08":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_summer-min.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+								case "09":
+								case "10":
+								case "11":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/illust_bana_fall-min.png" alt="イラストバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+							}
+							?>
                         </a><br>
-                        <a href="<?php echo esc_url(home_url('/work_scenery/')); ?>">イラストチーム作業風景</a>も是非ご覧ください。
+                        <a href="<?php echo esc_url( home_url( '/work_scenery/' ) ); ?>">イラストチーム作業風景</a>も是非ご覧ください。
                     </p>
                 </div>
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/4-min.webp" alt="イラストを書くキツネ" loading="lazy" width="500"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/4-min.webp" alt="イラストを書くキツネ"
+                         loading="lazy" width="500"
                          height="335" class="fadeup">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
             </div>
             <div class="Section__Even--cherry">
-                <?php if(wp_is_mobile()): ?><img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
-                                                 width="607" height="276.73">
-                <?php else: ?>
+				<?php if ( wp_is_mobile() ): ?><img
+                    src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
+                    width="607" height="276.73">
+				<?php else: ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
                          width="607" height="276.73">
-                <?php endif; ?>
+				<?php endif; ?>
             </div>
         </section>
 
@@ -334,7 +387,8 @@
             <h2>ゲームプログラミング</h2>
             <div class="Section__Odd__Contents">
                 <figure>
-                    <img class="pc_2 fadeup" src="<?php echo get_template_directory_uri(); ?>/images/5-min.webp" alt="プログラミングをしているキツネ" loading="lazy" width="500"
+                    <img class="pc_2 fadeup" src="<?php echo get_template_directory_uri(); ?>/images/5-min.webp"
+                         alt="プログラミングをしているキツネ" loading="lazy" width="500"
                          height="522">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
@@ -342,43 +396,44 @@
                     <p>プランナーの作成した仕様書を元に、Unityなどを使ってゲームの心臓部を作成していただきます。<br>
                         特にBeSmile十三駅前は<strong class="marker-animation">イラスト・サウンドメンバーと密に連携をとれる</strong>ので、あなたの作ったシステムにクオリティをもたらせられるというメリットがあります。<br>
                         とはいえ現状数名のプログラマーは在籍しているものの、まだ製品として販売した実績はない未熟な部門ではあるので、是非あなたのお力をお貸しください！<br>
-                        <a href="<?php echo esc_url(home_url('/game_sample/')); ?>" class="blank">
-                            <?php $today = date("m");
-                            switch ($today) {
-                                case "01":
-                                case "12":
-                                case "02":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/game_sample_winter-min.png" alt="ゲームバナー冬" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                                case "03":
-                                case "04":
-                                case "05":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/game_sample-min.png" alt="ゲームバナー春" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                                case "06":
-                                case "07":
-                                case "08":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/game_sample_summer-min.png" alt="ゲームバナー夏" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                                case "09":
-                                case "10":
-                                case "11":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/game_sample_fall-min.png" alt="ゲームバナー秋" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                            }
-                            ?>
+                        <a href="<?php echo esc_url( home_url( '/game_sample/' ) ); ?>" class="blank">
+							<?php $today = date( "m" );
+							switch ( $today ) {
+								case "01":
+								case "12":
+								case "02":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/game_sample_winter-min.png" alt="ゲームバナー冬" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+								case "03":
+								case "04":
+								case "05":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/game_sample-min.png" alt="ゲームバナー春" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+								case "06":
+								case "07":
+								case "08":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/game_sample_summer-min.png" alt="ゲームバナー夏" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+								case "09":
+								case "10":
+								case "11":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/05/game_sample_fall-min.png" alt="ゲームバナー秋" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+							}
+							?>
                         </a><br>
                         試作段階のサンプル動画、ございます。
                     </p>
                 </div>
             </div>
             <div class="Section__Odd--cherry">
-                <?php if(wp_is_mobile()): ?><img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
-                                                 width="607" height="276.73">
-                <?php else: ?>
+				<?php if ( wp_is_mobile() ): ?><img
+                    src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
+                    width="607" height="276.73">
+				<?php else: ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
                          width="607" height="276.73">
-                <?php endif; ?>
+				<?php endif; ?>
             </div>
         </section>
         <!--/プログラミング-->
@@ -391,50 +446,48 @@
                                 class="marker-animation">フレディ・フローレス氏の監修</strong>を受けることができ、イラスト部門と同じくあなたのスキルアップに貢献できます。以下よりサンプル等お聞きできます。<br>
                         <a href="https://begroup-create.biz/service/sound/" target="_blank" rel="noopener"
                            class="blank">
-                            <?php $today = date("m");
-                            switch ($today) {
-                                case "01":
-                                case "12":
-                                case "02":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_winter-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                                case "03":
-                                case "04":
-                                case "05":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_here-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                                case "06":
-                                case "07":
-                                case "08":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_summer-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                                case "09":
-                                case "10":
-                                case "11":
-                                    echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_fall-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
-                                    break;
-                            }
-                            ?>
+							<?php $today = date( "m" );
+							switch ( $today ) {
+								case "01":
+								case "12":
+								case "02":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_winter-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+								case "03":
+								case "04":
+								case "05":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_here-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+								case "06":
+								case "07":
+								case "08":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_summer-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+								case "09":
+								case "10":
+								case "11":
+									echo '<img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/04/sound_bana_fall-min.png" alt="サウンドバナー" class="link_banner fadeup" width="300" height="99" loading="lazy">';
+									break;
+							}
+							?>
                         </a>
                     </p>
-	                <?php $post = get_post(1725);//表示したい固定ページのページID
-	                echo apply_filters('the_content', $post->post_content); //固定ページの内容
-	                ?>
-
                 </div>
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/6-min.webp" alt="笛を吹くキツネ" loading="lazy" width="500"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/6-min.webp" alt="笛を吹くキツネ"
+                         loading="lazy" width="500"
                          height="518" class="fadeup">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
             </div>
             <div class="Section__Even--cherry">
-                <?php if(wp_is_mobile()): ?><img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
-                                                 width="607" height="276.73">
-                <?php else: ?>
+				<?php if ( wp_is_mobile() ): ?><img
+                    src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
+                    width="607" height="276.73">
+				<?php else: ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
                          width="607" height="276.73">
-                <?php endif; ?>
+				<?php endif; ?>
             </div>
         </section>
         <!--/サウンド-->
@@ -443,7 +496,8 @@
             <h2>施設外就労</h2>
             <div class="Section__Odd__Contents">
                 <figure>
-                    <img class="pc_2 fadeup" src="<?php echo get_template_directory_uri(); ?>/images/7-min-1.webp" alt="掃除をしているキツネ" loading="lazy" width="500"
+                    <img class="pc_2 fadeup" src="<?php echo get_template_directory_uri(); ?>/images/7-min-1.webp"
+                         alt="掃除をしているキツネ" loading="lazy" width="500"
                          height="542">
                     <figcaption>※BeSmile（ビースマイル）十三駅前イラストチーム制作</figcaption>
                 </figure>
@@ -457,12 +511,13 @@
                 </div>
             </div>
             <div class="Section__Odd--cherry">
-                <?php if(wp_is_mobile()): ?><img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
-                                                 width="607" height="276.73">
-                <?php else: ?>
+				<?php if ( wp_is_mobile() ): ?><img
+                    src="<?php echo get_template_directory_uri(); ?>/images/sakura_1_w400.webp" alt="桜の枝" loading="lazy"
+                    width="607" height="276.73">
+				<?php else: ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/sakura_1.webp" alt="" loading="lazy"
                          width="607" height="276.73">
-                <?php endif; ?>
+				<?php endif; ?>
             </div>
         </section>
         <!--施設外就労-->
@@ -472,41 +527,41 @@
                 <strong><a href="tel:0667709011">TEL 06-6770-9011</a></strong>（平日10:00～18:00)</p>
             <h2>メールでのお問い合わせ</h2>
             <div class="Section__Odd__Contents">
-                <?php $post = get_post(47);//表示したい固定ページのページID
-                echo apply_filters('the_content', $post->post_content); //固定ページの内容
-                ?>
+				<?php $post = get_post( 47 );//表示したい固定ページのページID
+				echo apply_filters( 'the_content', $post->post_content ); //固定ページの内容
+				?>
             </div>
         </section>
         <aside class="Section__Odd" id="section_tips">
             <h2>Be Smile TIPS<img src="<?php $upload_dir = wp_upload_dir();
-                echo $upload_dir['baseurl']; ?>/2021/04/coffee-solid.svg" alt="コーヒーアイコン" width="15" height="15"
+				echo $upload_dir['baseurl']; ?>/2021/04/coffee-solid.svg" alt="コーヒーアイコン" width="15" height="15"
                                   loading="lazy" class="fuwafuwa"></h2>
-            <?php
-            //子孫のページを取得するための親固定ページのID
-            $args = ['child_of' => 109];
+			<?php
+			//子孫のページを取得するための親固定ページのID
+			$args = [ 'child_of' => 109 ];
 
-            //固定ページを取得する
-            $pages = get_pages($args);
+			//固定ページを取得する
+			$pages = get_pages( $args );
 
-            //固定ページID格納用の配列を宣言
-            $page_ids = array();
+			//固定ページID格納用の配列を宣言
+			$page_ids = array();
 
-            //子ページがあり配列で取得出来ていれば処理開始
-            if (is_array($pages) && count($pages)) {
+			//子ページがあり配列で取得出来ていれば処理開始
+			if ( is_array( $pages ) && count( $pages ) ) {
 
-                foreach ($pages as $page) {
-                    //固定ページIDのみ配列に追加
-                    $page_ids[] = $page->ID;
-                }
-            }
+				foreach ( $pages as $page ) {
+					//固定ページIDのみ配列に追加
+					$page_ids[] = $page->ID;
+				}
+			}
 
-            //親固定ページIDを配列に追加
-            $tips_ids = array_rand($page_ids, 1);
-            $page_id = $page_ids[$tips_ids];
-            $post = get_post($page_id);//表示したい固定ページのページID
-            echo '<h3>' . apply_filters('the_title', $post->post_title) . '</h3>';
-            echo apply_filters('the_content', $post->post_content); //固定ページの内容
-            ?>
+			//親固定ページIDを配列に追加
+			$tips_ids = array_rand( $page_ids, 1 );
+			$page_id  = $page_ids[ $tips_ids ];
+			$post     = get_post( $page_id );//表示したい固定ページのページID
+			echo '<h3>' . apply_filters( 'the_title', $post->post_title ) . '</h3>';
+			echo apply_filters( 'the_content', $post->post_content ); //固定ページの内容
+			?>
         </aside>
         <!--<section class="Section__Even" id="shopify">
             <div id='product-component-1624335874476'></div>

@@ -63,6 +63,39 @@
 <!--jquery-->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 <!--/jquery-->
+<audio id="bgm1" preload loop>
+    <source src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/07/bgm.mp3" type="audio/mp3">
+</audio>
+<button id="btn-play" type="button">
+    <figure>
+        <img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/07/play-solid.svg" width="50" height="50" alt="play" loading="lazy">
+        <figcaption>BGM再生</figcaption>
+    </figure>
+</button>
+<script>
+    const bgm1 = document.querySelector("#bgm1");       // <audio>
+    const btn  = document.querySelector("#btn-play");   // <button>
+
+    btn.addEventListener("click", ()=>{
+        // pausedがtrue=>停止, false=>再生中
+        if( ! bgm1.paused ){
+            btn.innerHTML = '<figure><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/07/play-solid.svg" width="100" height="100" alt="play" loading="lazy"><figcaption>BGM再生</figcaption></figure>';  // 「再生ボタン」に切り替え
+            bgm1.pause();
+        }
+        else{
+            btn.innerHTML = '<figure><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/07/pause-solid.svg" width="100" height="100" alt="play" loading="lazy"><figcaption>BGM停止</figcaption></figure>';  // 「一時停止ボタン」に切り替え
+            bgm1.play();
+        }
+    });
+
+    /**
+     * [event] 再生終了時に実行
+     */
+    bgm1.addEventListener("ended", ()=>{
+        bgm1.currentTime = 0;  // 再生位置を先頭に移動(こいつはなくても大丈夫です)
+        btn.innerHTML = '<figure><img src="https://13-sunplace-osaka.com/wp/wp-content/uploads/2021/07/play-solid.svg" width="100" height="100" alt="play" loading="lazy"><figcaption>BGM再生</figcaption></figure>';  // 「再生ボタン」に変更
+    });
+</script>
 <?php if ( is_front_page() ): ?>
     <script src="<?php echo get_template_directory_uri();?>/js/particles.min.js" data-deferred="1"></script>
 

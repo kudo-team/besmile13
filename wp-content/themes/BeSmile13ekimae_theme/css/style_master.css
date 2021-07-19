@@ -16,6 +16,27 @@ a, a:visited, a:active {
 a:hover, a:hover h2, a:hover p {
     opacity: 0.7;
 }
+#btn-play{
+    position: fixed;
+    right:0;
+    bottom: 90px;
+    width:90px;
+    height: 90px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0;
+    background-color: transparent;
+}
+#btn-play figcaption{
+    color: #e460d2;
+}
+#btn-play img{
+    width:30px;
+    height: auto;
+}
 #fredy_bgm{
     position: relative;
     z-index: 3;
@@ -1591,7 +1612,7 @@ footer #copyright {
     height: 90px;
     position: fixed;
     right: 0;
-    bottom: 90px;
+    bottom: 158px;
     z-index: 100;
 }
 
@@ -1680,7 +1701,10 @@ header {
     }
 
     #page_top {
-        bottom: 0;
+        bottom: 65px;
+    }
+    #btn-play{
+        bottom:0;
     }
 }
 

@@ -155,3 +155,4 @@ function add_auto_id( $the_content ) {
 /* the_contentフックに関数をフック */
 add_filter( 'the_content', 'add_auto_id', 9 );
 /* 見出しにid属性を自動挿入 End */
+
